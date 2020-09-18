@@ -9,33 +9,35 @@
     
     <!-- Latest compiled and minified JS -->
     <script src="//code.jquery.com/jquery.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/<script src="//code.jquery.com/jquery.js"></script>/js/bootstrap.min.js"></script>
-    
+    <script src="//netdna.bootstrapcdn.com/bootstrap/<script src="//code.jquery.com/jquery.js"></script>
+  
+   
     
     <title>Hello</title>
 </head>
 <body>
-    
-    <form action="" method="POST" role="form">
-        <legend>Calculate Rectangule Area</legend>
-    
-        <div class="form-group">
-            <label for="">Width</label>
-            <input type="number" class="form-control" id="width" class="width" placeholder="Input width">
-        </div>
-        <div class="form-group">
-            <label for="">Height</label>
-            <input type="number" class="form-control" id="height"  class="height" placeholder="Input height">
-        </div>
-        <div class="form-group">
-            <label for="">Area</label>
-            <input type="number" class="form-control" id="area"  class="area" placeholder="">
-        </div>
-
+    <div class="container">
+        <div class="row">
+        <form action="" method="POST" role="form">
+            <legend>Calculate Rectangule Area</legend>
         
-    
-        <button type="submit" class="btn btn-primary">Calculate</button>
-    </form>
+            <div class="form-group">
+                <label for="">Width</label>
+                <input type="number" class="form-control" id="width" class="width" placeholder="Input width">
+            </div>
+            <div class="form-group">
+                <label for="">Height</label>
+                <input type="number" class="form-control" id="height"  class="height" placeholder="Input height">
+            </div>
+            <div class="form-group">
+                <label for="">Area</label>
+                <input type="number" class="form-control" id="area"  class="area" placeholder="">
+            </div>            
+        
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+        </div>
+    </div>
     
 
     
