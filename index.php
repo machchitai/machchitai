@@ -6,6 +6,6 @@
     <title>Hello</title>
 </head>
 <body>
-    Hello
+    <center><h1><strong>Hello</strong></center></h1>
 </body>
 </html>
