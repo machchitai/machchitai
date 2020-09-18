@@ -8,6 +8,6 @@
 <body>
     <center><h1><strong>Hello</strong></center></h1>
     <center>Day la file PHP</center>
-    
+    <center>Da duoc keet noi GIT</center>
 </body>
 </html>
