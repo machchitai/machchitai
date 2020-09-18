@@ -7,5 +7,6 @@
 </head>
 <body>
     <center><h1><strong>Hello</strong></center></h1>
+    <center>Dat la file PHP</center>
 </body>
 </html>
