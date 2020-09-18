@@ -9,17 +9,14 @@
     
     <!-- Latest compiled and minified JS -->
     <script src="//code.jquery.com/jquery.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/<script src="//code.jquery.com/jquery.js"></script>
-  
-   
-    
+    <script src="//netdna.bootstrapcdn.com/bootstrap/<script src="//code.jquery.com/jquery.js"></script>   
     <title>Hello</title>
 </head>
 <body>
     <div class="container">
         <div class="row">
         <form action="" method="POST" role="form">
-            <legend>Calculate Rectangule Area</legend>
+            <legend><b>Calculate Rectangule Area</b></legend>
         
             <div class="form-group">
                 <label for="">Width</label>
@@ -31,7 +28,7 @@
             </div>
             <div class="form-group">
                 <label for="">Area</label>
-                <input type="number" class="form-control" id="area"  class="area" placeholder="">
+                <input type="number" class="form-control" id="area"  class="area" placeholder="Show result">
             </div>            
         
             <button type="submit" class="btn btn-primary">Calculate</button>
@@ -39,7 +36,6 @@
         </div>
     </div>
     
-
     
     
 </body>
