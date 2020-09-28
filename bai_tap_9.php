@@ -1,29 +1,18 @@
 <?php
+    
+    if ( isset($_POST['toan']) && isset($_POST['ly']) && isset($_POST['hoa'])){        
 
-    if ( isset($_POST['hk1']) && isset($_POST['hk2'])){
-        $_POST['tb'] = ($_POST['hk1'] + $_POST['hk2']*2) / 3 ;
-
-        if ($_POST['tb'] >= 5) {
-            $_POST['kq'] = 'Được lên lớp';
+        if ($_POST['toan']!= 0 && $_POST['ly']!= 0 && $_POST['hoa']!= 0) {
+            $_POST['tong'] = $_POST['toan'] + $_POST['ly']+ $_POST['hoa'] ;
+            if ( $_POST['tong'] >=  $_POST['chuan']){
+                $_POST['kq'] = 'Đậu';
+            }
+            else {
+                $_POST['kq'] = 'Rớt';
+            }
         }
-        if ($_POST['tb'] < 5) {
-            $_POST['kq'] = 'Ở lại lớp';
-        }
-
-        if ($_POST['tb'] >= 8){
-            $_POST['hl'] = 'Giỏi';
-        }
-
-        if ($_POST['tb'] < 8 && $_POST['tb'] >= 6.5){
-            $_POST['hl'] = 'Khá';
-        }
-
-        if ($_POST['tb'] < 6.5 && $_POST['tb'] >= 5){
-            $_POST['hl'] = 'Trung Bình';
-        }
-
-        if ($_POST['tb'] < 5){
-            $_POST['hl'] = 'Yếu';
+        else {
+            $_POST['kq'] = 'Rớt';
         }
     }
 
@@ -52,7 +41,7 @@
                 <div class="form-group" style="background-color: lightblue;  margin: 0px auto;">
                     
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align:center; font-size:24px; color:blue;">
-                      <label>KẾT QUẢ THI ĐẠI HỌC</label>
+                      KẾT QUẢ THI ĐẠI HỌC
                     </div>                    
                     
                 </div>
@@ -66,7 +55,7 @@
                     
                     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" >
                         
-                        <input type="number" step="0.25" name="hk1" id="hk1" style="width:180px;" class="form-control" value="<?php echo $_POST["hk1"] ?>"  >
+                        <input type="number" step="0.25" name="toan" id="toan" style="width:180px;" class="form-control" value="<?php echo $_POST["toan"] ?>"  >
                         
                     </div>   
 
@@ -77,7 +66,7 @@
                     
                     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" >
                         
-                        <input type="number" step="0.25" name="hk2" id="hk2" style="width:180px;" class="form-control" value="<?php echo $_POST["hk2"] ?>"  >
+                        <input type="number" step="0.25" name="ly" id="ly" style="width:180px;" class="form-control" value="<?php echo $_POST["ly"] ?>"  >
                         
                     </div>   
                     
@@ -88,7 +77,7 @@
                     
                     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" >
                         
-                        <input type="number" step="0.25" name="hk2" id="hk2" style="width:180px;" class="form-control" value="<?php echo $_POST["hk2"] ?>"  >
+                        <input type="number" step="0.25" name="hoa" id="hoa" style="width:180px;" class="form-control" value="<?php echo $_POST["hoa"] ?>"  >
                         
                     </div>
                     
@@ -110,18 +99,18 @@
                     
                     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" >
                         
-                        <input type="number" name="tong" id="tong" style="width:180px;" class="form-control" value="<?php echo $_POST["kq"] ?>"  disabled>
+                        <input type="number" name="tong" id="tong" style="width:180px;" class="form-control" value="<?php echo $_POST["tong"] ?>"  disabled>
                         
                     </div> 
 
                     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                      Xếp loại học lực
+                      Kết quả thi
                     </div>
 
                     
                     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" >
                         
-                        <input type="text" name="hl" id="hl" style="width:180px;" class="form-control" value="<?php echo $_POST["hl"] ?>" disabled>
+                        <input type="text" name="kq" id="kq" style="width:180px;" class="form-control" value="<?php echo $_POST["kq"] ?>" disabled>
                         
                     </div>                                                                            
                     
