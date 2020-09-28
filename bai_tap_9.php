@@ -88,7 +88,7 @@
                     
                     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" >
                         
-                        <input type="number" name="chuan" id="chuan" style="width:180px;color:red;" class="form-control" value="<?php echo $_POST['chuan']?>">
+                        <input type="number" step="0.25" name="chuan" id="chuan" style="width:180px;color:red;" class="form-control" value="<?php echo $_POST['chuan']?>">
                         
                     </div> 
 
@@ -99,7 +99,7 @@
                     
                     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" >
                         
-                        <input type="number" name="tong" id="tong" style="width:180px;" class="form-control" value="<?php echo $_POST["tong"] ?>"  disabled>
+                        <input type="number" step="0.25" name="tong" id="tong" style="width:180px;" class="form-control" value="<?php echo $_POST["tong"] ?>"  disabled>
                         
                     </div> 
 
