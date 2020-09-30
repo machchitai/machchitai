@@ -7,7 +7,7 @@
         array(
             'ten' =>'Gấu',
             'nd' =>'Gấu là những loài động vật có vú ăn thịt thuộc Họ Gấu. Chúng được xếp vào Phân bộ Dạng chó. Mặc dù chỉ có 8 loài gấu còn sinh tồn, chúng phổ biến rất rộng rãi, xuất hiện ở nhiều môi trường sống khác nhau trên khắp Bắc Bán cầu và một phần ở Nam Bán cầu.'
-        ),
+        ), 
         array(
             'ten' =>'Lạc đà',
             'nd' =>'Lạc đà là tên gọi để chỉ một trong hai loài động vật guốc chẵn lớn trong chi Camelus, là Lạc đà một bướu và Lạc đà hai bướu. Cả hai loài này có nguồn gốc từ các vùng sa mạc của châu Á và Bắc Phi. Đây là loài động vật lớn nhất sống được trên sa mạc và các vùng khô cằn thiếu nước uống.'
