@@ -1,21 +1,4 @@
 <?php
-// $nhuan = 0;
-// $ngay_trong_thang = 0;
-// $ngay_trong_tuan = '';
-
-// $mang_thu_trong_tuan = array('Hai','Ba','Tu','Nam','Sau','Bay','CN');
-
-// if (isset($_POST['thang']) && isset($_POST['nam'])){    
-
-//     if ($_POST['nam'] % 400 == 0 || ($_POST['nam'] % 4 == 0 && $_POST['nam'] % 100 != 0)){
-//         $nhuan = 1;
-//     }
-
-//     $ngay_trong_thang = cal_days_in_month(CAL_GREGORIAN, $_POST['thang'], $_POST['nam']);   
-//     $date = date_create($_POST['nam'].'-'.$_POST['thang'].'-01'); 
-//     $ngay_trong_tuan = date_format($date,'D');                                  
-    
-// }
 
 $nhuan = 0;
 $ngay_trong_thang = 0;

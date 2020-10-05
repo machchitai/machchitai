@@ -27,7 +27,7 @@
                 <div class="form-group" style="background-color: lightblue;  margin: 0px auto;">
                     
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align:center; font-size:24px; color:blue;">
-                      <label>GIẢI PHƯƠNG TRÌNH BẬC NHẤT</label>
+                      <label>TÍNH TIỀN KARAOKE</label>
                     </div>                    
                     
                 </div>
@@ -35,23 +35,31 @@
                 <div class="form-group" style="background-color: cyan ; margin: 0px auto; padding: 20px; ">
                     
                     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                      Phương trình 
+                      Giờ bắt đầu
                     </div>
 
                     
                     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" >
                         
-                        <input type="number" name="a" id="a" style="width:90px;" class="form-control" value="<?php echo $_POST["a"] ?>"  required="required" title=""> x + <input type="number" name="b" id="b" style="width:90px;" class="form-control" value="<?php echo $_POST["b"] ?>"  required="required" title=""> = 0
-                        
+                        <input type="number" name="bd" id="a" style="width:90px;" class="form-control" value="<?php echo $_POST["bd"] ?>"  required="required"> 
+                        (h)
                     </div>   
                     
                                                                                 
                     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" >
                         
-                        Nghiệm 
+                        Giờ kết thúc
 
-                        <input type="text" name="n" style="width:180px;" class="form-control" value="x = <?php echo $_POST["n"] ?>" disabled>
+                        <input type="text" name="kt" style="width:180px;" class="form-control" value="x = <?php echo $_POST["kt"] ?>" required="required">
+                        (h)
+                    </div>
+
+                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" >
                         
+                        Tiền thanh toán
+
+                        <input type="text" name="tien" style="width:180px;" class="form-control" value="x = <?php echo $_POST["tien"] ?>" disabled>
+                        (h)
                     </div>
             
                 
@@ -60,7 +68,7 @@
                    
                 <div class="form-group" style="width: 100px; margin: 10px auto; ">
                     <div class="col-sm-10 col-sm-offset-2">
-                        <button type="submit" class="btn btn-primary">Giải phương trình</button>
+                        <button type="submit" class="btn btn-primary">Tính tiền</button>
                     </div>
                 </div>
         </form>
