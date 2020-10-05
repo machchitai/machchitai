@@ -3,7 +3,7 @@
 
     if($_FILES['hinh']){
         foreach ($_FILES['hinh']['name'] as $key => $value){
-            $thong_tin_hinh = './images/' . $_FILES['hinh']['name'][$key];
+            $thong_tin_hinh = './demo/images/' . $_FILES['hinh']['name'][$key];
             move_uploaded_file($_FILES['hinh']['tmp_name'][$key], $thong_tin_hinh);
         }
     }
@@ -14,7 +14,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Upload thư mục</title>
     
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -22,15 +22,29 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     
 </head>
+
 <body>
     <div class="container">
+        <div class="hinhanh">
+            <?php
+                $dir = opendir('./demo/images');
+                while(($file = readdir($dir))!==false){
+                    if ($file != '.' && $file != '..'){
+                        ?>
+                        <img src="./demo/images/<?php echo $file;?>">
+                        <?php
+                    }                    
+                }
+                closedir($dir);
+            ?>
+        </div>
         
         <form action="" method="POST" role="form">
-            <legend>Form title</legend>      
+            <legend>Form  </legend>      
                           
             <div class="form-group">
-            <label for="exampleFormControlFile1">Example file input</label>
-            <input type="file" class="form-control-file" name="hinh" id="hinh" multiple=true>
+                <label for="exampleFormControlFile1">Upload file</label>
+                <input type="file" class="form-control-file" name="hinh" id="hinh" multiple=true>
             </div>           
                     
         
