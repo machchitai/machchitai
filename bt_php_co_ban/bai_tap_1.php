@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST["chieu_dai"]) && isset($_POST["chieu_rong"])){
-   
+    print_r($_POST);
     $dien_tich = $_POST["chieu_dai"] * $_POST["chieu_rong"];
 }
 ?>
@@ -58,29 +58,30 @@ if(isset($_POST["chieu_dai"]) && isset($_POST["chieu_rong"])){
                     
                     
                 </div>
-       
+
+
+                <div class="form-group">
+                    
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        diện tích
+                    </div>
+
+                    
+                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        
+                        <input type="number" name="" id="input" class="form-control" value="<?php echo $dien_tich ?>">
+                        
+                    </div>
+                    
+                    
+                </div>
+        
                 <div class="form-group">
                     <div class="col-sm-10 col-sm-offset-2">
-                        <button type="submit" class="btn btn-primary">Tính</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </div>
         </form>
-
-        <div class="form-group">
-                    
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                Diện tích
-            </div>
-
-            
-            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                
-                <?php echo $dien_tich ?>
-                
-            </div>
-            
-            
-        </div>
     </div>
     
     

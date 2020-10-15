@@ -73,6 +73,12 @@ if(isset($_POST["so_bat_dau"]) && isset($_POST["so_ket_thuc"])){
                     
                 </div>
 
+                <div class="form-group">
+                    
+                    
+                    
+                    
+                </div>
 
                 <div class="form-group">
                     
