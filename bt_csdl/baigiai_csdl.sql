@@ -60,30 +60,30 @@ FROM bs_sach
 WHERE (id_loai_sach = 56 OR id_loai_sach = 90 OR id_loai_sach = 92)
 AND trong_luong >= 300;
 
-/* bai tap 1.14 */
+/* bai tap 1.15 */
 SELECT *
 FROM bs_sach
 WHERE gioi_thieu LIKE '%huyền bí%' OR gioi_thieu LIKE '%du lịch%';
 
-/* bai tap 1.15 */
+/* bai tap 1.16 */
 SELECT *
 FROM bs_sach
 WHERE trong_luong IN (280, 350, 380);
 
 
-/* bai tap 1.15 */
+/* bai tap 1.17 */
 SELECT *
 FROM bs_sach
 ORDER BY don_gia DESC
 LIMIT 10;
 
-SELECT MIN(don_gia)
-FROM (
-    SELECT *
-    FROM bs_sach
-    ORDER BY don_gia DESC
-	LIMIT 10
-) temp_table
+-- SELECT MIN(don_gia)
+-- FROM (
+--     SELECT *
+--     FROM bs_sach
+--     ORDER BY don_gia DESC
+-- 	   LIMIT 10
+-- ) as temp_table
 
 /* bai tap 1.19 */
 SELECT *
@@ -99,7 +99,7 @@ SELECT nxb.*, count(s.id) as so_sach
 FROM bs_nha_xuat_ban nxb
 JOIN bs_sach s
 ON s.id_nha_xuat_ban = nxb.id
-GROUP BY nxb.id
+GROUP BY nxb.id;
 
 
 /* bai tap 2.3 */
@@ -123,7 +123,7 @@ ORDER BY so_luong_ban DESC
 LIMIT 10;
 
 
-/* bai tap 2.5 */
+/* bai tap 2.6 */
 SELECT s.*, SUM(thanh_tien) as doanh_thu
 FROM bs_chi_tiet_don_hang ctdh
 JOIN bs_sach s
