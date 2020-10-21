@@ -46,8 +46,22 @@ $ds_sach_ban_chay = $xl_sach->ds_sach_ban_chay();
             <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
         </div>
 
-        <!-- end slide banner -->
+
         <div class="sach_noi_bat">
+
+            <div class="container-fluid module_sach_noi_bat">
+                    <div class="title_module">
+                        Sách bán chạy
+                    </div>
+                    
+                    <div class="ds_sach">
+
+                    <?php
+                    in_ds_sach_theo_data_truyen_vao($ds_sach_ban_chay);
+                    ?>
+
+                    </div>
+            </div>
             
             
             <div class="container-fluid module_sach_noi_bat">
@@ -58,13 +72,11 @@ $ds_sach_ban_chay = $xl_sach->ds_sach_ban_chay();
                     <div class="ds_sach">
 
                     <?php
-                        in_ds_sach_theo_data_truyen_vao($ds_sach_noi_bat);
+                    in_ds_sach_theo_data_truyen_vao($ds_sach_noi_bat);
                     ?>
 
                     </div>
             </div>
-
-            <!-- end phần sach nổi bật -->
 
             <div class="container-fluid module_sach_moi">
                     <div class="title_module">
@@ -74,34 +86,16 @@ $ds_sach_ban_chay = $xl_sach->ds_sach_ban_chay();
                     <div class="ds_sach">
 
                     <?php
-                        in_ds_sach_theo_data_truyen_vao($ds_sach_moi);
-                    ?>
-
-                    </div>
-            </div>
-
-            <!-- end phần sách mới  -->
-
-            <div class="container-fluid module_sach_moi">
-                    <div class="title_module">
-                        Sách bán chạy
-                    </div>
-                    
-                    <div class="ds_sach">
-
-                    <?php
-                        in_ds_sach_theo_data_truyen_vao($ds_sach_ban_chay);
+                    in_ds_sach_theo_data_truyen_vao($ds_sach_moi);
                     ?>
 
                     </div>
             </div>
             
-            <!-- end phần sách bán chạy  -->
 
         </div>
-        <!-- end div sách nổi bật -->
         
-        
+
     </div>
 </body>
 </html>

@@ -1,41 +1,34 @@
 <?php
-    
-    //phan connect db
-    $db = new PDO('mysql:host=localhost;dbname=ban_sach_online_db', 'root', '');
+$so_sach_tren_trang = 10;
 
-    $db->query("set names utf8");
+$db = new PDO('mysql:host=localhost;dbname=ban_sach_online_db', 'root', '');
 
-    $SQL_query = "SELECT * FROM bs_sach";
+$db->query("set names utf8");
 
-    $statement = $db->prepare($SQL_query);
-    $statement->execute();
+$SQL_query = "SELECT * FROM bs_sach";
 
-    $ds_sach = $statement->fetchAll(PDO::FETCH_OBJ);
-    // het connect db
+$statement = $db->prepare($SQL_query);
+$statement->execute();
 
-
-    //lay danh sach theo trang
-    $so_sach_tren_trang = 10;
-    $trang_hien_tai = (isset($_GET['trang']))?$_GET['trang']:0;
-    
-
-    $SQL_query = "SELECT * FROM bs_sach LIMIT " . $trang_hien_tai * $so_sach_tren_trang . ",$so_sach_tren_trang";
-
-    echo $SQL_query;
-
-    $statement = $db->prepare($SQL_query);
-    $statement->execute();
-
-    $ds_sach_hien_thi = $statement->fetchAll(PDO::FETCH_OBJ);
+$ds_sach = $statement->fetchAll(PDO::FETCH_OBJ);
 
 
-    $so_luong_sach = count($ds_sach);
-    $so_trang = ceil($so_luong_sach/$so_sach_tren_trang);
-    
+$trang_hien_tai = (isset($_GET['trang']))?$_GET['trang']:0;
+
+//lay danh sach theo trang
+$SQL_query = "SELECT * FROM bs_sach LIMIT " . $trang_hien_tai * $so_sach_tren_trang . ",$so_sach_tren_trang";
+
+echo $SQL_query;
+
+$statement = $db->prepare($SQL_query);
+$statement->execute();
+
+$ds_sach_hien_thi = $statement->fetchAll(PDO::FETCH_OBJ);
+
+
+$so_luong_sach = count($ds_sach);
+$so_trang = ceil($so_luong_sach/$so_sach_tren_trang);
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

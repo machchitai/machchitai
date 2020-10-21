@@ -2,9 +2,9 @@
 include_once('./model/xl_loai_sach.php');
 
 $xl_loai_sach = new xl_loai_sach();
-$ds_cha = $xl_loai_sach->ds_loai_sach_theo_id_loai_cha();
-$ds_con = $xl_loai_sach->ds_loai_sach_theo_id_loai_cha($loai_sach->id);
+//$ds_loai_sach_cha = $xl_loai_sach->ds_loai_sach_theo_id_cha();
 
+$ds_loai_cha = $xl_loai_sach->ds_tat_ca_loai_sach_theo_cha();
 ?>
 
 <nav class="navbar navbar-default navbar-inverse" role="navigation">
@@ -23,43 +23,15 @@ $ds_con = $xl_loai_sach->ds_loai_sach_theo_id_loai_cha($loai_sach->id);
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
             <li class="active"><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<b class="caret"></b></a>
+                <div class="dropdown_button">Dropdown <b class="caret"></b></div>
                 <ul class="dropdown-menu">
-                
+                    
                     <?php
-                        foreach($ds_cha as $ds_cha){                            
-
-                            if (count($ds_con)>0){
-                                ?>
-                                <li class="dropdown">
-                                    <a href=""><?php echo $ds_cha->ten_loai_sach; ?></a>
-                                    <ul class="dropdown-menu">
-                                        <?php
-                                            foreach ($ds_con as $ds_con){
-                                                ?>
-                                                <li>
-                                                    <a href=""><?php echo $ds_con->ten_loai_sach; ?></a>
-                                                </li>
-                                                <?php
-                                            }
-                                        ?>
-                                    </ul>
-                                </li>
-                                <?php
-                            }  
-                            else {
-                                ?>
-                                    <li>
-                                        <a href=""><?php echo $ds_cha->ten_loai_sach; ?></a>
-                                    </li>
-                                    <?php
-                            }                      
-                        }
-
+                        //echo '<pre>',print_r($ds_loai_cha),'</pre>';
+                        $xl_loai_sach->print_ds_tat_ca_loai_sach_theo_cha($ds_loai_cha);
                     ?>
-
+                    
                 </ul>
             </li>
         </ul>
@@ -70,13 +42,13 @@ $ds_con = $xl_loai_sach->ds_loai_sach_theo_id_loai_cha($loai_sach->id);
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>            
+            <li><a href="#">Link</a></li>
+            
         </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
-
 <script>
-     $(function(){
+    $(function(){
         $('.dropdown_button').click(function(){
             //console.log('click');
             console.log($(this).find('~.dropdown-menu'));
