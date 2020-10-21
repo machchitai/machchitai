@@ -14,7 +14,6 @@ $SQL_query = "SELECT * FROM bs_sach";
 
 $statement = $db->prepare($SQL_query);
 $statement->execute();
-//$result = $statement->fetch(PDO::FETCH_OBJ);
 //$result = $statement->fetch(PDO::FETCH_ASSOC);
 $result = $statement->fetchAll(PDO::FETCH_OBJ);
 

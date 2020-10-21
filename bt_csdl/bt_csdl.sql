@@ -192,3 +192,11 @@ WHERE dh.tong_tien>=500000
 ORDER BY dh.id ASC;
 
 -- query 2.10
+SELECT tg.ten_tac_gia, SUM(ctdh.so_luong) as tong_so_luong_sach
+FROM bs_chi_tiet_don_hang ctdh
+JOIN bs_sach s
+ON ctdh.id_sach = s.id
+JOIN bs_tac_gia tg 
+ON tg.id = s.id_tac_gia
+GROUP BY s.id;
+

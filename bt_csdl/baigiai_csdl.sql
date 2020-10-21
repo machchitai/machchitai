@@ -142,7 +142,7 @@ JOIN bs_sach s
 ON s.id_nha_xuat_ban = nxb.id
 WHERE dia_chi LIKE '%Hà Nội%'
 GROUP BY nxb.id
-HAVING so_luong_sach > 5
+HAVING so_luong_sach > 5;
 
 
 /* bai tap 3.1 */
