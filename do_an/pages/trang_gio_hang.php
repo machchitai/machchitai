@@ -16,6 +16,20 @@ if(isset($_POST['btn_cap_nhat'])){
     $_SESSION['gio_hang'] = $mang_gio_hang; 
 }
 
+if(isset($_GET['id_xoa'])) {
+    foreach($mang_gio_hang as $key => $item_gio_hang){
+        if($item_gio_hang->id == $_GET['id_xoa']){
+            unset($mang_gio_hang[$key]);
+        }
+    }
+    $_SESSION['gio_hang'] = $mang_gio_hang; 
+    ?>
+    <script>
+        window.location.href = '/machchitai/do_an/?page=gio-hang';
+    </script>
+    <?php
+}
+
 if(isset($_POST['so_luong']) && isset($_POST['id_sach'])){ // nếu có thông tin đc gửi từ form
         //echo '<pre>',print_r($_POST),'</pre>';
         //echo $_GET['id_sach'];
@@ -41,7 +55,7 @@ if(isset($_POST['so_luong']) && isset($_POST['id_sach'])){ // nếu có thông t
 
         $_SESSION['gio_hang'] = $mang_gio_hang; 
 }
-echo '<pre>',print_r($_SESSION['gio_hang']),'</pre>';
+//echo '<pre>',print_r($_SESSION['gio_hang']),'</pre>';
 ?>
 
 <body class="main_content">    
@@ -71,19 +85,19 @@ echo '<pre>',print_r($_SESSION['gio_hang']),'</pre>';
                             <td><?php echo $item_gio_hang->don_gia;?></td>
                             <td>
                                 <input type="number" 
-                                name="so_luong_cap_nhat[<?php echo $item_gio_hang->id; ?>]"
+                                name="so_luong_cap_nhat[<?php echo $item_gio_hang->id;?>]"
                                 id="so_luong_<?php echo $item_gio_hang->id; ?>"  min="1" step="1" 
                                 value="<?php echo $item_gio_hang->so_luong;?>" class="form-control" title="">  
                             </td>
-                            <td><?php echo $item_gio_hang->so_luong * $item_gio_hang->don_gia;?></td>
+                            <td><?php echo $item_gio_hang->so_luong*$item_gio_hang->don_gia;?></td>
                             <td>
-                                <a href="">
+                                <a href="/machchitai/do_an/?page=gio-hang&id_xoa=<?php echo $item_gio_hang->id; ?>">
                                     
                                     <button type="button" class="btn btn-danger">                                
                                     
                                         <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>                               
                                         
-                                        Xóa
+                                         Xóa
                                 
                                     </button>
                                     
@@ -97,9 +111,9 @@ echo '<pre>',print_r($_SESSION['gio_hang']),'</pre>';
         </table>
 
         <div class="include_button">
-            <input type="button" class="btn btn-primary" value="Cập nhật giỏ hàng" name="btn_cap_nhat">
+            <input type="submit" class="btn btn-primary" value="Cập nhật giỏ hàng" name="btn_cap_nhat">
             <button type="button" class="btn btn-danger">
-                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Xóa giỏ hàng
+                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Xóa giỏ hàng
             </button>
         </div>
 

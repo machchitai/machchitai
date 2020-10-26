@@ -18,7 +18,7 @@ $ds_sach_ban_chay = $xl_sach->ds_sach_ban_chay();
 <body class="main_content">
     <div class="container-fluid">
 
-        
+<!--         
         <div id="carousel-id" class="carousel slide slide_banner" data-ride="carousel">
             <ol class="carousel-indicators">
                 <?php
@@ -44,7 +44,7 @@ $ds_sach_ban_chay = $xl_sach->ds_sach_ban_chay();
             </div>
             <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
             <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div>
+        </div> -->
 
 
         <div class="sach_noi_bat">
