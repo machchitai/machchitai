@@ -21,10 +21,10 @@ else{
 ?>
 <body class="main_content">
     <div class="container-fluid">
-        <?php
-            //echo '<pre>',print_r($ds_sach_theo_loai),'<pre>';
-            in_ds_sach_theo_data_truyen_vao($ds_sach_theo_loai);
-        ?>
+    <?php
+    //echo '<pre>',print_r($ds_sach_theo_loai),'<pre>';
+    in_ds_sach_theo_data_truyen_vao($ds_sach_theo_loai);
+    ?>
     </div>
 </body>
 </html>

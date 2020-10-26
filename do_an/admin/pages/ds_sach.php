@@ -1,4 +1,7 @@
 <?php
+//$ten_dang_nhap = $_SESSION['ten_dang_nhap'];
+//echo $ten_dang_nhap;
+
 $so_sach_tren_trang = 10;
 
 $db = new PDO('mysql:host=localhost;dbname=ban_sach_online_db', 'root', '');
@@ -160,7 +163,7 @@ $so_trang = ceil($so_luong_sach/$so_sach_tren_trang);
                     //     // ... and then only show the appropriate rows.
                     //     .slice(showFrom, showTo).show();
 
-                    $.get('http://localhost:8181/test_php/do_an_nho_nho/admin/api.php?trang=' + (pageNumber - 1))
+                    $.get('http://localhost:8181/machchitai/do_an/admin/api.php?trang=' + (pageNumber - 1))
                         .done((data) => {
                             console.log(JSON.parse(data));
 

@@ -16,7 +16,9 @@ class xl_loai_sach extends database{
         $this->execute();
         $result = $this->loadAllRow();
         return $result;
+        
     }
+
 
     function ds_tat_ca_loai_sach_theo_cha(){
 
@@ -45,7 +47,7 @@ class xl_loai_sach extends database{
         foreach($ds_loai_cha as $item_loai_cha){
             ?>
             <li class="dropdown-submenu">
-                <a href="/machchitai/do_an/?page=loai-sach&id_loai_sach=<?php echo $item_loai_cha->id; ?>"><?php echo $item_loai_cha->ten_loai_sach; ?></a>
+                <a href="/test_php/do_an_nho_nho/?page=loai-sach&id_loai_sach=<?php echo $item_loai_cha->id; ?>"><?php echo $item_loai_cha->ten_loai_sach; ?></a>
                 <?php $this->print_de_quy_loai_con($item_loai_cha); ?>
             </li>
             <?php
@@ -60,7 +62,7 @@ class xl_loai_sach extends database{
                 foreach($item_loai_cha->ds_con as $loai_sach_con){
                     ?>
                     <li class="dropdown-submenu">
-                        <a href="/machchitai/do_an/?page=loai-sach&id_loai_sach=<?php echo $loai_sach_con->id; ?>"><?php echo $loai_sach_con->ten_loai_sach; ?></a>
+                        <a href="/test_php/do_an_nho_nho/?page=loai-sach&id_loai_sach=<?php echo $loai_sach_con->id; ?>"><?php echo $loai_sach_con->ten_loai_sach; ?></a>
                         <?php $this->print_de_quy_loai_con($loai_sach_con); ?>
                     </li>
                     <?php

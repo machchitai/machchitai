@@ -28,8 +28,8 @@ $ds_loai_cha = $xl_loai_sach->ds_tat_ca_loai_sach_theo_cha();
                 <ul class="dropdown-menu">
                     
                     <?php
-                        //echo '<pre>',print_r($ds_loai_cha),'</pre>';
-                        $xl_loai_sach->print_ds_tat_ca_loai_sach_theo_cha($ds_loai_cha);
+                    //echo '<pre>',print_r($ds_loai_cha),'</pre>';
+                    $xl_loai_sach->print_ds_tat_ca_loai_sach_theo_cha($ds_loai_cha);
                     ?>
                     
                 </ul>
