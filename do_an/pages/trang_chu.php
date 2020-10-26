@@ -1,9 +1,9 @@
 <?php
-include_once('./model/xl_slide_banner.php');
+//include_once('./model/xl_slide_banner.php');
 include_once('./model/xl_sach.php');
 
-$xl_slide_banner = new xl_slide_banner();
-$ds_slide_banner = $xl_slide_banner->ds_slide_banner();
+//$xl_slide_banner = new xl_slide_banner();
+//$ds_slide_banner = $xl_slide_banner->ds_slide_banner();
 
 $xl_sach = new xl_sach();
 $ds_sach_noi_bat = $xl_sach->ds_sach_noi_bat();

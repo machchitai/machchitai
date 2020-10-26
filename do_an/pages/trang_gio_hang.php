@@ -9,6 +9,13 @@ else {
     $mang_gio_hang = [];
 }
 
+if(isset($_POST['btn_cap_nhat'])){
+    foreach ($mang_gio_hang as $item_gio_hang){
+        $item_gio_hang->so_luong = $_POST['so_luong_cap_nhat'][$item_gio_hang->id];    
+    }
+    $_SESSION['gio_hang'] = $mang_gio_hang; 
+}
+
 if(isset($_POST['so_luong']) && isset($_POST['id_sach'])){ // nếu có thông tin đc gửi từ form
         //echo '<pre>',print_r($_POST),'</pre>';
         //echo $_GET['id_sach'];
@@ -34,32 +41,71 @@ if(isset($_POST['so_luong']) && isset($_POST['id_sach'])){ // nếu có thông t
 
         $_SESSION['gio_hang'] = $mang_gio_hang; 
 }
-//echo '<pre>',print_r($_SESSION['gio_hang']),'</pre>';
+echo '<pre>',print_r($_SESSION['gio_hang']),'</pre>';
 ?>
 
-<body class="main_content">
-    
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>Tên sách</th>
-                <th>Đơn giá</th>
-                <th>Số lượng</th>
-                <th>Hành động</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><?php echo $thong_tin_sach->ten_sach;?></td>
-                <td><?php echo $thong_tin_sach->don_gia;?></td>
-                <td><?php echo $thong_tin_sach->so_luong;?></td>
-                <td>
-                    <input type="checkbox" name="chon" id="">
-                    <input type="button" name="xoa" value="Xóa">    
-                </td>
-            </tr>
-        </tbody>
-    </table>
+<body class="main_content">    
+
+    <form action="/machchitai/do_an/?page=gio-hang" method="POST">
+        <table class="table table-hover table_gio_hang">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên sách</th>
+                    <th>Hình</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <?php
+                    foreach($mang_gio_hang as $item_gio_hang){
+                        ?>
+                        <tr>
+                            <td><?php echo $item_gio_hang->id;?></td>
+                            <td><?php echo $item_gio_hang->ten_sach;?></td>
+                            <td><img src="/machchitai/do_an/public/images/sach/<?php echo $item_gio_hang->hinh;?>" alt=""></td>
+                            <td><?php echo $item_gio_hang->don_gia;?></td>
+                            <td>
+                                <input type="number" 
+                                name="so_luong_cap_nhat[<?php echo $item_gio_hang->id; ?>]"
+                                id="so_luong_<?php echo $item_gio_hang->id; ?>"  min="1" step="1" 
+                                value="<?php echo $item_gio_hang->so_luong;?>" class="form-control" title="">  
+                            </td>
+                            <td><?php echo $item_gio_hang->so_luong * $item_gio_hang->don_gia;?></td>
+                            <td>
+                                <a href="">
+                                    
+                                    <button type="button" class="btn btn-danger">                                
+                                    
+                                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>                               
+                                        
+                                        Xóa
+                                
+                                    </button>
+                                    
+                                </a>    
+                            </td>
+                        </tr>
+                        <?php
+                    }
+                ?>            
+            </tbody>     
+        </table>
+
+        <div class="include_button">
+            <input type="button" class="btn btn-primary" value="Cập nhật giỏ hàng" name="btn_cap_nhat">
+            <button type="button" class="btn btn-danger">
+                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Xóa giỏ hàng
+            </button>
+        </div>
+
+    </form>
     
 
+
+    
 </body>

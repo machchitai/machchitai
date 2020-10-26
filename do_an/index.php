@@ -7,6 +7,14 @@ include_once('./widgets/head.php');
 
 include_once('./widgets/header.php');
 
+include_once('./model/xl_slide_banner.php');
+include_once('./model/xl_sach.php');
+
+$xl_slide_banner = new xl_slide_banner();
+$ds_slide_banner = $xl_slide_banner->ds_slide_banner();
+
+include_once('./widgets/slide_banner.php');
+
 if(isset($_GET['page'])){
     if($_GET['page'] == 'sach'){
         include_once('./pages/ds_sach.php');
