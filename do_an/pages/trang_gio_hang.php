@@ -4,7 +4,7 @@ $xl_sach = new xl_sach();
 
 if(isset($_POST['so_luong']) && isset($_POST['id_sach'])){
         //echo '<pre>',print_r($_POST),'</pre>';
-        //echo $_GET['id_sach'];
+    
         $thong_tin_sach = $xl_sach->lay_thong_tin_sach_theo_id($_GET['id_sach']);
         $thong_tin_sach->gioi_thieu = '';
         $thong_tin_sach->so_luong = $_POST['so_luong'];

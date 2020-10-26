@@ -17,6 +17,9 @@ if(isset($_GET['page'])){
     else if($_GET['page'] == 'chi-tiet-sach'){
         include_once('./pages/trang_chi_tiet_sach.php');
     }
+    else if($_GET['page'] == 'gio_hang'){
+        include_once('./pages/trang_gio_hang.php');
+    }
     else{
         include_once('./pages/trang_chu.php');
     }

@@ -59,7 +59,7 @@ class xl_sach extends database{
         //echo $string_sql;exit;
         $this->setSQL($string_sql);
         $this->execute();
-        $result = $this->loadRow();
+        $result = $this->loadAllRow();
         return $result;
     }
 
