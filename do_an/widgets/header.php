@@ -16,15 +16,15 @@ $ds_loai_cha = $xl_loai_sach->ds_tat_ca_loai_sach_theo_cha();
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="?page=trang-chu">Trang bán sách</a>
+        <a class="navbar-brand" href="#">Title</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="?page=trang-chu">Trang chủ</a></li>
+            <li class="active"><a href="#">Link</a></li>
             <li class="dropdown">
-                <div class="dropdown_button">Thể loại <b class="caret"></b></div>
+                <div class="dropdown_button">Dropdown <b class="caret"></b></div>
                 <ul class="dropdown-menu">
                     
                     <?php
@@ -37,11 +37,14 @@ $ds_loai_cha = $xl_loai_sach->ds_tat_ca_loai_sach_theo_cha();
         </ul>
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Tìm sách">
+                <input type="text" class="form-control" placeholder="Search">
             </div>
-            <button type="submit" class="btn btn-default">Tìm</button>
+            <button type="submit" class="btn btn-default">Submit</button>
         </form>
-        
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            
+        </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
 <script>

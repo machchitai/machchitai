@@ -13,6 +13,8 @@
         }
 
     }
+
+
     .sach_noi_bat {
         .ds_sach {
             display: flex;
@@ -29,7 +31,6 @@
         color: #14855a;
         border-bottom: 1px solid #14855a;
     }
-    
 }
 
 
@@ -67,4 +68,10 @@
         }
     }
     
+}
+
+.table_gio_hang {
+    img {
+        width: 50px;
+    }
 }
