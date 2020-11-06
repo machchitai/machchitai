@@ -13,7 +13,7 @@ class database {
 
     function execute(){
         $this->sth = $this->db->prepare($this->sql);
-        $this->sth->execute();
+        return $this->sth->execute();
     }
 
     function loadAllRow(){
