@@ -110,11 +110,11 @@ class xl_sach extends database{
         $bien_dem = 0;
         foreach ($mang_thong_tin as $input_name => $item_input){
             if($input_name != 'btn_save_cap_nhat_sach'){
-                if($bien_dem==0){
+                if($bien_dem == 0){
                     $string_build_query .= $input_name . "= '". $item_input . "' ";
                 }
                 else {
-                    $string_build_query .= ','.$input_name . "= '". $item_input . "' ";
+                    $string_build_query .= "," . $input_name . "= '". $item_input . "' ";
                 }
                 $bien_dem++;
             }
@@ -128,6 +128,15 @@ class xl_sach extends database{
         //$result = $this->loadRow();   
         return $result;
         
+    }
+
+    function lay_toan_bo_sach(){
+        $string_sql = "SELECT * FROM bs_sach";
+        //echo $string_sql; exit;
+        $this->setSQL($string_sql);
+        $this->execute();
+        $result = $this->loadAllRow();
+        return $result;
     }
 }
 ?>

@@ -1,0 +1,56 @@
+# GET  http://localhost/machchitai/do_an/api/sach/index.php
+# Content-Type: application/json
+
+# POST http://localhost/machchitai/do_an/api/sach/index.php
+# Content-Type: application/json
+
+
+# {
+#             "ten_sach": "Diary Of A Wimpy Kids T10 - Paperback",
+#             "id_tac_gia": "33",
+#             "gioi_thieu": "<span style=\"color:#ff6600; font-size:medium\"><strong>Diary Of A Wimpy Kids T9 - Paperback</strong></span><br />\r\n<br />\r\nA family road trip is supposed to be a lot of fun... unless, of course, you’re the Heffleys.<br />\r\n<br />\r\nThe journey starts off full of promise, then quickly takes several wrong turns. Petrol-station bathrooms, crazed seagulls, a fender bender and a runaway pig - not exactly Greg Heffley’s idea of a good time. But even the worst road trip can turn into an adventure - and this is one the Heffleys won’t soon forget.</p>\r\n>",
+#             "doc_thu": "images/doc_thu/diary-of-a-wimpy-kids-t9-paperback/index.html",
+#             "id_loai_sach": "93",
+#             "id_nha_xuat_ban": "18",
+#             "so_trang": "240",
+#             "ngay_xuat_ban": "11-2015",
+#             "kich_thuoc": "20x20x20cm",
+#             "sku": "9780141361819",
+#             "trong_luong": "350",
+#             "trang_thai": "1",
+#             "hinh": "diary_4.jpg",
+#             "don_gia": "138000",
+#             "gia_bia": "162000",
+#             "noi_bat": "0",
+#             "id_cap_nhat":94
+# }
+
+# PUT http://localhost/machchitai/do_an/api/sach/index.php
+# Content-Type: application/json
+
+# {
+#             "ten_sach": "Diary Of A Wimpy Kids T10 - Paperback",
+#             "id_tac_gia": "33",
+#             "gioi_thieu": "<span style=\"color:#ff6600; font-size:medium\"><strong>Diary Of A Wimpy Kids T9 - Paperback</strong></span><br />\r\n<br />\r\nA family road trip is supposed to be a lot of fun... unless, of course, you’re the Heffleys.<br />\r\n<br />\r\nThe journey starts off full of promise, then quickly takes several wrong turns. Petrol-station bathrooms, crazed seagulls, a fender bender and a runaway pig - not exactly Greg Heffley’s idea of a good time. But even the worst road trip can turn into an adventure - and this is one the Heffleys won’t soon forget.</p>\r\n>",
+#             "doc_thu": "images/doc_thu/diary-of-a-wimpy-kids-t9-paperback/index.html",
+#             "id_loai_sach": "93",
+#             "id_nha_xuat_ban": "18",
+#             "so_trang": "240",
+#             "ngay_xuat_ban": "11-2015",
+#             "kich_thuoc": "20x20x20cm",
+#             "sku": "9780141361819",
+#             "trong_luong": "350",
+#             "trang_thai": "1",
+#             "hinh": "diary_4.jpg",
+#             "don_gia": "138000",
+#             "gia_bia": "162000",
+#             "noi_bat": "0",
+#             "id_cap_nhat":94
+# }
+
+DELETE http://localhost/machchitai/do_an/api/sach/index.php
+Content-Type: application/json
+
+{
+    "id_xoa":100
+}
