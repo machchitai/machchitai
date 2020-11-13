@@ -56,7 +56,7 @@ if(isset($_POST['ho_ten_nguoi_nhan']) && isset($_SESSION['gio_hang'])){
             ?>
             <script>
                 alert('đơn hàng đã đặt thành công!');
-                window.location.href = '/test_php/do_an_nho_nho/';
+                window.location.href = '/machchitai/do_an/';
             </script>
             <?php
         }

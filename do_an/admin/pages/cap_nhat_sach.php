@@ -5,8 +5,10 @@ include_once('../model/xl_tac_gia.php');
 include_once('../model/xl_nha_xuat_ban.php');
 
 $xl_sach = new xl_sach();
-$id_cap_nhat_sach = $_GET['id_sach'];
-$thong_tin_sach_cap_nhat = $xl_sach->lay_thong_tin_sach_theo_id($id_cap_nhat_sach); 
+
+$id_cap_nhat = $_GET['id_sach'];
+$thong_tin_sach_cap_nhat = $xl_sach->lay_thong_tin_sach_theo_id($id_cap_nhat);
+//echo '<pre>',print_r($thong_tin_sach_cap_nhat),'</pre>';
 
 $xl_loai_sach = new xl_loai_sach();
 $ds_loai_sach = $xl_loai_sach->ds_tat_ca_loai_sach_theo_cha();
@@ -16,6 +18,7 @@ $ds_tac_gia = $xl_tac_gia->ds_tac_gia();
 
 $xl_nha_xuat_ban = new xl_nha_xuat_ban();
 $ds_nha_xuat_ban = $xl_nha_xuat_ban->ds_nha_xuat_ban();
+
 
 if(isset($_POST['btn_save_cap_nhat_sach'])){
     $hop_le = true;
@@ -33,14 +36,14 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
         }
     }
 
-    if($hop_le == true){// se xu lý cap nhat
-        $id_sach_cap_nhat = $xl_sach->cap_nhat_sach($_POST, $id_cap_nhat_sach);
-
-        if($id_sach_cap_nhat){
+    if($hop_le == true){// se xu lý save
+        $result = $xl_sach->cap_nhat_sach($_POST, $id_cap_nhat);
+        //echo '<pre>',print_r($result),'</pre>';
+        if($result){
             ?>
             <script>
-                alert('Cập nhật thành công');
-                //window.location.href = '/machchitai/do_an/admin/?page=sach';
+                alert('Cập nhật sách thành công');
+                //window.location.href = '/test_php/do_an_nho_nho/admin/?page=sach';
             </script>
             <?php
         }
@@ -53,14 +56,12 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
         }
     }
 }
-
 ?>
-
-
 
 <div class="title_page">
     Cập Nhật Sách
 </div>
+
 
 <div class="include_form_process">
     
@@ -71,7 +72,13 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
                 Tên sách:
             </div>
             <div class="col-sm-10">
-                <input type="text" name="ten_sach" id="input" class="form-control" value="<?php if(isset($_POST['ten_sach'])) echo $_POST['ten_sach']; else if($thong_tin_sach_cap_nhat) echo $thong_tin_sach_cap_nhat->ten_sach;?>" title="">
+                <input type="text" name="ten_sach" id="input" class="form-control" 
+                    value="<?php 
+                    if(isset($_POST['ten_sach'])) 
+                        echo $_POST['ten_sach']; 
+                    else if($thong_tin_sach_cap_nhat) 
+                        echo $thong_tin_sach_cap_nhat->ten_sach;
+                    ?>" title="">
             </div>
         </div> 
 
@@ -80,7 +87,13 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
                 SKU:
             </div>
             <div class="col-sm-10">
-                <input type="text" name="sku" id="input" class="form-control" value="<?php if(isset($_POST['ten_sach'])) echo $_POST['sku']; else if($thong_tin_sach_cap_nhat) echo trim($thong_tin_sach_cap_nhat->sku);?>"  title="">
+                <input type="text" name="sku" id="input" class="form-control"
+                 value="<?php 
+                    if(isset($_POST['sku'])) 
+                        echo $_POST['sku']; 
+                    else if($thong_tin_sach_cap_nhat) 
+                        echo trim($thong_tin_sach_cap_nhat->sku);
+                    ?>"  title="">
             </div>
         </div> 
 
@@ -101,7 +114,7 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
                         if(count($item_loai_sach->ds_con)){
                             foreach($item_loai_sach->ds_con as $item_loai_con){
                                 ?>
-                                <option value="<?php echo $item_loai_con->id; ?>" <?php if($item_loai_con->id == $thong_tin_sach_cap_nhat->id_loai_sach) echo 'selected="selected"'; ?>>
+                                <option value="<?php echo $item_loai_con->id; ?>"  <?php if($item_loai_con->id == $thong_tin_sach_cap_nhat->id_loai_sach) echo 'selected="selected"'; ?>>
                                     <?php echo '||== ' . $item_loai_con->ten_loai_sach; ?>
                                 </option>
                                 <?php
@@ -121,7 +134,12 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
             </div>
             <div class="col-sm-10">
                 
-                <textarea name="gioi_thieu" id="input" class="form-control" rows="3" <?php if(isset($_POST['gioi_thieu'])) echo $_POST['gioi_thieu']; else if($thong_tin_sach_cap_nhat) echo $thong_tin_sach_cap_nhat->gioi_thieu;?>></textarea>
+                <textarea name="gioi_thieu" id="input" class="form-control" rows="3"><?php 
+                    if(isset($_POST['gioi_thieu'])) 
+                        echo $_POST['gioi_thieu']; 
+                    else if($thong_tin_sach_cap_nhat) 
+                        echo trim($thong_tin_sach_cap_nhat->gioi_thieu);
+                    ?></textarea>
                 
             </div>
         </div> 
@@ -131,7 +149,13 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
                 Đọc thử:
             </div>
             <div class="col-sm-10">
-                <input type="text" name="doc_thu" id="input" class="form-control" value="<?php if(isset($_POST['doc_thu'])) echo $_POST['doc_thu']; else if($thong_tin_sach_cap_nhat) echo $thong_tin_sach_cap_nhat->doc_thu;?>"  title="">
+                <input type="text" name="doc_thu" id="input" class="form-control" 
+                    value="<?php 
+                    if(isset($_POST['doc_thu'])) 
+                        echo $_POST['doc_thu']; 
+                    else if($thong_tin_sach_cap_nhat) 
+                        echo $thong_tin_sach_cap_nhat->doc_thu;
+                    ?>"  title="">
             </div>
         </div> 
 
@@ -164,7 +188,7 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
                     <?php
                     foreach($ds_nha_xuat_ban as $nha_xuat_ban){
                         ?>
-                        <option value="<?php echo $nha_xuat_ban->id; ?>"  <?php if($nha_xuat_ban->id == $thong_tin_sach_cap_nhat->id_nha_xuat_ban) echo 'selected="selected"';?>>
+                        <option value="<?php echo $nha_xuat_ban->id; ?>" <?php if($nha_xuat_ban->id == $thong_tin_sach_cap_nhat->id_nha_xuat_ban) echo 'selected="selected"'; ?>>
                             <?php echo $nha_xuat_ban->ten_nha_xuat_ban; ?>
                         </option>
                         <?php
@@ -180,7 +204,13 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
                 Số trang:
             </div>
             <div class="col-sm-10">
-                <input type="text" name="so_trang" id="input" class="form-control" value="<?php if(isset($_POST['so_trang'])) echo $_POST['so_trang']; else if($thong_tin_sach_cap_nhat) echo $thong_tin_sach_cap_nhat->so_trang;?>"  title="">
+                <input type="text" name="so_trang" id="input" class="form-control"
+                    value="<?php 
+                    if(isset($_POST['so_trang'])) 
+                        echo $_POST['so_trang']; 
+                    else if($thong_tin_sach_cap_nhat) 
+                        echo $thong_tin_sach_cap_nhat->so_trang;
+                    ?>"  title="">
             </div>
         </div> 
 
@@ -189,7 +219,13 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
                 Ngày xuất bản:
             </div>
             <div class="col-sm-10">
-                <input type="text" name="ngay_xuat_ban" id="input" class="form-control" value="<?php if(isset($_POST['ngay_xuat_ban'])) echo $_POST['ngay_xuat_ban']; else if($thong_tin_sach_cap_nhat) echo $thong_tin_sach_cap_nhat->ngay_xuat_ban;?>"  title="">
+                <input type="text" name="ngay_xuat_ban" id="input" class="form-control" 
+                    value="<?php 
+                    if(isset($_POST['ngay_xuat_ban'])) 
+                        echo $_POST['ngay_xuat_ban']; 
+                    else if($thong_tin_sach_cap_nhat) 
+                        echo trim($thong_tin_sach_cap_nhat->ngay_xuat_ban);
+                    ?>"  title="">
             </div>
         </div> 
 
@@ -199,7 +235,13 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
                 Kích thước:
             </div>
             <div class="col-sm-10">
-                <input type="text" name="kich_thuoc" id="input" class="form-control" value="<?php if(isset($_POST['kich_thuoc'])) echo $_POST['kich_thuoc'];  else if($thong_tin_sach_cap_nhat) echo $thong_tin_sach_cap_nhat->kich_thuoc;?>"  title="">
+                <input type="text" name="kich_thuoc" id="input" class="form-control" 
+                    value="<?php 
+                    if(isset($_POST['kich_thuoc'])) 
+                        echo $_POST['kich_thuoc']; 
+                    else if($thong_tin_sach_cap_nhat) 
+                        echo trim($thong_tin_sach_cap_nhat->kich_thuoc);
+                    ?>"  title="">
             </div>
         </div> 
 
@@ -208,7 +250,13 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
                 Trọng lượng:
             </div>
             <div class="col-sm-10">
-                <input type="text" name="trong_luong" id="input" class="form-control" value="<?php if(isset($_POST['trong_luong'])) echo $_POST['trong_luong']; else if($thong_tin_sach_cap_nhat) echo $thong_tin_sach_cap_nhat->trong_luong;?>"  title="">
+                <input type="text" name="trong_luong" id="input" class="form-control" 
+                    value="<?php 
+                    if(isset($_POST['trong_luong'])) 
+                        echo $_POST['trong_luong']; 
+                    else if($thong_tin_sach_cap_nhat) 
+                        echo $thong_tin_sach_cap_nhat->trong_luong;
+                    ?>"  title="">
             </div>
         </div> 
 
@@ -221,12 +269,12 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
                 
                 <div class="radio">
                     <label>
-                        <input type="radio" name="trang_thai" id="input" value="1" <?php if($thong_tin_sach_cap_nhat->trang_thai == 1) echo 'checked="checked"';?>> 
+                        <input type="radio" name="trang_thai" id="input" value="1" <?php if($thong_tin_sach_cap_nhat->trang_thai == 1) echo 'checked="checked"'; ?>>
                         Hiện
                     </label>
 
                     <label>
-                        <input type="radio" name="trang_thai" id="input" value="0" <?php if($thong_tin_sach_cap_nhat->trang_thai == 0) echo 'checked="checked"';?>> 
+                        <input type="radio" name="trang_thai" id="input" value="0" <?php if($thong_tin_sach_cap_nhat->trang_thai == 0) echo 'checked="checked"'; ?>>
                         Ẩn
                     </label>
                 </div>
@@ -248,7 +296,13 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
                 Đơn giá:
             </div>
             <div class="col-sm-10">
-                <input type="number" name="don_gia" id="input" class="form-control" value="<?php if(isset($_POST['don_gia'])) echo $_POST['don_gia']; else if($thong_tin_sach_cap_nhat) echo $thong_tin_sach_cap_nhat->don_gia;?>"  title="">
+                <input type="number" name="don_gia" id="input" class="form-control" 
+                    value="<?php 
+                    if(isset($_POST['don_gia'])) 
+                        echo $_POST['don_gia']; 
+                    else if($thong_tin_sach_cap_nhat) 
+                        echo $thong_tin_sach_cap_nhat->don_gia;
+                    ?>"  title="">
             </div>
         </div>
         
@@ -257,7 +311,13 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
                 Giá bìa:
             </div>
             <div class="col-sm-10">
-                <input type="text" name="gia_bia" id="input" class="form-control" value="<?php if(isset($_POST['gia_bia'])) echo $_POST['gia_bia']; else if($thong_tin_sach_cap_nhat) echo $thong_tin_sach_cap_nhat->gia_bia; ?>"  title="">
+                <input type="text" name="gia_bia" id="input" class="form-control" 
+                    value="<?php 
+                    if(isset($_POST['gia_bia'])) 
+                        echo $_POST['gia_bia']; 
+                    else if($thong_tin_sach_cap_nhat) 
+                        echo $thong_tin_sach_cap_nhat->gia_bia;
+                    ?>"  title="">
             </div>
         </div>  
 
@@ -269,12 +329,12 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
             <div class="col-sm-10">
             <div class="radio">
                     <label>
-                        <input type="radio" name="noi_bat" id="input" value="1" <?php if($thong_tin_sach_cap_nhat->noi_bat == 1) echo 'checked="checked"';?>>
+                        <input type="radio" name="noi_bat" id="input" value="1" <?php if($thong_tin_sach_cap_nhat->noi_bat == 1) echo 'checked="checked"'; ?>>
                         Có
                     </label>
 
                     <label>
-                        <input type="radio" name="noi_bat" id="input" value="0"  <?php if($thong_tin_sach_cap_nhat->noi_bat == 0) echo 'checked="checked"';?>>
+                        <input type="radio" name="noi_bat" id="input" value="0"  <?php if($thong_tin_sach_cap_nhat->noi_bat == 0) echo 'checked="checked"'; ?>>
                         Không
                     </label>
                 </div>
@@ -288,3 +348,4 @@ if(isset($_POST['btn_save_cap_nhat_sach'])){
         </div>
     </form>
     
+</div>

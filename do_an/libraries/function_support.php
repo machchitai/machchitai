@@ -114,7 +114,7 @@ function print_chuoi_html_gio_hang(){
 
 
 function create_url_review_don_hang($id_don_hang){
-    return 'http://localhost:8181/machchitai/do_an/?page=don-hang&id_don_hang=' . $id_don_hang;
+    return 'http://localhost/machchitai/do_an/?page=don-hang&id_don_hang=' . $id_don_hang;
 }
 
 
@@ -163,13 +163,13 @@ function print_chi_tiet_don_hang($ds_chi_tiet_don_hang){
 }
 
 function check_and_include_model_database(){
-    if (file_exists('./model/database.php')){
+    if(file_exists('./model/database.php')){
         include_once('./model/database.php');
     }
-    else if (file_exists('./model/database.php')){
-        include_once('./model/database.php');
+    if(file_exists('../model/database.php')){
+        include_once('../model/database.php');
     }
-    else {
+    else{
         include_once('../../model/database.php');
     }
 }

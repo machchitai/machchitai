@@ -1,1 +1,1 @@
-GET http://localhost:8181/machchitai/do_an/admin/api.php
+GET http://localhost/machchitai/do_an/admin/api.php

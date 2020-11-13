@@ -92,7 +92,7 @@ if(!isset($mang_gio_hang)){
                 <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Xóa giỏ hàng
             </button>
 
-            <a href="/machchitai/do_an/?page=thanh-toan" class="btn btn-success">
+            <a href="/test_php/do_an_nho_nho/?page=thanh-toan" class="btn btn-success">
                 <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
                 Thanh Toán
             </a>

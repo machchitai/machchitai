@@ -1,24 +1,26 @@
 <?php
-
 include_once('../model/xl_sach.php');
 
 $xl_sach = new xl_sach();
 
+
 if(isset($_GET['id_xoa'])){
     $id_xoa = $_GET['id_xoa'];
+    //echo $id_xoa;
 
     if($id_xoa){
-        $result=$xl_sach->xoa_sach($id_xoa);
+        $result = $xl_sach->xoa_sach($id_xoa);
         if($result){
             ?>
             <script>
-                alert('Xóa sách thành công!');
-                window.location.href = '/machchitai/do_an/admin/?page=sach';
+            alert('Xóa sách thành công!');
+            window.location.href = '/machchitai/do_an/admin/?page=sach';
             </script>
             <?php
         }
     }
 }
+
 
 $so_sach_tren_trang = 10;
 
@@ -38,11 +40,12 @@ $so_trang = ceil($so_luong_sach/$so_sach_tren_trang);
     <script type="text/javascript" src="./js/simple_pagination.js"></script>
     <link rel="stylesheet" href="./css/simple_pagination.css">
     <script type="text/javascript" src="./js/function_support.js"></script>
+    
     <div class="title_page">
         Danh Sách Sách
     </div>
     <?php
-   // echo $so_trang;
+    //echo $so_trang;
     ?>
 
     
@@ -104,7 +107,10 @@ $so_trang = ceil($so_luong_sach/$so_sach_tren_trang);
                 <th>Tên sách</th>
                 <th>Đơn giá</th>
                 <th>Giá bìa</th>
-                <th>Chọn</th>                           
+                <th>Chọn</th>
+                <th>
+                Hành động
+                </th>
             </tr>
         </thead>
         <tbody id="data_show">
@@ -113,8 +119,7 @@ $so_trang = ceil($so_luong_sach/$so_sach_tren_trang);
 
     <div id="pagination" class="pagination"></div>
     
-    <script>    // javascript lấy dữ liệu sách từ database để build html
-
+    <script>
     // $(document).ready( function () {
     //     $('#table_sach').DataTable();
     // } );
@@ -137,7 +142,7 @@ $so_trang = ceil($so_luong_sach/$so_sach_tren_trang);
                     <input type="checkbox" name="chon_sach[]" value="${data_list[i].gia_bia}">
                 </td>
                 <td>
-                    <a href="/machchitai/do_an/admin/?page=sach&id_xoa=${data_list[i].id}" type="button" class="btn btn-danger" onclick="return recheck_delete()">
+                    <a href="/machchitai/do_an/admin?page=sach&id_xoa=${data_list[i].id}" type="button" class="btn btn-danger" onclick="return recheck_delete();">
                     <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                     Xóa
                     </a>
