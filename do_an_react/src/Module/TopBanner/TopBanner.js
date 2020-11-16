@@ -2,14 +2,11 @@ import React, { Component } from 'react';
 import LogoBanner from './LogoBanner';
 
 
-
 class TopBanner extends Component {
 
     constructor(props){
         super(props);
-        this.state = {
-            title_logo: `${this.props.title_page} SHOP`
-        };
+        this.state = { title_logo: `${this.props.title_page} SHOP` };
     }
 
     render() {
