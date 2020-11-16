@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import LogoBanner from './LogoBanner';
 
 
-// dung Class
+
 class TopBanner extends Component {
 
     constructor(props){
         super(props);
         this.state = {
-            title_logo: this.props.title_page + ' test '
+            title_logo: this.props.title_page + ' SHOP'
         };
     }
 
@@ -73,8 +73,6 @@ class TopBanner extends Component {
 export default TopBanner;
 
 
-
-// dung function
 // const TopBanner = (props) => {
 //     return (
 //         <div>

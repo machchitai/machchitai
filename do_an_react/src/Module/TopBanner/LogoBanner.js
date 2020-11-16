@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 
-//dung function
+
 const LogoBanner = (props) => {
 
-    const [title_edit, SetTitleEdit] = useState(props.title_logo);
-
-    setTimeout(()=>{SetTitleEdit(title_edit + ' fixed ');},5000);
+    const title_edit= useState(props.title_logo);
 
     return (
         <div>
