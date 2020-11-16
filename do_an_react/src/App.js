@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import TopBanner from './Module/TopBanner';
+import Slider from './Module/Slider';
+import Content from './Module/Content';
+import Latest from './Module/Latest';
+import Poster from './Module/Poster';
+import Xbox from './Module/Xbox';
+import Footer from './Module/Footer';
+import Copyright from './Module/Copyright';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p> */}
-        <p>Hello cac ban da add duoc thu vien reactjs</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <TopBanner/>
+        <Slider/>
+        <Content/>
+        <Latest/>
+        <Poster/>
+        <Xbox/>
+        <Footer/>
+        <Copyright/>
+      </div> 
   );
 }
 
