@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+//dung function
 const LogoBanner = (props) => {
 
     const [title_edit, SetTitleEdit] = useState(props.title_logo);

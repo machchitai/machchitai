@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import LogoBanner from './LogoBanner';
 
+
+// dung Class
 class TopBanner extends Component {
 
     constructor(props){
@@ -72,7 +74,7 @@ export default TopBanner;
 
 
 
-
+// dung function
 // const TopBanner = (props) => {
 //     return (
 //         <div>
