@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const LogoBanner = (props) => {
+
+    const [title_edit, SetTitleEdit] = useState(props.title_logo);
+
+    setTimeout(()=>{SetTitleEdit(title_edit + ' fixed ');},5000);
+
     return (
         <div>
-            <h1><a href="index.html">{props.title_logo}</a></h1>
+            <h1><a href="index.html">{title_edit}</a></h1>
         </div>
     );
 };

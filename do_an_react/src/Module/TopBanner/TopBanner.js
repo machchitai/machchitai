@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import LogoBanner from './LogoBanner';
 
-const TopBanner = (props) => {
-    return (
-        <div>
-           <div className="top-banner">
+class TopBanner extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            title_logo: this.props.title_page + ' test '
+        };
+    }
+
+    render() {
+        return (
+            <div>
+                <div className="top-banner">
                 <div className="header">
                     <div className="container">
                         <div className="headr-left">
@@ -37,7 +46,7 @@ const TopBanner = (props) => {
             
                 <div className="banner-info">
                     <div className="container">
-                        <LogoBanner title_logo={props.title_page}/>
+                        <LogoBanner title_logo={this.state.title_logo}/>
                         <div className="top-menu">
                                 <span className="menu"></span>
                                 <ul className="nav1">
@@ -54,8 +63,22 @@ const TopBanner = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
-    );
-};
+            </div>
+        );
+    }
+}
 
 export default TopBanner;
+
+
+
+
+// const TopBanner = (props) => {
+//     return (
+//         <div>
+           
+//         </div>
+//     );
+// };
+
+// export default TopBanner;
