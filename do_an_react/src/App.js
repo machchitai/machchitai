@@ -1,18 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import TopBanner from './Module/TopBanner';
-import Slider from './Module/Slider';
-import Content from './Module/Content';
-import Latest from './Module/Latest';
-import Poster from './Module/Poster';
-import Xbox from './Module/Xbox';
-import Footer from './Module/Footer';
-import Copyright from './Module/Copyright';
+import TopBanner from './Module/TopBanner/TopBanner';
+import Slider from './Module/Slider/Slider';
+import Content from './Module/Content/Content';
+import Latest from './Module/Latest/Latest';
+import Poster from './Module/Poster/Poster';
+import Xbox from './Module/Xbox/Xbox';
+import Footer from './Module/Footer/Footer';
+import Copyright from './Module/Copyright/Copyright';
 
 function App() {
   return (
       <div>
-        <TopBanner/>
+        <TopBanner title_page='HALO'/>
         <Slider/>
         <Content/>
         <Latest/>

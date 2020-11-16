@@ -23,7 +23,7 @@ const Footer = () => {
                         </div>
                         <div className="col-md-3 ftr-grid">
                             <h3>Platform</h3>
-                            <ul class="ftr-list">
+                            <ul className="ftr-list">
                                 <li><a href="#">Pc</a></li>
                                 <li><a href="#">Ps4</a></li>
                                 <li><a href="#">XBOX 360</a></li>					 

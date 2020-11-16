@@ -1,6 +1,7 @@
 import React from 'react';
+import LogoBanner from './LogoBanner';
 
-const TopBanner = () => {
+const TopBanner = (props) => {
     return (
         <div>
            <div className="top-banner">
@@ -16,7 +17,7 @@ const TopBanner = () => {
                         </div>
                         <div className="search">
                             <form>
-                                <input type="button" class="submit" defaultValue=""/>
+                                <input type="button" className="submit" defaultValue=""/>
                                 <input type="text" defaultValue="" placeholder="Search..."/>					 
                             </form>
                         </div>
@@ -36,19 +37,17 @@ const TopBanner = () => {
             
                 <div className="banner-info">
                     <div className="container">
-                        <div className="logo">
-                            <h1><a href="index.html">GAME BOX</a></h1>
-                        </div>
+                        <LogoBanner title_logo={props.title_page}/>
                         <div className="top-menu">
-                        <span className="menu"></span>
-                        <ul className="nav1">
-                            <li className="active"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="reviews.html">Reviews</a></li>
-                            <li><a href="typo.html">News</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="contact.html">Mail</a></li>
-                        </ul>
+                                <span className="menu"></span>
+                                <ul className="nav1">
+                                    <li className="active"><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="reviews.html">Reviews</a></li>
+                                    <li><a href="typo.html">News</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="contact.html">Mail</a></li>
+                                </ul>
                         </div>	
                     
                         <div className="clearfix"></div>

@@ -43,7 +43,7 @@ const Latest = () => {
                             </div>
                             </div>
                             <div className="col-md-7 trailer">
-                            <iframe src="https://www.youtube.com/embed/V5-DyoVlNOg?list=PLiVunv1pnIs2c0ORVqY60K3n8XMO9CoGp" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/V5-DyoVlNOg?list=PLiVunv1pnIs2c0ORVqY60K3n8XMO9CoGp" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="clearfix"> </div>
                         </div>
