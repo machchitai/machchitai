@@ -13,6 +13,9 @@ html, body{
 	font-size: 100%;
 	background: #ffffff;
 }
+.error{
+  color:#ff0000;
+}
 @font-face {
    font-family: 'OpenSans-Regular';
    src: url(../fonts/OpenSans-Regular.ttf)format('truetype');
@@ -101,7 +104,7 @@ background-position:-180px -9px;
   -webkit-appearance: none;
   margin-left: 3em;
 }
-.search .submit {
+.search .button_submit {
   background: url('../images/search1.png') no-repeat 0px 1px;
   border: none;
   cursor: pointer;
@@ -111,6 +114,22 @@ background-position:-180px -9px;
   height: 24px;
   top: 3px;
   left: 8px;
+}
+.contact_form {
+  background: url('../images/contact_bg.jpg') no-repeat top center #ccc;
+  background-size: cover;
+  padding: 60px 0;
+}
+.contact_form .background_form_map {
+  background: rgba(0,0,0,0.2);
+  padding: 20px;
+}
+.contact_form .background_form_map .title_form {
+  color: #FFF;
+  font-size: 20px;
+}
+.contact_form input::placeholder, .contact_form textarea::placeholder {
+  color: #555!important;
 }
 .headr-right {
   float: left;
