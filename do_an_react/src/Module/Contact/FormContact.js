@@ -38,6 +38,8 @@ class FormContact extends Component {
         });
     }
 
+//------------------------------------------------------------------
+
     validateCheckInput = (valid_check,key_check) =>{
         if(this.state[key_check].length > 0){
 
@@ -208,6 +210,8 @@ class FormContact extends Component {
         
 
     }
+
+//------------------------------------------------------------------
 
     render() {
         return (
