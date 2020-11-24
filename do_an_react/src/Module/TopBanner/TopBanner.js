@@ -98,7 +98,6 @@ class TopBanner extends Component {
               <span className="menu"></span>
               <ul className="nav1">
                 <li className="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">{this.state.count}</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
                 <li><a href="typo.html">News</a></li>
