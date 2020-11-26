@@ -39,18 +39,18 @@ class FormContact extends Component {
     }
 
     //------------------------------------------------------------------
-
-    handleSendForm = () => {
-        console.log(this.state.ho_ten,this.state.so_dien_thoai,this.state.email,this.state.noi_dung);
-    }
-
-    //------------------------------------------------------------------
-
+    
     handleChangeInput = (e) => {
         //console.log(e.target.value);
         this.setState({
             [e.target.name]: e.target.value
         });
+    }
+   
+
+    //------------------------------------------------------------------
+    handleSendForm = () => {
+        console.log(this.state.ho_ten,this.state.so_dien_thoai,this.state.email,this.state.noi_dung);
     }
 
     //------------------------------------------------------------------
@@ -99,7 +99,7 @@ class FormContact extends Component {
                     this.setState({
                         message_error: {
                             ...this.state.message_error,
-                            [array_key_check[run_item]]: ""
+                            [array_key_check[run_item]]: " "
                         }
                     }, next)
                 }
@@ -127,8 +127,6 @@ class FormContact extends Component {
                 }
 
             }
-
-
         }
 
         else {
@@ -295,7 +293,7 @@ class FormContact extends Component {
     //         },200)
     //   }
 
-    //------------------------------------------------------------------
+//------------------------------------------------------------------
 
     render() {
         return (
