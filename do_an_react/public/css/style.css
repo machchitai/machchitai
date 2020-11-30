@@ -128,7 +128,10 @@ background-position:-180px -9px;
   color: #FFF;
   font-size: 20px;
 }
-.contact_form input::placeholder, .contact_form textarea::placeholder {
+.login_form input::placeholder, .login_form textarea::placeholder {
+  color: #555!important;
+}
+.body input::placeholder, .body textarea::placeholder {
   color: #555!important;
 }
 .headr-right {
