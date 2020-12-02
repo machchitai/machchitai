@@ -7,34 +7,87 @@ class TopBanner extends Component {
 
   constructor(props){
     super(props);
-    this.state = {
-      title_logo: this.props.title_page,
-      count: 1,
-      interval: null,
-      search: '',
-      thong_tin_user: {
+    this.state = { 
+      
+      // các state
+      title_logo: this.props.title_page,  // state của logo truyền từ LogoBanner.js
+      count: 1,       // biến đếm
+      interval: null, 
+      search: '',     // biến của search
+
+      thong_tin_user: {   // state của thong_tin_user
         name: '',
         tai_khoan:'',
         mat_khau:''
       },
-      message_error:{
+
+      message_error:{     // state của thông báo lỗi
         general_error:''
-      }
+      },
+
+      menu_list: [        // state của menu bar
+        {
+          title: 'Home',
+          links: '/'
+        },
+
+        {
+          title: 'About',
+          links: '/about'
+        },
+        
+        {
+          title: 'Reviews',
+          links: '/reviews'
+        },
+
+        {
+          title: 'News',
+          links: '/news'
+        },
+
+        {
+          title: 'Gallery',
+          links: '/gallery'
+        },
+
+        {
+          title: 'Contact',
+          links: '/contact'
+        }
+      ]
     };
 
+    // function xử lý phải được bind trước khi render (tính năng của ReactJS)
     this.handleChangeInput = this.handleChangeInput.bind(this);
     this.handleSearchfunction = this.handleSearchfunction.bind(this);
     this.handleChangeInputLoginForm = this.handleChangeInputLoginForm.bind(this);
     this.handleSubmitLoginForm = this.handleSubmitLoginForm.bind(this);
   }
 
-  updateCount(){
+  updateCount(){  // thay đổi biến đếm
     this.setState({
       count: this.state.count + 1
     });
   }
 
-  componentDidMount(){
+  componentDidMount(){ // get(load) object function
+    
+    var thong_tin_user_save = localStorage.getItem('thong_tin_user'); // load state vào cookie của browser
+
+    if ( typeof thong_tin_user_save != 'undefined' && thong_tin_user_save != null){
+      thong_tin_user_save = JSON.parse(thong_tin_user_save);
+
+      if (thong_tin_user_save.tai_khoan){
+
+        this.setState({  // thay đổi state
+          thong_tin_user: thong_tin_user_save
+        }, () => {
+          console.log(this.state.thong_tin_user);          
+        })
+      }
+
+    }
     // this.setState({
     //   interval: setInterval(() => {
     //     this.updateCount();
@@ -43,38 +96,46 @@ class TopBanner extends Component {
     // })
   }
 
-  componentDidUpdate(){
+  componentDidUpdate(){ // update object function
     // console.log("đang didupdate");
     // if(this.state.count == 3){
     //   this.props.delete_me();
     // }
   }
 
-  componentWillUnmount(){
+  componentWillUnmount(){  // unload object function
     console.log('đang bắt đầu cho component remove');
     clearInterval(this.state.interval);
   }
 
-  handleSubmitLoginForm = (e) => {
+  handleSubmitLoginForm = (e) => {  // set object function 
 
     e.preventDefault();
 
-    if(this.state.thong_tin_user.tai_khoan == 'machchitai' && this.state.thong_tin_user.mat_khau == '123456'){
-      console.log('Đăng nhập thành công!');
-      var thong_tin_user_temp = {...this.state.thong_tin_user};
+    if (this.state.thong_tin_user.tai_khoan == 'machchitai' && this.state.thong_tin_user.mat_khau == '123456') {
 
-      thong_tin_user_temp.name = 'Tài Mạch';
+      alert('Đăng nhập thành công!');
 
-      this.setState({  
-          thong_tin_user: thong_tin_user_temp
+      var thong_tin_user_temp = {...this.state.thong_tin_user}; // gán object vào biến để xử lý
+
+      thong_tin_user_temp.name = 'Tài Mạch';  
+
+      this.setState({   // thay đổi state
+          
+        thong_tin_user: thong_tin_user_temp
         },() => {
-          $('#modal-id').hide();
-          $('.modal-backdrop').hide();
+
+          thong_tin_user_temp.mat_khau = '';
+          localStorage.setItem('thong_tin_user', JSON.stringify(thong_tin_user_temp));  // đổi JavaScript object hay giá trị sang JSON string (JSX) để hiện ra trên browser
+          $('#modal-id').hide();                  // hàm jquery          
+          $('.modal-backdrop').hide();             // hàm jquery
+          $('body').removeClass('.modal-open');      // hàm jquery
+          
         });
     }
 
     else {
-      this.setState({
+      this.setState({ // thay đổi state của error
         message_error:{
           general_error:'Tài khoản hoặc mật khẩu không chính xác'
         }
@@ -83,12 +144,12 @@ class TopBanner extends Component {
 
   }
 
-  handleChangeInputLoginForm = (e) => {
-    var thong_tin_user_temp = {...this.state.thong_tin_user};
+  handleChangeInputLoginForm = (e) => { // function thay đổi giá trị trong khi nhập vào login form
+    var thong_tin_user_temp = {...this.state.thong_tin_user};   //  gán object vào biến để xử lý
 
     thong_tin_user_temp[e.target.name] = e.target.value;
 
-    this.setState({  
+    this.setState({   // thay đổi state
       thong_tin_user: thong_tin_user_temp
     },() => {
       //console.log(this.state);
@@ -96,7 +157,7 @@ class TopBanner extends Component {
   }
 
 
-  handleChangeInput = (e) => {
+  handleChangeInput = (e) => {  // function thay đổi giá trị trong khi nhập vào form
       //console.log(e.target.value);
 
       this.setState({
@@ -104,13 +165,17 @@ class TopBanner extends Component {
       })
   }
 
-  handleSearchfunction = () => {
+  handleSearchfunction = () => {  // function thay đổi giá trị trong khi nhập vào search box
     console.log(this.state.search);
   }
 
+
+  // phần render xuất ra browser
+
   render() {
-    //console.log(this.state.count);
+
     return (
+
       <div className="top-banner">
         <div className="header">
           <div className="container">
@@ -145,21 +210,38 @@ class TopBanner extends Component {
         </div>
         <div className="banner-info">
                 <div className="container">
-                  <LogoBanner title_logo={this.state.title_logo} />
+                  <LogoBanner title_logo={this.state.title_logo} />   {/** dùng tag từ file LogoBanner.js với property title_logo */}
                   <div className="top-menu">
                     <span className="menu"></span>
-                    <ul className="nav1">
-                      <li className="active"><a href="index.html">Home</a></li>
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="reviews.html">Reviews</a></li>
-                      <li><a href="typo.html">News</a></li>
-                      <li><a href="gallery.html">Gallery</a></li>
-                      <li><a href="contact.html">Mail</a></li>  
+                    <ul className="nav1">                                         
+                      {        
+                         // in chuỗi menubar ra browser bằng map(tương đương forEach bên Javascript)
+                          this.state.menu_list.map((item_menu,index)=>{
+
+                            // Cách 1
+                              var class_active = '';
+                              if(index == 0){
+                                class_active = 'active';
+                              }
+                              return <li key={index} className={class_active}><a href={item_menu.links}>{item_menu.title}</a></li> 
+
+                            // Cách 2
+                            // if(index == 0){
+                            //   return <li key={index} className='active'><a href={item_menu.links}>{item_menu.title}</a></li> 
+                            // }
+                            // else {
+                            //   return <li key={index}><a href={item_menu.links}>{item_menu.title}</a></li> 
+                            // }
+                          })                        
+                         
+                      }                     
+                      
                       {
-                        (this.state.thong_tin_user.name != '')?
-                        <li><a href="">{this.state.thong_tin_user.name}</a></li>  
-                        :
-                        <li><a href='#modal-id' className="btn btn-primary" data-toggle="modal">Đăng nhập</a></li>  
+                        (this.state.thong_tin_user.name != '')?    // nếu state name của thong_tin_user không rỗng (đã đăng nhập)                        
+                        <li><a href="">{this.state.thong_tin_user.name}</a></li>    // thì hiện tên ra menubar
+                        :                        
+                        <li><a href='#modal-id' className="btn btn-primary" data-toggle="modal">Đăng nhập</a></li>  // nếu rỗng (chưa đăng nhập) thì hiện chữ Đăng nhập                        
+                        // sau khi bấm đăng nhập sẽ chuyển tới form có id="modal-id"
                       }                              
 
                     </ul>
@@ -170,9 +252,12 @@ class TopBanner extends Component {
                 </div>   
           </div>    
 
+          {/* Login Form */}
+          
           <div className="modal fade" id="modal-id">
 
-            <form className="login_form" action="" method="POST" onSubmit={this.handleSubmitLoginForm}>
+            <form className="login_form" action="" method="POST" onSubmit={this.handleSubmitLoginForm}> 
+
                   <div className="modal-dialog">
                     <div className="modal-content">
 
@@ -209,12 +294,16 @@ class TopBanner extends Component {
                     </div>
                   </div>
                   
-              </form>            
-        </div>
-      </div>
-    );
-  }
+              </form>     {/** End form modal */}           
 
-}
+        </div>  {/** End div modal */}     
+
+      </div>  // End render
+    
+    );  // End return
+  
+  } // End render
+
+} // End class
 
 export default TopBanner;
