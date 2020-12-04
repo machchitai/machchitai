@@ -1,6 +1,8 @@
 import LogoBanner from './LogoBanner';
 import React, { Component } from 'react';
 import $ from 'jquery';
+import ItemMenu from './ItemMenu';
+import {withRouter} from 'react-router-dom';
 //import ReactDOM from 'react-dom';
 
 class TopBanner extends Component {
@@ -34,23 +36,13 @@ class TopBanner extends Component {
         {
           title: 'About',
           links: '/about'
+        },        
+
+        {
+          title: 'Details',
+          links: '/details'
         },
         
-        {
-          title: 'Reviews',
-          links: '/reviews'
-        },
-
-        {
-          title: 'News',
-          links: '/news'
-        },
-
-        {
-          title: 'Gallery',
-          links: '/gallery'
-        },
-
         {
           title: 'Contact',
           links: '/contact'
@@ -101,6 +93,7 @@ class TopBanner extends Component {
     // if(this.state.count == 3){
     //   this.props.delete_me();
     // }
+    console.log(this.props.location.pathname);
   }
 
   componentWillUnmount(){  // unload object function
@@ -219,19 +212,19 @@ class TopBanner extends Component {
                           this.state.menu_list.map((item_menu,index)=>{
 
                             // Cách 1
-                              var class_active = '';
-                              if(index == 0){
-                                class_active = 'active';
-                              }
-                              return <li key={index} className={class_active}><a href={item_menu.links}>{item_menu.title}</a></li> 
+                              // var class_active = '';
+                              // if(index == 0){
+                              //   class_active = 'active';
+                              // }
+                              // return <li key={index} className={class_active}><Link to={item_menu.links}>{item_menu.title}</Link></li> 
 
                             // Cách 2
-                            // if(index == 0){
-                            //   return <li key={index} className='active'><a href={item_menu.links}>{item_menu.title}</a></li> 
-                            // }
-                            // else {
-                            //   return <li key={index}><a href={item_menu.links}>{item_menu.title}</a></li> 
-                            // }
+                            if(item_menu.links == this.props.location.pathname){
+                              return <ItemMenu item_menu={item_menu} index={index} class_name={'active'}></ItemMenu>
+                            }
+                            else {
+                              return <ItemMenu item_menu={item_menu} index={index} class_name={''}></ItemMenu>
+                            }
                           })                        
                          
                       }                     
@@ -306,4 +299,4 @@ class TopBanner extends Component {
 
 } // End class
 
-export default TopBanner;
+export default withRouter(TopBanner);

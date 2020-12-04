@@ -10,13 +10,14 @@ import Xbox from './Module/Xbox/Xbox';
 import Footer from './Module/Footer/Footer';
 import Contact from './Module/Contact/Contact';
 import { useState } from 'react';
+import {
+   Route, Switch, BrowserRouter as Router
+} from 'react-router-dom';
 
 
 function App() {
-  //let abc = 'Chào các bạn';
 
   const[load_top_banner, SetLoadTopBanner] = useState(true);
-
 
   const handleUnMountTopBanner = () => {
     SetLoadTopBanner(false);
@@ -24,28 +25,44 @@ function App() {
 
   return (
     <>
-      
-      {
-        (load_top_banner)?
-        <TopBanner title_page={"Hung " + "Store " + Math.round(Math.random() * 100)} delete_me={handleUnMountTopBanner} />
-        :
-        null
-      }
+      <Router>
+        {
+          (load_top_banner)?
+          <TopBanner title_page={"Hung " + "Store " + Math.round(Math.random() * 100)} delete_me={handleUnMountTopBanner} />
+          :
+          null
+        }  
+              
+        <Switch>                          
+            <Route path='/details'>
 
-      <Slider />
+                <Poster />
 
-      <Content />
-      
-      <Lastest />
-      
-      <Poster />
-      
-      <Xbox />
+                <Xbox />
 
-      <Contact />
-      
-      <Footer />
+            </Route>
+        
+            <Route path='/contact'>
 
+                <Contact />
+
+            </Route>
+
+            <Route path='/'>
+
+                <Slider />
+
+                <Content />
+
+                <Lastest />
+
+            </Route>
+
+        </Switch>    
+        
+        <Footer />
+
+      </Router>
       
 
     </>
