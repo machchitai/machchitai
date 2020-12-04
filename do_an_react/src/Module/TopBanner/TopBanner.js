@@ -27,7 +27,7 @@ class TopBanner extends Component {
         general_error:''
       },
 
-      menu_list: [        // state của menu bar
+      menu_list: [        // state của menubar có menu_item
         {
           title: 'Home',
           links: '/'

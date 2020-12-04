@@ -6,6 +6,7 @@ import Slider from './Module/Slider/Slider';
 import Content from './Module/Content/Content';
 import Lastest from './Module/Lastest/Lastest';
 import Poster from './Module/Poster/Poster';
+import PosterDetails from './Module/Poster/PosterDetails';
 import Xbox from './Module/Xbox/Xbox';
 import Footer from './Module/Footer/Footer';
 import Contact from './Module/Contact/Contact';
@@ -28,34 +29,30 @@ function App() {
       <Router>
         {
           (load_top_banner)?
-          <TopBanner title_page={"Hung " + "Store " + Math.round(Math.random() * 100)} delete_me={handleUnMountTopBanner} />
+          <TopBanner title_page={"Halo " + "Store "} delete_me={handleUnMountTopBanner} />
           :
           null
         }  
               
-        <Switch>                          
-            <Route path='/details'>
+        <Switch>   
 
-                <Poster />
-
-                <Xbox />
-
+            <Route path='/details/:id_san_pham'>
+                <PosterDetails />
             </Route>
+
+            <Route path='/details'>
+                <Poster />
+                <Xbox />
+            </Route>            
         
             <Route path='/contact'>
-
                 <Contact />
-
             </Route>
 
             <Route path='/'>
-
                 <Slider />
-
                 <Content />
-
                 <Lastest />
-
             </Route>
 
         </Switch>    
