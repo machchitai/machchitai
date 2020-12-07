@@ -97,7 +97,7 @@ class TopBanner extends Component {
   }
 
   componentWillUnmount(){  // unload object function
-    console.log('đang bắt đầu cho component remove');
+    console.log('begin removing component');
     clearInterval(this.state.interval);
   }
 
@@ -107,7 +107,7 @@ class TopBanner extends Component {
 
     if (this.state.thong_tin_user.tai_khoan == 'machchitai' && this.state.thong_tin_user.mat_khau == '123456') {
 
-      alert('Đăng nhập thành công!');
+      alert('Login successfully!');
 
       var thong_tin_user_temp = {...this.state.thong_tin_user}; // gán object vào biến để xử lý
 
@@ -233,7 +233,7 @@ class TopBanner extends Component {
                         (this.state.thong_tin_user.name != '')?    // nếu state name của thong_tin_user không rỗng (đã đăng nhập)                        
                         <li><a href="">{this.state.thong_tin_user.name}</a></li>    // thì hiện tên ra menubar
                         :                        
-                        <li><a href='#modal-id' className="btn btn-primary" data-toggle="modal">Đăng nhập</a></li>  // nếu rỗng (chưa đăng nhập) thì hiện chữ Đăng nhập                        
+                        <li><a href='#modal-id' className="btn btn-primary login_button" data-toggle="modal">Login</a></li>  // nếu rỗng (chưa đăng nhập) thì hiện chữ Đăng nhập                        
                         // sau khi bấm đăng nhập sẽ chuyển tới form có id="modal-id"
                       }                              
 
@@ -256,7 +256,7 @@ class TopBanner extends Component {
 
                       <div className="modal-header">
                         <button type="button" className="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 className="modal-title">Đăng nhập</h4>
+                        <h4 className="modal-title">Login</h4>
                       </div>
 
                       <div className="modal-body">  
@@ -268,20 +268,20 @@ class TopBanner extends Component {
                             </div>                        
 
                             <div className="container-form">
-                                <label htmlFor="uname" style={{padding:10}}><b>Tài khoản</b></label>
+                                <label htmlFor="uname" style={{padding:10}}><b>Username</b></label>
 
-                                <input type="text" onChange={this.handleChangeInputLoginForm} id="tai_khoan" placeholder="Tài khoản" name="tai_khoan" value={this.state.thong_tin_user.tai_khoan} required/>
+                                <input type="text" onChange={this.handleChangeInputLoginForm} id="tai_khoan" placeholder="Username" name="tai_khoan" value={this.state.thong_tin_user.tai_khoan} required/>
 
-                                <label htmlFor="psw" style={{padding:10}}><b>Mật khẩu</b></label>
+                                <label htmlFor="psw" style={{padding:10}}><b>Password</b></label>
 
-                                <input type="password" onChange={this.handleChangeInputLoginForm}  id="mat_khau"  placeholder="Mật khẩu" name="mat_khau" value={this.state.thong_tin_user.mat_khau} required/>                                                                      
+                                <input type="password" onChange={this.handleChangeInputLoginForm}  id="mat_khau"  placeholder="Password" name="mat_khau" value={this.state.thong_tin_user.mat_khau} required/>                                                                      
                             </div>                        
 
                       </div>
 
                       <div className="modal-footer">
-                        <button type="button" className="btn btn-default" data-dismiss="modal">Đóng</button>
-                        <button type="submit" className="btn btn-primary">Đăng nhập</button>
+                        <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" className="btn btn-primary">Login</button>
                       </div>
 
                     </div>

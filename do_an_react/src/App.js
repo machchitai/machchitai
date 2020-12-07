@@ -2,15 +2,18 @@
 import './App.css';   
 
 import TopBanner from './Module/TopBanner/TopBanner';
-import Slider from './Module/Slider/Slider';
-import Content from './Module/Content/Content';
-import Lastest from './Module/Lastest/Lastest';
-import Poster from './Module/Poster/Poster';
-import PosterDetails from './Module/Poster/PosterDetails';
-import Xbox from './Module/Xbox/Xbox';
+
+import Home from './Pages/Home';
+import Details from './Pages/Details';
+import Contacts from './Pages/Contacts';
+import ShoppingCart from './Pages/ShoppingCart';
+
 import Footer from './Module/Footer/Footer';
-import Contact from './Module/Contact/Contact';
+
+import ButtonGoToShoppingCart from './Module/ButtonGoToShoppingCart/ButtonGoToShoppingCart';
+
 import { useState } from 'react';
+
 import {
    Route, Switch, BrowserRouter as Router
 } from 'react-router-dom';
@@ -36,27 +39,27 @@ function App() {
               
         <Switch>   
 
-            <Route path='/details/:id_san_pham'>
-                <PosterDetails />
-            </Route>
-
-            <Route path='/details'>
-                <Poster />
-                <Xbox />
-            </Route>            
+            <Route path='/details/:id_product'>
+              <Details></Details>
+            </Route>    
         
             <Route path='/contact'>
-                <Contact />
+               <Contacts></Contacts>
             </Route>
 
+            <Route path='/shopping-cart'>
+               <ShoppingCart></ShoppingCart>
+            </Route>
+
+
             <Route path='/'>
-                <Slider />
-                <Content />
-                <Lastest />
+                <Home></Home>
             </Route>
 
         </Switch>    
-        
+
+        <ButtonGoToShoppingCart></ButtonGoToShoppingCart>     
+         
         <Footer />
 
       </Router>

@@ -19,6 +19,29 @@ html, body{
 .carousel-inner img {
   width: 100%;
 }
+
+#carousel-id {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.button_shopping_cart {
+    top: 0;
+    right: 0;
+    position: fixed;
+    padding: 1em;
+    font-size: 20px;
+    background-color: white;
+    color: #69d2e8;
+    margin-top:10px ;
+    border-radius:20px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.login_button {
+  box-shadow: 10px 7px 10px black;
+}
+
 @font-face {
    font-family: 'OpenSans-Regular';
    src: url(../fonts/OpenSans-Regular.ttf)format('truetype');
@@ -162,12 +185,13 @@ background-position:-180px -9px;
   margin-right:5px;
 }
 .logo{
-	float:left;
+  float:left;
 }
 .logo h1 a{
 	color:#fff;
 	font-family: 'Play-Bold';
-	text-decoration:none;
+  text-decoration:none;
+  text-shadow: 5px 5px black;
 }
 .top-menu{
 	float:right;
@@ -181,7 +205,8 @@ background-position:-180px -9px;
 	padding:0.5em 1em;
 	text-decoration:none;
 	font-family: 'Play-Regular';
-	font-size:1.1em;
+  font-size:1.1em;
+  text-shadow: 2px 2px 1px black;
 }
 span.menu {
 		display:none;

@@ -6,24 +6,32 @@ const Content = () => {
 
     const [list_item, SetListItem] = useState([       // tự tạo State mới
       {
+        'id':1,
         'type': 'Action Games',
         'title': 'Nulla elementum nunc tempus' ,
-        'image': 'images/t1.jpg'
+        'image': 'images/t1.jpg',
+        'price': 100000
       },
       {
+        'id':2,
         'type': 'Racing Games',
         'title': 'Nulla elementum nunc tempus' ,
-        'image': 'images/t3.jpg'
+        'image': 'images/t3.jpg',
+        'price': 100000
       },
       {
+        'id':3,
         'type': '3D Games',
         'title': 'Nulla elementum nunc tempus' ,
-        'image': 'images/t2.jpg'
+        'image': 'images/t2.jpg',
+        'price': 100000
       },
       {
+        'id':4,
         'type': 'Arcade Games',
         'title': 'Nulla elementum nunc tempus' ,
-        'image': 'images/t4.jpg'
+        'image': 'images/t4.jpg',
+        'price': 100000
       }
 
     ])
