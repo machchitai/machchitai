@@ -44,7 +44,7 @@ class Details extends Component {
     }
 
     componentDidMount(){
-        let id_product = this.props.math.params.id_product;
+        let id_product = this.props.match.params.id_product;
        
         this.state.item_list.forEach((item)=>{
             if(item.id == id_product){
