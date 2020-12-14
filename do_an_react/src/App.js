@@ -1,27 +1,31 @@
-//import logo from './logo.svg';
-import './App.css';   
+import logo from './logo.svg';
+import './App.css';
 
 import TopBanner from './Module/TopBanner/TopBanner';
 
-import Home from './Pages/Home';
-import Details from './Pages/Details';
-import Contacts from './Pages/Contacts';
-import ShoppingCart from './Pages/ShoppingCart';
+import TrangChu from './Pages/TrangChu';
+import TrangChiTietSanPham from './Pages/TrangChiTietSanPham';
+import TrangLienHe from './Pages/TrangLienHe';
+import TrangGioHang from './Pages/TrangGioHang';
 
 import Footer from './Module/Footer/Footer';
 
-import ButtonGoToShoppingCart from './Module/ButtonGoToShoppingCart/ButtonGoToShoppingCart';
+import ButtonGoToGioHang from './Module/ButtonGoToGioHang';
 
 import { useState } from 'react';
-
 import {
-   Route, Switch, BrowserRouter as Router
+  Link,
+  Route,
+  BrowserRouter as Router,
+  Switch
 } from 'react-router-dom';
 
 
 function App() {
+  let abc = 'Chào các bạn';
 
   const[load_top_banner, SetLoadTopBanner] = useState(true);
+
 
   const handleUnMountTopBanner = () => {
     SetLoadTopBanner(false);
@@ -30,40 +34,38 @@ function App() {
   return (
     <>
       <Router>
-        {
-          (load_top_banner)?
-          <TopBanner title_page={"Halo " + "Store "} delete_me={handleUnMountTopBanner} />
-          :
-          null
-        }  
-              
-        <Switch>   
-
-            <Route path='/details/:id_product'>
-              <Details></Details>
-            </Route>    
+      
+      {
+        (load_top_banner)?
+        <TopBanner title_page={"Halo " + "Shop "} delete_me={handleUnMountTopBanner} />
+        :
+        null
+      }      
         
-            <Route path='/contact'>
-               <Contacts></Contacts>
-            </Route>
+        <Switch>
 
-            <Route path='/shopping-cart'>
-               <ShoppingCart></ShoppingCart>
-            </Route>
+          <Route path='/chi-tiet/:id_san_pham'>
+            <TrangChiTietSanPham />
+          </Route>
 
+          <Route path='/lien-he'>
+            <TrangLienHe />
+          </Route>
 
-            <Route path='/'>
-                <Home></Home>
-            </Route>
+          <Route path='/gio-hang'>
+            <TrangGioHang />
+          </Route>
 
-        </Switch>    
+          <Route path='/'>
+            <TrangChu />
+          </Route>
+        </Switch>
 
-        <ButtonGoToShoppingCart></ButtonGoToShoppingCart>     
-         
-        <Footer />
+      
+      <ButtonGoToGioHang />
+      <Footer />
 
       </Router>
-      
 
     </>
   );
