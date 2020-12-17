@@ -70,7 +70,8 @@ class TopBanner extends Component {
           title: 'Liên hệ',
           link: '/lien-he'
         }
-      ]
+      ],
+    value_volume: 30
     };
 
     this.handleChangeInput = this.handleChangeInput.bind(this);
@@ -85,12 +86,12 @@ class TopBanner extends Component {
     });
   }
 
-  // handleChange = (event, newValue) => {
-  //   this.setState({
-  //     newValue: this.state.newValue
-  //   });
+  handleChange = (event, newValue) => {
+    this.setState({
+      value_volume: newValue
+    });
    
-  // };
+  };
 
   componentDidMount(){   
     var thong_tin_user_save = localStorage.getItem('thong_tin_user');
@@ -339,22 +340,29 @@ class TopBanner extends Component {
                     name="nhap_lai_mat_khau" id="nhap_lai_mat_khau" className="form-control" defaultValue="" 
                     value={this.state.thong_tin_user_sign_up.mat_khau} />
                   </div>
-                  {/* <div>
+                  <div>
+                    <input type="range"  />
+                  </div>
                   <Typography id="continuous-slider" gutterBottom>
-                      Volume
+                    Volume
                   </Typography>
                   <Grid container spacing={2}>
                     <Grid item>
                       <VolumeDown />
                     </Grid>
                     <Grid item xs>
-                      <Slider value={value} onChange={handleChange} aria-labelledby="continuous-slider" />
+                      <Slider value={this.state.value_volume} 
+                      onChange={this.handleChange} 
+                      aria-labelledby="continuous-slider"
+                      step={10}
+                      marks
+                      min={10}
+                      max={110} />
                     </Grid>
                     <Grid item>
                       <VolumeUp />
                     </Grid>
                   </Grid>
-                  </div> */}
                   <div>
                   <MuiPickersUtilsProvider utils={DateFnsUtils}>
                     <KeyboardDatePicker
