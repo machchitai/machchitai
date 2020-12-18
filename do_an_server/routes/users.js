@@ -4,14 +4,17 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   
-  var data = {
-    data: "data"
-  };
-  res.json(data);
+  // var data = {
+  //   data: "data"
+  // };
+  // res.json(data);
 
   //var a = 10 + 1;
   //res.send('respond with a resource ' + a);
 
+  res.json({
+    " data": "list users" +  JSON.stringify(req.query)
+  });
 });
 
 router.post('/', function(req, res, next) {
