@@ -2,8 +2,15 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs');
 
+const MongoClient = require('mongodb').MongoClient;
 
-//function for logging
+//--Connection URL
+const url = 'mongodb://localhost:27017';
+
+//--Database Name
+const dbName = 'project';
+
+//--function for logging
 var complete_log = (req, res, next) => {
   try {
       var string_log = '-200-'+JSON.stringify({
@@ -19,15 +26,15 @@ var complete_log = (req, res, next) => {
   next();
 }
 
-// function for checking authentication
+//--function for checking authentication
 var authentication = (req, res, next) => {
 
-    // get Authentication Key
+    //--get Authentication Key
     var authorization = req.header('Authorization');
     var array_auth = authorization.split(' ');
     //console.log(array_auth[1]);
 
-    // decode Authorization key into String
+    //--decode Authorization key into String
     var string_basic_auth = array_auth[1];
     var data_string_auth = (new Buffer(string_basic_auth, 'base64')).toString();
     //console.log(data_string_auth);    
@@ -47,24 +54,58 @@ var authentication = (req, res, next) => {
    
 }
 
+
 router.get('/', function(req, res, next) {
-  
-    res.json({
-        'user':' show thong tin user',
-        data_send: req.body
+
+    //--Use connect method to connect to the server
+    MongoClient.connect(url, function(err, client) {
+    
+      if(err){
+        console.log(err);
+      }
+
+      else
+      {
+        console.log("Connected successfully to server");
+      }
+      
+      const db = client.db(dbName);
+
+      //--Get the documents collection
+      const collection_user = db.collection('user');
+
+      //--Find some documents
+      collection_user.find({}).toArray(function(err, ds_user) {
+        
+        if(err){
+          console.log(err);
+        }
+
+        else {      
+
+          res.json({
+            'xuly':' show thong tin user',
+            'data': ds_user
+          });
+                    
+          client.close();
+        }
+
       });
+    
+    });   
   
 });
 
-// router for post request to check authentication and write in log
+//--router for POST request to check authentication and write in log
 router.post('/', authentication, complete_log, (req, res) =>{
  
   res.json({
     'add':' them user moi',
     data_send: req.body    
   });
-});
 
+});
 
 router.post('/sign-up', function(req, res) {
   res.json({

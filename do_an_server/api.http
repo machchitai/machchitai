@@ -1,4 +1,4 @@
-# GET   http://localhost:4000/user/1
+ GET   http://localhost:4000/user/
 
 # POST http://localhost:4000/?abc=abc
 # Content-Type: application/json
@@ -7,16 +7,16 @@
 #     "bien" : "gia_tri"
 # }
 
-#GET http://localhost:4000/users/?search=name
+# GET http://localhost:4000/users/
 
-POST http://localhost:4000/user/
-Content-Type: application/json
-Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=
+# POST http://localhost:4000/user/
+# Content-Type: application/json
+# Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=
 
-{
-    "name": "name",
-    "username":"username",  
-    "password": "password",
-    "email": "email",
-    "phone":"phone"
-}
+# {
+#     "name": "name",
+#     "username":"username",  
+#     "password": "password",
+#     "email": "email",
+#     "phone":"phone"
+# }
