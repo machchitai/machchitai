@@ -55,47 +55,6 @@ var authentication = (req, res, next) => {
 }
 
 
-router.get('/', function(req, res, next) {
-
-    //--Use connect method to connect to the server
-    MongoClient.connect(url, function(err, client) {
-    
-      if(err){
-        console.log(err);
-      }
-
-      else
-      {
-        console.log("Connected successfully to server");
-      }
-      
-      const db = client.db(dbName);
-
-      //--Get the documents collection
-      const collection_user = db.collection('user');
-
-      //--Find some documents
-      collection_user.find({}).toArray(function(err, ds_user) {
-        
-        if(err){
-          console.log(err);
-        }
-
-        else {      
-
-          res.json({
-            'xuly':' show thong tin user',
-            'data': ds_user
-          });
-                    
-          client.close();
-        }
-
-      });
-    
-    });   
-  
-});
 
 //--router for POST request to check authentication and write in log
 router.post('/', authentication, complete_log, (req, res) =>{
@@ -107,6 +66,7 @@ router.post('/', authentication, complete_log, (req, res) =>{
 
 });
 
+//--router for POST request to  signup 
 router.post('/sign-up', function(req, res) {
   res.json({
     'signup':' dang ky user moi',
@@ -115,46 +75,45 @@ router.post('/sign-up', function(req, res) {
 });
 
 
-// router.get('/:id_nguoi_dung', function(req, res, next) {
+ router.get('/:email_user', (req, res) => {
   
-//     res.json({
-//         'id': req.params.id_nguoi_dung,
-//         'tai_khoan':'',
-//         'mat_khau':'',
-//         'id_loai_user':'',
-//         'id_phan_quyen':'',
-//         'ho_ten':'',
-//         'email':'',
-//         'ngay_sinh':'',
-//         'dia_chi':'',
-//         'diem_tich_luy':'',
-//         'ngay_dang_ky':'',
-//         'avatar':'',
-//         'dien_thoai':'',
-//         data_send: req.body
-//       });
-  
-// });
+      //--Use connect method to connect to the server
+      MongoClient.connect(url, function(err, client) {
+          
+        if(err){
+          console.log(err);
+        }
+        else
+        {
+          console.log("Connected successfully to server");
+        }
+        
+        const db = client.db(dbName);
 
-// router.post('/:id_nguoi_dung', function(req, res, next) {
+        //--Get the documents collection
+        const collection_user = db.collection('user');
+
+        //--Find some documents
+        collection_user.findOne({'email':req.params.email_user},function(err, info_user) {
+          
+          if(err){
+            console.log(err);
+          }
+
+          else {      
+
+            res.json({
+              'xuly':' show thong tin user ' + req.params.email_user,
+              'data': info_user
+            });
+                      
+            client.close();
+          }
+
+        });
+
+      });   
   
-//     res.json({
-//       'id': req.params.id_nguoi_dung,
-//       'tai_khoan':'',
-//       'mat_khau':'',
-//       'id_loai_user':'',
-//       'id_phan_quyen':'',
-//       'ho_ten':'',
-//       'email':'',
-//       'ngay_sinh':'',
-//       'dia_chi':'',
-//       'diem_tich_luy':'',
-//       'ngay_dang_ky':'',
-//       'avatar':'',
-//       'dien_thoai':'',
-//       data_send: req.body
-//       });
-  
-// });
+ });
 
 module.exports = router;

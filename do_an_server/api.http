@@ -1,4 +1,4 @@
- GET   http://localhost:4000/user/
+ # GET   http://localhost:4000/users/
 
 # POST http://localhost:4000/?abc=abc
 # Content-Type: application/json
@@ -7,7 +7,7 @@
 #     "bien" : "gia_tri"
 # }
 
-# GET http://localhost:4000/users/
+ GET http://localhost:4000/user/machchitai@gmail.com
 
 # POST http://localhost:4000/user/
 # Content-Type: application/json
