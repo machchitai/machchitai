@@ -7,16 +7,58 @@
 #     "bien" : "gia_tri"
 # }
 
- GET http://localhost:4000/user/machchitai@gmail.com
 
-# POST http://localhost:4000/user/
+
+# GET http://localhost:4000/user/machchitai
+
+
+# POST http://localhost:4000/users
 # Content-Type: application/json
-# Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=
+# Authorization: Basic bWFjaGNoaXRhaToxMjMxMjM=
+
+# [
+#     {
+#         "name":"Tai Mach",
+#         "username":"machchitai",
+#         "password":"123123",
+#         "email":"machchitai@gmail.com"
+#     },
+#     {
+#         "name":"Tai Mach 2",
+#         "username":"machchitai",
+#         "password":"123123",
+#         "email":"machchitai2@gmail.com"
+#     },
+#     {
+#         "name":"Tai Mach 3",
+#         "username":"machchitai",
+#         "password":"123123",
+#         "email":"machchitai3@gmail.com"
+#     }
+
+# ]
+
+
+# POST http://localhost:4000/user/sign-up
+# Content-Type: application/json
 
 # {
-#     "name": "name",
-#     "username":"username",  
-#     "password": "password",
-#     "email": "email",
-#     "phone":"phone"
+#     "name":"Tai Mach",
+#     "username":"machchitai",
+#     "password":"123123",
+#     "email":"machchitai@gmail.com"
 # }
+
+# PUT http://localhost:4000/user/machchitai1994@gmail.com
+# Content-Type: application/json
+
+# {
+#     "name":"Tai Mach",
+#     "username":"machchitai",
+#     "password":"123123",
+#     "email":"machchitai@gmail.com"
+# }
+
+DELETE http://localhost:4000/user/machchitai1994@gmail.com
+Content-Type: application/json
+Authorization: Basic bWFjaGNoaXRhaToxMjMxMjM=
