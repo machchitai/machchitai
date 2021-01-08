@@ -75,25 +75,19 @@ router.post('/sign-up', function(req, res) {
     {
       console.log("Connected successfully to server");
     }
-    
-    const db = client.db(dbName);
 
+    const db = client.db(dbName);
+    
     //--Get the documents collection
     const collection_user = db.collection('users');
-
+    //console.log(collection_user);
     //--Insert one document
-    collection_user.insertOne(req.body,function(err, data) {
-      
-      if(err){
-        console.log(err);
-      }
-      else {      
+    collection_user.insertOne(req.body,() => {     
+           
         res.json({
             'thong_bao':'dang ky user moi thanh cong!',
-            data_send: data
-        });                  
-        client.close();
-      }
+            data_send: req.body
+        });                       
 
     });
 
@@ -113,8 +107,7 @@ router.post('/sign-up', function(req, res) {
         else
         {
           console.log("Connected successfully to server");
-        }
-        
+        }        
         const db = client.db(dbName);
 
         //--Get the documents collection
@@ -122,16 +115,12 @@ router.post('/sign-up', function(req, res) {
 
         //--Find some documents
         collection_user.findOne({'username':req.params.username},function(err, info_user) {          
-          if(err){
-            console.log(err);
-          }
-          else {   
+            
             res.json({
               'thong_bao':' show thong tin user ' + req.params.username,
               'data': info_user
-            });                      
-            client.close();
-          }
+            });           
+          
 
         });
 
@@ -151,8 +140,7 @@ router.post('/sign-up', function(req, res) {
       else
       {
         console.log("Connected successfully to server");
-      }
-      
+      }   
       const db = client.db(dbName);
       //--Get the documents collection
       const collection_user = db.collection('users');
@@ -164,39 +152,80 @@ router.post('/sign-up', function(req, res) {
           'thong_bao':' update thong tin user ' + req.params.email + ' thanh cong!',
           data_send: req.body
         });                      
-        client.close();
       });
 
     });   
  });
 
  router.delete('/:email', authenticate.auth, (req, res) => {
-    console.log(req.params.email);
-    //--Use connect method to connect to the server
-    MongoClient.connect(url, function(err, client) {          
-      if(err){
-        console.log(err);
-      }
-      else
-      {
-        console.log("Connected successfully to server");
-      }
-      
-      const db = client.db(dbName);
-      //--Get the documents collection
-      const collection_user = db.collection('users');
-      
-      //--Delete documents
-      collection_user.deleteOne({email:req.params.email}, () => {
-        
-        res.json({
-          'thong_bao':' xoa user ' + req.params.email + ' thanh cong!',
+  MongoClient.connect(url, function(err, client) {
           
-        });                      
-        client.close();
-      });
+    if(err){
+      console.log(err);
+    }
+    else
+    {
+      console.log("Connected successfully to server");
+    }
 
-    });   
+    const db = client.db(dbName);
+    console.log(db);
+    //--Get the documents collection
+    const collection_user = db.collection('users');
+    console.log(collection_user);
+
+    //--Insert one document
+    collection_user.deleteOne({email:req.params.email},() => {     
+           
+        res.json({
+            'thong_bao':'xoa user thanh cong!',
+            data_send: req.body
+        });                       
+
+    });
+
+  });   
+  
  });
+
+ router.post('/log-in', (req, res) => {
+  console.log(req.body);
+  MongoClient.connect(url, function(err, client) {
+      if(err)
+          console.log(err);
+      const db = client.db(dbName);
+      const collection_user = db.collection('users');
+      collection_user.findOne({tai_khoan: req.body.tai_khoan}, (err, result) => {
+          if(err)
+              console.log(err);
+
+          if(typeof result != 'undefined' && result != null){
+              if(result.mat_khau == req.body.mat_khau){
+                  //res.status(401);
+                  result.mat_khau = null;
+                  res.json({
+                      'xu_ly': 'đăng nhập thành công',
+                      data_send: result
+                  });
+              }
+              else{
+                  res.status(401);
+                  res.json({
+                      'xu_ly': 'xử lý đăng nhập thất bại, sai tài khoản hoặc mật khẩu',
+                      error: true
+                  });
+              }
+          }
+          else{
+              res.status(401);
+              res.json({
+                  'xu_ly': 'xử lý đăng nhập thất bại, sai tài khoản hoặc mật khẩu',
+                  error: true
+              });
+          }
+      });
+      
+  });
+})
 
 module.exports = router;

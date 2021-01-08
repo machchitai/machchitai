@@ -9,6 +9,7 @@ import TrangGioHang from './Pages/TrangGioHang';
 import TrangTestMaterialUI from './Pages/TrangTestMaterialUI';
 import Footer from './Module/Footer/Footer';
 import ButtonGoToGioHang from './Module/ButtonGoToGioHang';
+import TrangTimKiem from './Pages/TrangTimKiem';
 
 import { useState } from 'react';
 import {
@@ -56,6 +57,10 @@ function App() {
 
           <Route path='/gio-hang'>
             <TrangGioHang />
+          </Route>
+
+          <Route path='/tim-kiem'>
+            <TrangTimKiem />
           </Route>
 
           <Route path='/'>

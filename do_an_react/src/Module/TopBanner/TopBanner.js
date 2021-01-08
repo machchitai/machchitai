@@ -1,14 +1,16 @@
 import LogoBanner from './LogoBanner';
 import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
+import axios from 'axios';
 
-import {Button, Typography, Grid, Slider} from '@material-ui/core';
+import {Button, Checkbox, Typography, Grid, Slider } from '@material-ui/core';
 import PersonIcon from '@material-ui/icons/Person';
 import CloseIcon from '@material-ui/icons/Close';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
-import VolumeUp from '@material-ui/icons/VolumeUp';
 import VolumeDown from '@material-ui/icons/VolumeDown';
+import VolumeUp from '@material-ui/icons/VolumeUp';
+ 
 
 import GreenCheckbox from '../../Theme/CustomInput/CheckBoxLike';
 
@@ -20,6 +22,7 @@ import {
 } from '@material-ui/pickers';
 
 
+
 import {
   Link,
   withRouter
@@ -28,6 +31,9 @@ import {
 import ItemMenu from './ItemMenu';
 
 import $ from 'jquery';
+
+
+
 
 class TopBanner extends Component {
 
@@ -71,13 +77,14 @@ class TopBanner extends Component {
           link: '/lien-he'
         }
       ],
-    value_volume: 30
+      value_volume: 30
     };
 
     this.handleChangeInput = this.handleChangeInput.bind(this);
     this.handleSearchfunction = this.handleSearchfunction.bind(this);
     this.handleChangeInputLoginForm = this.handleChangeInputLoginForm.bind(this);
     this.handleSubmitLoginForm = this.handleSubmitLoginForm.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   updateCount(){
@@ -86,14 +93,16 @@ class TopBanner extends Component {
     });
   }
 
-  handleChange = (event, newValue) => {
+  handleChange(event, newValue){
     this.setState({
       value_volume: newValue
-    });
-   
+    })
   };
 
-  componentDidMount(){   
+  componentDidMount(){
+
+    
+
     var thong_tin_user_save = localStorage.getItem('thong_tin_user');
 
     //console.log(JSON.parse(thong_tin_user_save));
@@ -124,6 +133,7 @@ class TopBanner extends Component {
     // if(this.state.count == 3){
     //   this.props.delete_me();
     // }
+
     console.log(this.props.location.pathname);
   }
 
@@ -132,14 +142,9 @@ class TopBanner extends Component {
     clearInterval(this.state.interval);
   }
 
-  // handleChange = (event, newValue) => {
-  //   this.setState({
-  //     newValue: newValue.target.value
-  //   })
-  // }
-
   handleChangeInput = (e) => {
       //console.log(e.target.value);
+
       this.setState({
         search: e.target.value
       })
@@ -186,34 +191,72 @@ class TopBanner extends Component {
   handleSubmitLoginForm = (e) => {
     e.preventDefault();
 
-    if(this.state.thong_tin_user.tai_khoan == 'hungnguyen' && this.state.thong_tin_user.mat_khau == '123456'){
-      console.log('Đăng nhập thành công');
-      var thong_tin_user_temp = {...this.state.thong_tin_user};
+    axios.post('http://localhost:4000/user/log-in', this.state.thong_tin_user)
+      .then((result) =>  {
+        console.log(result);
 
-      thong_tin_user_temp.name = 'Hùng Nguyễn';
+        var thong_tin_user_temp = {...this.state.thong_tin_user};
 
-      this.setState({
-        thong_tin_user: thong_tin_user_temp
-      }, () => {
+        thong_tin_user_temp.name = result.data.data_send.name;
 
-        console.log(this.state);
+        this.setState({
+          thong_tin_user: thong_tin_user_temp
+        }, () => {
 
-        thong_tin_user_temp.mat_khau = '';
+          //console.log(this.state);
 
-        localStorage.setItem('thong_tin_user', JSON.stringify(thong_tin_user_temp));
+          thong_tin_user_temp.mat_khau = '';
 
-        $('#modal-id').hide();
-        $('.modal-backdrop').hide();
-        $('body').removeClass('modal-open');
-      });
-    }
-    else{
-      this.setState({
-        message_error: {
-          general_error: 'Tài khoản hoặc Mật khẩu không chính xác'
-        }
+          localStorage.setItem('thong_tin_user', JSON.stringify(thong_tin_user_temp));
+
+          $('#modal-id').hide();
+          $('.modal-backdrop').hide();
+          $('body').removeClass('modal-open');
+          
+        });
+
       })
-    }
+      .catch((err) => {
+        console.log(err);
+        console.log(err.response);
+
+        this.setState({
+          message_error: {
+            general_error: err.response.data.xu_ly
+          }
+        })
+
+      })
+
+    // if(this.state.thong_tin_user.tai_khoan == 'hungnguyen' && this.state.thong_tin_user.mat_khau == '123456'){
+    //   console.log('Đăng nhập thành công');
+    //   var thong_tin_user_temp = {...this.state.thong_tin_user};
+
+    //   thong_tin_user_temp.name = 'Hùng Nguyễn';
+
+    //   this.setState({
+    //     thong_tin_user: thong_tin_user_temp
+    //   }, () => {
+
+    //     console.log(this.state);
+
+    //     thong_tin_user_temp.mat_khau = '';
+
+    //     localStorage.setItem('thong_tin_user', JSON.stringify(thong_tin_user_temp));
+
+    //     $('#modal-id').hide();
+    //     $('.modal-backdrop').hide();
+    //     $('body').removeClass('modal-open');
+    //   });
+    // }
+    // else{
+    //   this.setState({
+    //     message_error: {
+    //       general_error: 'Tài khoản hoặc Mật khẩu không chính xác'
+    //     }
+    //   })
+    // }
+
   }
 
   render() {
@@ -275,7 +318,9 @@ class TopBanner extends Component {
                       }
                       else{
                         return <ItemMenu item_menu={item_menu} index={index} class_name={''} />
-                      }                     
+                      }
+
+                      
 
                     }
                   )
@@ -336,7 +381,7 @@ class TopBanner extends Component {
                     value={this.state.thong_tin_user_sign_up.mat_khau} />
                   </div>
                   <div>
-                    <input type="password" onChange={this.handleChangeInputSignUpForm} placeholder="Nhập Lại Mật khẩu" 
+                    <input type="password" onChange={this.handleChangeInputSignUpForm} placeholder="Mật khẩu" 
                     name="nhap_lai_mat_khau" id="nhap_lai_mat_khau" className="form-control" defaultValue="" 
                     value={this.state.thong_tin_user_sign_up.mat_khau} />
                   </div>
@@ -383,10 +428,10 @@ class TopBanner extends Component {
                 </div>
                 <div class="modal-footer">
                   <Button variant="contained" color="default" data-dismiss="modal">
-                    <CloseIcon /> Đóng
+                    <CloseIcon /> Close
                   </Button>
                   <Button variant="contained" color="primary" onClick={this.handleSubmitLoginForm}>
-                    <VpnKeyIcon /> Đăng ký
+                    <VpnKeyIcon /> Sign Up
                   </Button>
                   {/* <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
                   <button type="submit" className="btn btn-primary">Login</button> */}
@@ -428,10 +473,10 @@ class TopBanner extends Component {
                 </div>
                 <div class="modal-footer">
                   <Button variant="contained" color="default" data-dismiss="modal">
-                    <CloseIcon /> Đóng
+                    <CloseIcon /> Close
                   </Button>
                   <Button variant="contained" color="primary" onClick={this.handleSubmitLoginForm}>
-                    <VpnKeyIcon /> Đăng nhập
+                    <VpnKeyIcon /> Login
                   </Button>
                   {/* <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
                   <button type="submit" className="btn btn-primary">Login</button> */}

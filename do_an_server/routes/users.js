@@ -64,16 +64,15 @@ router.post('/', authenticate.auth, (req, res, next) => {
     const collection_user = db.collection('users');
     
     //--Insert one document
-    collection_user.insertMany([req.body],function(err, data) {      
+    collection_user.insertMany(req.body,() => {      
       if(err){
         console.log(err);
       }
       else {      
         res.json({
             'thong_bao':'them nhieu user thanh cong!',
-            data_send: data
-        });                  
-        client.close();
+            data_send: req.body
+        });                
       }
     });
   });   

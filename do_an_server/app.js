@@ -4,10 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var fs = require('fs');
+var cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var userRouter = require('./routes/user');
+var moviesRouter = require('./routes/movies');
 var bs_loai_sachRouter = require('./routes/bs_loai_sach');
 var bs_sachRouter = require('./routes/bs_sach');
 var bs_tin_tucRouter = require('./routes/bs_tin_tuc');
@@ -18,7 +20,7 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -41,6 +43,7 @@ app.use('/sach', bs_sachRouter);
 app.use('/chi-tiet-don-hang', bs_chi_tiet_don_hangRouter);
 app.use('/tin-tuc', bs_tin_tucRouter);
 app.use('/don-hang', bs_don_hangRouter);
+app.use('/movies', moviesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

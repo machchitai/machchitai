@@ -9,7 +9,7 @@ module.exports = {
     
         //--decode Authorization key into String
         var string_basic_auth = array_auth[1];
-        var data_string_auth = (new Buffer.alloc(string_basic_auth, 'base64')).toString();
+        var data_string_auth = (new Buffer(string_basic_auth, 'base64')).toString();
         //console.log(data_string_auth);    
         
         var user_info = data_string_auth.split(':');
