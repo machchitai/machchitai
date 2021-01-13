@@ -8,6 +8,7 @@ import TrangLienHe from './Pages/TrangLienHe';
 import TrangGioHang from './Pages/TrangGioHang';
 import TrangTestMaterialUI from './Pages/TrangTestMaterialUI';
 import Footer from './Module/Footer/Footer';
+import FormChat from './Module/FormChat/index';
 import ButtonGoToGioHang from './Module/ButtonGoToGioHang';
 import TrangTimKiem from './Pages/TrangTimKiem';
 
@@ -71,8 +72,10 @@ function App() {
       
       <ButtonGoToGioHang />
       <Footer />
-
+      
       </Router>
+
+      <FormChat/>
 
     </>
   );

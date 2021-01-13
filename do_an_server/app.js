@@ -15,6 +15,7 @@ var bs_sachRouter = require('./routes/bs_sach');
 var bs_tin_tucRouter = require('./routes/bs_tin_tuc');
 var bs_chi_tiet_don_hangRouter = require('./routes/bs_chi_tiet_don_hang');
 var bs_don_hangRouter = require('./routes/bs_don_hang');
+var messageRouter = require('./routes/message');
 var app = express();
 
 // view engine setup
@@ -44,6 +45,7 @@ app.use('/chi-tiet-don-hang', bs_chi_tiet_don_hangRouter);
 app.use('/tin-tuc', bs_tin_tucRouter);
 app.use('/don-hang', bs_don_hangRouter);
 app.use('/movies', moviesRouter);
+app.use('/message', messageRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

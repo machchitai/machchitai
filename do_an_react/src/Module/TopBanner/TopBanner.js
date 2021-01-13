@@ -40,7 +40,7 @@ class TopBanner extends Component {
   constructor(props){
     super(props);
     this.state = {
-      title_logo: this.props.title_page + ' test xem sao',
+      title_logo: this.props.title_page,
       count: 1,
       interval: null,
       search: '',
@@ -209,7 +209,7 @@ class TopBanner extends Component {
 
           localStorage.setItem('thong_tin_user', JSON.stringify(thong_tin_user_temp));
 
-          $('#modal-id').hide();
+          $('#modal-form-dang-nhap').hide();
           $('.modal-backdrop').hide();
           $('body').removeClass('modal-open');
           
@@ -331,7 +331,7 @@ class TopBanner extends Component {
                   :
                   <li>
                     {/* <a href="" class="btn btn-primary" data-toggle="modal" href='#modal-id'>Đăng nhập</a> */}
-                    <a href="" data-toggle="modal" href='#modal-id'>
+                    <a href="" data-toggle="modal" href='#modal-form-dang-nhap'>
                       <Button variant="contained" color="primary">
                         <PersonIcon />Đăng nhập
                       </Button>
@@ -443,7 +443,7 @@ class TopBanner extends Component {
         </div>
 
         
-        <div className="modal fade" id="modal-id">
+        <div className="modal fade" id="modal-form-dang-nhap">
 
           <form className="login_form" action="" method="POST" onSubmit={this.handleSubmitLoginForm}>
             <div className="modal-dialog">
