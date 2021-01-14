@@ -41,6 +41,10 @@ const io = socketIo(server, {
 io.on("connection", (socket) => {
   console.log("New client connected");
 
+  socket.on('joinRoom', (room_name) => {
+    socket.join(room_name);
+  })
+
   socket.on('MessageFromClient', (data) => {
     //console.log(data);
 
@@ -60,11 +64,16 @@ io.on("connection", (socket) => {
       const collection_user = db.collection('chat_message');
 
       collection_user.insertOne(data,() => {
-        // server gui lai message cho tat ca client dang connect
-        socket.broadcast.emit("MessageFromServer",data);
-        
-        // server gui lai message cho nguoi gui
-        socket.emit("MessageFromServer",data);
+
+        if(data.room){
+            io.in(data.room).emit("MessageFromServer",data);
+        }
+              else {
+                  // server gui lai message cho tat ca client dang connect
+                  socket.broadcast.emit("MessageFromServer",data);
+                   // server gui lai message cho nguoi gui
+                  socket.emit("MessageFromServer",data);
+              }        
       });    
   })
 

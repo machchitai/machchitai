@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import socketIOClient from "socket.io-client";
 import axios from 'axios';
 
+import $ from 'jquery';
+
 const ENDPOINT = "http://localhost:4000/";
 const socket = socketIOClient(ENDPOINT);
 
@@ -17,7 +19,7 @@ function PopupChat() {
 
   const [current_username, setCurrentusername] = useState('');    
 
-  useEffect(() => {
+  useEffect(() => {    
 
     axios.get('http://localhost:4000/message')
       .then((results) => {
@@ -38,9 +40,12 @@ function PopupChat() {
         setListMessage(list_message => [...list_message, data]);
     });
 
+
     var thong_tin_user_save = localStorage.getItem('thong_tin_user');
 
     if(typeof thong_tin_user_save != 'undefined' && thong_tin_user_save != null){
+
+      socket.emit('joinRoom', 'room1');
 
       thong_tin_user_save = JSON.parse(thong_tin_user_save);
 
@@ -50,6 +55,14 @@ function PopupChat() {
     }
     
   }, []);
+  
+  useEffect (() => {
+
+    //var object = $('.danh_sach_chat').animate({ scrollTop: $('.danh_sach_chat').height() }, 1000);
+    var object = document.getElementsByClassName(".danh_sach_chat");
+    object.scrollTop = object.scrollHeight;
+
+  },[list_message]);
 
   //-- Xu ly gui message tu Client len Server
   const handleSendMessageToServer = (e) => {
@@ -67,7 +80,7 @@ function PopupChat() {
               "username" : thong_tin_user_save.tai_khoan, 
               "timestamp" : Date.now(), 
               "message" : input_message, 
-              "room" : ""
+              "room" : "room1"
           }     
 
         socket.emit("MessageFromClient", data_message_save);
@@ -76,7 +89,16 @@ function PopupChat() {
       }
 
       else {
-        alert("Vui lòng đăng nhập để chat");
+        var data_message_save =  { 
+              "username" : "anonymous", 
+              "timestamp" : Date.now(), 
+              "message" : input_message, 
+              "room" : ""
+          }     
+
+        socket.emit("MessageFromClient", data_message_save);
+
+        setInputMessage('');
       }
 
     }
@@ -116,7 +138,7 @@ function PopupChat() {
     <div className="div_include_chat_box">       
 
         <div className="title_chat_form" onClick={handleShowHidePopupChat}>
-            Liên hệ chúng tôi
+            <b>Chat box</b>
         </div>
   
         <div className="detect_an_hien" style={state_style}>
@@ -124,7 +146,7 @@ function PopupChat() {
               {
                 list_message.map((item_message, index) => (
                       <div key={index} className={"item_message" + ((item_message.username == current_username)?' current_user':'')} title={item_message.username}>
-                          {item_message.username}: {item_message.message}
+                          <b>{item_message.username}</b>: {item_message.message}
                       </div>
                 ))
               }
