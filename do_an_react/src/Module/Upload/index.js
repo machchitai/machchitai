@@ -1,9 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-const UploadFile = (e) => {
-
-    e.preventDefault();
+const UploadFile = () => {
 
     const handleUploadForm = (e) => {
 
