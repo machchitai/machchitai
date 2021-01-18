@@ -32,10 +32,8 @@ const UploadFile = () => {
                 <div class="form-group">
                     <label for="">label</label>
                     <input type="file" name="upload_file_input" class="form-control" id="file"/>
-                </div>
-            
-                
-            
+                </div>           
+                            
                 <button type="submit" class="btn btn-primary">Upload</button>
             </form>
             
