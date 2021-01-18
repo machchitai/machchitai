@@ -11,6 +11,7 @@ import Footer from './Module/Footer/Footer';
 import FormChat from './Module/FormChat/index';
 import ButtonGoToGioHang from './Module/ButtonGoToGioHang';
 import TrangTimKiem from './Pages/TrangTimKiem';
+import UploadFile from './Module/Upload';
 
 import { useState } from 'react';
 import {
@@ -76,6 +77,8 @@ function App() {
       </Router>
 
       <FormChat/>
+
+      <UploadFile/>
 
     </>
   );
