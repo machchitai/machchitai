@@ -2,95 +2,77 @@ var express = require('express');
 var router = express.Router();
 var authenticate = require('../middleware/auth');
 
+
 const MongoClient = require('mongodb').MongoClient;
 
-//--Connection URL
+// Connection URL
 const url = 'mongodb://localhost:27017';
 
-//--Database Name
-const dbName = 'project';
+const dbName = 'database_chat';
 
-//-- GET users listing. 
-router.get('/', function(req, res, next) {  
-  
+/* GET users listing. */
+router.get('/', function(req, res, next) {
+  // var a = 10 + 1;
+  // var data = {
+  //   data: "data"
+  // };
+  // res.json(data);
+
   MongoClient.connect(url, function(err, client) {
-    
-    if(err){
-      console.log(err);
-    }
-    else
-    {
-      console.log("Connected successfully to server");
-    }
-    
+    if(err)
+        console.log(err);
+
     const db = client.db(dbName);
-    //--Get the documents collection
+
     const collection_user = db.collection('users');
 
-    //--Find some documents
-    collection_user.find({}).toArray(function(err, ds_user) {      
-      if(err){
-        console.log(err);
-      }
-      else {      
-        res.json({
-          'xuly':' show thong tin tat ca user',
-          'data': ds_user
-        });                  
+    collection_user.find({}).toArray(function(err, ds_user) {
+        if(err)
+            console.log(err);
+
+        //console.log(ds_user);
+
+        res.json({'xu_ly': 'danh sach user', 'data': ds_user});
+        
         client.close();
-      }
     });
-  
-  });   
+  });
 
+  // res.json({
+  //   "data": "danh sach user" + JSON.stringify(req.query)
+  // });
+
+  //res.send('respond with a resource' + a);
 });
 
-//-- import many users
-router.post('/', authenticate.auth, (req, res, next) => {
-
-  //--Connect to server
-  MongoClient.connect(url, function(err, client) {          
-    if(err){
-      console.log(err);
-    }
-    else
-    {
-      console.log("Connected successfully to server");
-    }    
-
-    const db = client.db(dbName);
-
-    //--Get the documents collection
-    const collection_user = db.collection('users');
-    
-    //--Insert one document
-    collection_user.insertMany(req.body,() => {      
-      if(err){
+router.post('/', authenticate.auth, (req, res) => {
+  MongoClient.connect(url, function(err, client) {
+    if(err)
         console.log(err);
-      }
-      else {      
+    const db = client.db(dbName);
+    const collection_user = db.collection('users');
+    collection_user.insertMany(req.body, () => {
         res.json({
-            'thong_bao':'them nhieu user thanh cong!',
+            'xu_ly': 'import nhieu user 1 lúc',
             data_send: req.body
-        });                
-      }
-    });
-  });   
-
+        });
+    })
 });
+  //res.json({'xu_ly': 'import nhieu user 1 lúc'});
+}); // insert
 
-router.put('/', function(req, res, next) {
-  res.json({
-    'xu_ly':'create or update users'
-  });
-});
+router.put('/', (req, res) => {
+  res.json({'xu_ly': 'update nhieu user 1 lúc'});
+}); // create or update
 
+router.delete('/', (req, res) => {
+  res.json({'xu_ly': 'delete nhieu user 1 lúc'});
+}); // delete
 
-router.delete('/', function(req, res, next) {
-  res.json({
-    'xu_ly':'delete users'
-  });
-});
-
+// router.all(); // thich cai nao chay cai do
+// router.patch(); //move
+// router.head(); // send before to get token
+// router.options(); // check server
+// router.purge(); // re-check server
 
 module.exports = router;

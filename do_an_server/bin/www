@@ -9,14 +9,14 @@ var debug = require('debug')('do-an-server:server');
 var http = require('http');
 const express = require("express");
 
-const socketIo = require("socket.io");
-
 const MongoClient = require('mongodb').MongoClient;
 
 // Connection URL
 const url = 'mongodb://localhost:27017';
 
 const dbName = 'project';
+
+const socketIo = require("socket.io");
 
 /**
  * Get port from environment and store in Express.
@@ -42,47 +42,53 @@ io.on("connection", (socket) => {
   console.log("New client connected");
 
   socket.on('joinRoom', (room_name) => {
+    console.log('client join room ' + room_name);
     socket.join(room_name);
   })
 
   socket.on('MessageFromClient', (data) => {
     //console.log(data);
 
-    // var data_message_save =  { 
-    //     "username" : "hungnguyen", 
-    //     "timestamp" : Date.now(), 
-    //     "message" : data, 
-    //     "room" : ""
-    // }       
+    // var data_message_save = { 
+    //   "username" : "hungnguyen", 
+    //   "timestamp" : Date.now(), 
+    //   "message" : data, 
+    //   "room" : ""
+    // }
+  
 
     MongoClient.connect(url, function(err, client) {
       if(err)
           console.log(err);
-  
       const db = client.db(dbName);
-  
-      const collection_user = db.collection('chat_message');
-
-      collection_user.insertOne(data,() => {
-
+      const collection_chat_message = db.collection('chat_message');
+      collection_chat_message.insertOne(data, () => {
+        
         if(data.room){
-            io.in(data.room).emit("MessageFromServer",data);
+          console.log('room', data.room);
+          io.in(data.room).emit('MessageFromServer', data);
         }
-              else {
-                  // server gui lai message cho tat ca client dang connect
-                  socket.broadcast.emit("MessageFromServer",data);
-                   // server gui lai message cho nguoi gui
-                  socket.emit("MessageFromServer",data);
-              }        
-      });    
+        else{
+          console.log('broadcast');
+          socket.broadcast.emit("MessageFromServer", data);
+          socket.emit("MessageFromServer", data);
+        }
+        
+        
+      });
+
+    });
+    
   })
+
+  // setInterval(() => {
+  //   socket.emit('MessageFromServer', 'Hello Client');
+  // }, 1000);
 
   socket.on("disconnect", () => {
     console.log("Client disconnected");
   });
-
-  })
-}) 
+})
 
 /**
  * Listen on provided port, on all network interfaces.

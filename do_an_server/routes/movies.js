@@ -8,7 +8,7 @@ const MongoClient = require('mongodb').MongoClient;
 // Connection URL
 const url = 'mongodb://localhost:27017';
 
-const dbName = 'project';
+const dbName = 'database_chat';
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -26,7 +26,7 @@ router.get('/', function(req, res, next) {
 
     const db = client.db(dbName);
 
-    const collection_user = db.collection('movies');
+    const collection_user = db.collection('movie');
 
     collection_user.find({
         // $and: [

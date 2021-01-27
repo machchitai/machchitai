@@ -10,49 +10,62 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var userRouter = require('./routes/user');
 var moviesRouter = require('./routes/movies');
-var bs_loai_sachRouter = require('./routes/bs_loai_sach');
-var bs_sachRouter = require('./routes/bs_sach');
-var bs_tin_tucRouter = require('./routes/bs_tin_tuc');
-var bs_chi_tiet_don_hangRouter = require('./routes/bs_chi_tiet_don_hang');
-var bs_don_hangRouter = require('./routes/bs_don_hang');
 var messageRouter = require('./routes/message');
-var uploadfilesRouter = require('./routes/upload_files');
+var uploadRouter = require('./routes/upload_file');
+
 var app = express();
+
+app.use(cors());
+
+var complete_log = (req, res, next) => {
+  try {
+      //console.log(hahaha.length);
+      var string_log = '-200-' + JSON.stringify({
+          'xu_ly': 'thêm user mới',
+          data_send: req.body
+      }) +  '\n';
+  
+      fs.appendFileSync('./data_log/2020_12_23.log', string_log);
+  }
+  catch(err){
+      var string_log = '-500-Server Internal Error' +  '\n';
+      fs.appendFileSync('./data_log/2020_12_23.log', string_log);
+  }
+
+  next();
+}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
-app.use(cors());
+app.set('view engine', 'ejs');
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// execute logging
-app.use((req,res,next) => {
-  var string_log = Date.now()+'-'+req.method+'-'+req.url+'\n';
-  fs.appendFileSync('./data_log/2020_12_23.log',string_log);
+app.use((req, res, next) => {
+  //console.log(Date.now() + '-' + req.method + '-' + req.url);
+  var string_log = Date.now() + '-' + req.method + '-' + req.url + '\n';
+  fs.appendFileSync('./data_log/2020_12_23.log', string_log);
   next();
-});
+})
 
-// routing
+app.use(complete_log);
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/user', userRouter);
-app.use('/loai-sach', bs_loai_sachRouter);
-app.use('/sach', bs_sachRouter);
-app.use('/chi-tiet-don-hang', bs_chi_tiet_don_hangRouter);
-app.use('/tin-tuc', bs_tin_tucRouter);
-app.use('/don-hang', bs_don_hangRouter);
 app.use('/movies', moviesRouter);
-app.use('/message', messageRouter);
-app.use('/upload', uploadfilesRouter);
+app.use('/messages', messageRouter);
+app.use('/upload', uploadRouter);
+
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+// app.use(function(req, res, next) {
+//   next(createError(404));
+// });
 
 // error handler
 app.use(function(err, req, res, next) {
@@ -62,7 +75,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.send('Server Error!');
+  res.send("Server Error")
   //res.render('error');
 });
 

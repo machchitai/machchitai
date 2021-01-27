@@ -1,0 +1,1496 @@
+1608903872252-GET-/user/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1608903898499-GET-/user/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1608903951146-GET-/user/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1608903962865-GET-/user/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1608905071483-GET-/user/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1608905131717-GET-/users?s=hung
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1608905157490-GET-/users
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1608905287659-GET-/user/hungnguyenxuan118@gmail.com
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1608905324969-GET-/user/hungnguyenxuan118@gmail.com
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609157283851-POST-/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","username":"hungnguyen","password":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609157293878-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","username":"hungnguyen","password":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609157377461-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","username":"hungnguyen","password":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609157562169-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","username":"hungnguyen","password":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609157659493-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","username":"hungnguyen","password":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609157835011-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","username":"hungnguyen","password":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609159878505-POST-/user
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609160113008-POST-/user
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609160144698-POST-/user
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609160160918-POST-/user
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609160176200-POST-/user
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609160226588-POST-/user
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609160244540-POST-/user
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609160260617-POST-/user
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609160283285-POST-/user
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609160309773-POST-/user
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609160327014-POST-/user
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609160376925-POST-/user
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"}}
+1609160557346-POST-/users
+-200-{"xu_ly":"thêm user mới","data_send":[{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"},{"name":"Hùng Nguyễn 1","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan1@gmail.com"},{"name":"Hùng Nguyễn 2","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan2@gmail.com"}]}
+1609160601272-POST-/users
+-200-{"xu_ly":"thêm user mới","data_send":[{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"},{"name":"Hùng Nguyễn 1","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan1@gmail.com"},{"name":"Hùng Nguyễn 2","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan2@gmail.com"}]}
+1609163628003-PUT-/users
+-200-{"xu_ly":"thêm user mới","data_send":[{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan118@gmail.com"},{"name":"Hùng Nguyễn 1","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan1@gmail.com"},{"name":"Hùng Nguyễn 2","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan2@gmail.com"}]}
+1609163662408-PUT-/user/hungnguyenxuan2@gmail.com
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan3@gmail.com"}}
+1609163720008-PUT-/user/hungnguyenxuan2@gmail.com
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan3@gmail.com"}}
+1609163825822-PUT-/user/hungnguyenxuan2@gmail.com
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng Nguyễn","tai_khoan":"hungnguyen","mat_khau":"123456789","email":"hungnguyenxuan3@gmail.com"}}
+1609164696764-DELETE-/user/hungnguyenxuan3@gmail.com
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609164764701-DELETE-/user/hungnguyenxuan3@gmail.com
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609766407481-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"tai_khoan":"hungnguyen","mat_khau":"123456789"}}
+1609766493154-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"tai_khoan":"hungnguyen","mat_khau":"123456789"}}
+1609766500254-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"tai_khoan":"dfdsfdsfdsfs","mat_khau":"123456789"}}
+1609766811037-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"tai_khoan":"dfdsfdsfdsfs","mat_khau":"123456789"}}
+1609766822949-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"tai_khoan":"hungnguyen","mat_khau":"12345678921321321"}}
+1609766831747-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"tai_khoan":"hungnguyen","mat_khau":"123456789"}}
+1609767071783-OPTIONS-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609767232276-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"","tai_khoan":"dsfdsfdsfsd","mat_khau":"34234234234324"}}
+1609767322079-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"","tai_khoan":"dsfdsfdsfsd","mat_khau":"432423423423"}}
+1609767376814-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"","tai_khoan":"dsfdsfdsfsd","mat_khau":"dsfdsfdsfds"}}
+1609767532686-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"","tai_khoan":"dsfdsfdsfsd","mat_khau":"dsfdsfdfdsfdsf"}}
+1609767546046-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"","tai_khoan":"hungnguyen","mat_khau":"3423423432432423"}}
+1609767551532-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"","tai_khoan":"hungnguyen","mat_khau":"123456789"}}
+1609767676872-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"","tai_khoan":"hungnguyen","mat_khau":"123456789"}}
+1609934798558-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609934811123-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609935072903-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609935238121-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609935245137-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609935265424-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609935331149-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609935360140-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609935497182-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609935499874-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609935539558-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609935641011-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609935793343-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609937934759-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609937988665-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609938037474-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609938294658-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609938775112-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609938825038-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609939495031-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609939619521-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609939756955-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609941544037-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609941877164-GET-/movies?thoi_luong=120
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609941972586-GET-/movies?thoi_luong=120
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609942006539-GET-/movies?thoi_luong=120
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609942045371-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609942118042-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609942401203-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609942413869-GET-/movies?thoi_luong=120
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609942458219-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609942465042-GET-/movies?thoi_luong=120
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1609942491768-GET-/movies?thoi_luong=100
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610105681938-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610108747602-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610108888055-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610108930079-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610108974897-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109071366-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109188570-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109327982-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109332760-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109470495-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109478113-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109629099-GET-/socket.io/?EIO=4&transport=polling&t=NRY0pAV
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109629106-GET-/socket.io/?EIO=4&transport=polling&t=NRY0pAV.0
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109635090-GET-/socket.io/?EIO=4&transport=polling&t=NRY0qeF
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109635092-GET-/socket.io/?EIO=4&transport=polling&t=NRY0qeG
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109640372-GET-/socket.io/?EIO=4&transport=polling&t=NRY0rwg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109640374-GET-/socket.io/?EIO=4&transport=polling&t=NRY0rwh
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109641659-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109793701-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109829505-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109848184-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109892311-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109946640-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109970990-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610109985041-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610110039696-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610110154124-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610110175206-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610110197118-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610110290721-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610110313256-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610110341161-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610110822233-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610110926865-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610110986405-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610111009358-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610111039305-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610111165397-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610111175513-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610115565828-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610115565914-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610115565927-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610115565934-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610365307992-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610365308075-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610365308113-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610365308184-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610365774161-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610365804751-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610365804909-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610365804941-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610365804943-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610365990139-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610365990145-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366030127-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366030177-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366038131-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366038435-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366175774-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366175888-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366175914-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366175916-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366240087-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366240221-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366240260-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366240265-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366261134-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366302146-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366384131-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366925395-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366925528-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366925548-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610366925551-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367078082-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367078224-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367078232-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367078249-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367353143-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367353149-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367353164-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367353178-GET-/danh-sach-chat
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367620027-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367662133-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367662136-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367700140-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367700149-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367797141-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367797152-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367801935-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367802027-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367802031-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367802033-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367839132-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367840154-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367914154-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367914183-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367929157-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367929196-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367982135-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367982148-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367989471-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367989601-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367989607-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610367989609-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368010147-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368010168-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368021994-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368022120-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368022127-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368022131-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368223149-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368223253-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368223267-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368223274-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368225833-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368225949-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368225952-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368225955-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368264575-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368264715-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368264729-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368264731-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368266706-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368266833-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368266838-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368266846-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368355150-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368355157-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368358406-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368358501-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368358505-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368358516-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368360736-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368360870-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368360874-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368360878-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368396147-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368396177-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368403590-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368403701-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368403729-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368403736-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368406716-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368406795-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368406797-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368406808-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368567143-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368567153-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368662136-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368662167-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368714143-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368714145-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368722300-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368722425-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368722426-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368722450-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368730696-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368730797-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368730822-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368730823-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368733441-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368733537-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368733545-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368733550-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368769838-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368769995-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368770012-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368770020-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368772615-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368772713-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368772717-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368772721-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368802125-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368803127-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368848625-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368848736-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368848751-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368848753-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368851737-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368851840-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368851843-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368851851-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368874142-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368874144-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368877359-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368877493-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368877494-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368877496-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368880448-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368880559-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368880564-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610368880572-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610537793962-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610537794140-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610537794153-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610537794156-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610537909835-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610537909922-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610537909929-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610537909933-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538043027-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538043172-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538043175-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538043196-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538061945-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538062052-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538062060-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538062062-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538133081-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538133194-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538133197-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538133208-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538165890-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538166027-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538166059-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538166070-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538177987-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538178094-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538178097-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538178101-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538225742-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538225858-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538225861-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538225865-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538235874-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538235952-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538235962-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538235963-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538269734-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538269864-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538269867-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538269886-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538315553-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538315665-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538315671-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538315677-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538327591-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538327697-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538327701-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538327712-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538353373-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538353463-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538353470-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538353483-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538356075-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538356195-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538356208-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538356211-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538406110-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538406196-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538406198-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538406215-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538460713-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538460797-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538460799-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538460815-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538483777-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538483851-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538483854-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538483923-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538493527-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538493580-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538493585-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538493596-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538615029-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538615175-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538615180-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538615186-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538674362-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538674478-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538674481-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538674484-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538684371-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538684458-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538684460-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538684463-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538719241-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538719352-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538719357-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538719361-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538750738-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538750826-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538750828-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610538750836-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610540979198-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"","tai_khoan":"hungnguyen","mat_khau":"123456"}}
+1610541003083-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"","tai_khoan":"hungnguyen","mat_khau":"123456789"}}
+1610541083891-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541093633-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541093740-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541093744-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541093748-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541106181-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"","tai_khoan":"hungnguyen","mat_khau":"123456789"}}
+1610541135211-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541135217-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541135218-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541135248-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541164133-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541175185-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541196187-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541205200-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541231068-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541262122-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541262132-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541262133-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541262156-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541413133-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541450130-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541472756-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541472764-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541472779-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541472842-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541481666-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541481790-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541481793-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541481797-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541604583-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"","tai_khoan":"test","mat_khau":"123456789+"}}
+1610541610697-POST-/user/log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"","tai_khoan":"test","mat_khau":"123456789"}}
+1610541846226-GET-/babel/parser/lib/index.js
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541846328-GET-/babel/parser/lib/index.js
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541847111-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541847135-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541847213-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541847218-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541925892-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541925955-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541925958-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541925997-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541925999-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541926007-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541926052-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541926072-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541928225-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541928232-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541928233-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541928416-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541931427-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541931433-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541931434-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610541931556-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610544988885-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610544989145-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545301125-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545301138-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545392138-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545392159-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545394689-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545394690-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545394692-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545394816-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545396958-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545396962-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545396965-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545397011-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545463167-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545463195-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545467767-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545467779-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545467781-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545467897-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545468623-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545468640-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545468641-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545468718-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545914195-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545914251-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545926606-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545926608-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545926610-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545926750-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545967171-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545967186-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545967196-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545967215-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545969479-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545969480-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545969483-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610545969585-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546024155-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546025152-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546027939-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546027944-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546027945-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546028024-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546030572-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546030576-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546030578-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546030651-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546072219-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546072319-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546086358-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546086366-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546086368-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546086583-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546086589-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546086600-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546096128-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546096129-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546096132-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546096171-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546099061-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546099062-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546099066-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546099129-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546161180-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546161198-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546163483-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546163488-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546163489-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546163534-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546609428-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546609448-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546609533-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546609550-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546621337-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546621340-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546621355-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546621402-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546623647-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546623649-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546623651-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546623713-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546690484-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546691145-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546691182-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546855184-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546856143-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546856149-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546884717-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546885189-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610546885225-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547016295-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547016312-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547016331-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547016333-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547018909-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547018913-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547018915-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547018980-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547020532-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547020556-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547020602-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547020604-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547089664-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547089679-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547089686-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547089687-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547092637-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547092639-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547092640-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547092656-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547094264-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547094286-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547094334-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547094336-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547299644-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547299652-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547299664-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547299735-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547302707-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547302721-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547302726-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547302729-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547305103-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547305126-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547305174-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547305177-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547490577-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547491198-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547491251-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547497186-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547497191-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547497193-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547497234-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547503277-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547503288-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547503301-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547503360-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547505111-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547505127-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547505165-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547505167-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547605182-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547606196-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547606220-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547608726-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547608774-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547608776-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547608780-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547611170-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547611172-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547611173-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547611254-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547614345-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547614365-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547614408-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547614410-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547671435-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547672152-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547672174-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547675150-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547675153-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547675155-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547675237-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547677525-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547677541-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547677542-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547677607-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547680528-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547680546-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547680581-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547680583-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547777809-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547778303-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547778312-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547785188-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547785195-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547785196-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547785248-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547786515-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547786518-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547786521-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547786617-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547788309-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547788327-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547788369-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610547788369-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610710913623-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610710913721-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610710913725-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610710913727-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610711269182-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610711269196-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610711269198-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610711269224-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718638825-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718638843-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718638844-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718638853-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718731826-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718731840-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718731847-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718731867-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718740297-POST-/upload
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718740328-GET-/favicon.ico
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718786046-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718786048-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718786050-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718786086-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718809944-POST-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718870984-POST-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718914395-GET-/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718961074-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718961089-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718961091-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718961161-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610718968403-POST-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719030686-GET-/upload
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719062327-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719062342-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719062344-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719062395-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719066678-POST-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719314125-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719314137-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719314146-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719314234-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719322934-POST-/upload_file
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719349785-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719349791-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719349794-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719349878-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719354315-POST-/upload
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719369724-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719369742-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719369743-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719369747-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719373340-POST-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719467763-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719467765-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719467789-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719467858-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719478568-POST-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719517256-POST-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719828536-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719828538-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719828552-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719828622-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719833740-POST-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610719918153-POST-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610720014438-POST-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610720059862-POST-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610720148171-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610720148181-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610720148193-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610720148195-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610720153955-POST-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610720290196-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610720290206-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610720290218-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610720290221-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610720300197-POST-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610970094972-GET-/movies
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610970095062-GET-/messages
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610970095063-GET-/images/send_message.png
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1610970095067-GET-/fonts/glyphicons-halflings-regular.woff2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611149650611-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"Hùng test","tai_khoan":"hungtest","mat_khau":"12345678","email":"nxhung118@gmail.com"}}
+1611750588959-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611750702442-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611750794686-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611750814336-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"mach chi tai","tai_khoan":"machchitai","mat_khau":"123123","email":"machchitai@gmail.com"}}
+1611750816958-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611752194463-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611752234180-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611752254621-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"mach chi da","tai_khoan":"machchida","mat_khau":"123456","email":"machchida@gmail.com"}}
+1611752259862-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611752286224-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"mach chi thong","tai_khoan":"machchithong","mat_khau":"123456","email":"machchithong@gmail.com"}}
+1611752291426-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611752380598-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"giang chi dong","tai_khoan":"giangchidong","mat_khau":"123456","email":"giangchidong@gmail.com"}}
+1611752381800-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611753122809-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611753129285-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611753472275-DELETE-/user/601163bcb9c12a16ec426a16
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611753475294-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754405385-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754411013-GET-/user/6011635eb9c12a16ec426a15
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754413970-PUT-/user/6011635eb9c12a16ec426a15
+-200-{"xu_ly":"thêm user mới","data_send":{"_id":"6011635eb9c12a16ec426a15","name":"mach chi thong","tai_khoan":"machchithong","mat_khau":"123456","email":"machchithong@gmail.com"}}
+1611754424335-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754434754-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754436516-GET-/user/6011635eb9c12a16ec426a15
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754437385-PUT-/user/6011635eb9c12a16ec426a15
+-200-{"xu_ly":"thêm user mới","data_send":{"_id":"6011635eb9c12a16ec426a15","name":"mach chi thong","tai_khoan":"machchithong","mat_khau":"123456","email":"machchithong@gmail.com"}}
+1611754438583-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754446815-DELETE-/user/6011635eb9c12a16ec426a15
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754455740-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754567563-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754569636-DELETE-/user/6011633eb9c12a16ec426a14
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754600542-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754732093-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754755233-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"mach chi da","tai_khoan":"machchida","mat_khau":"123456","email":"machchida@gmail.com"}}
+1611754756484-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754761173-DELETE-/user/60116d03b9c12a16ec426a17
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754761316-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754802192-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754825795-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"mach chi da","tai_khoan":"machchida","mat_khau":"123456","email":"machchida@gmail.com"}}
+1611754827044-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754846504-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"mach chi thong","tai_khoan":"machchithong","mat_khau":"123456","email":"machchithong@gmail.com"}}
+1611754847685-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754863107-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"giang chi dong","tai_khoan":"giangchidong","mat_khau":"123456","email":"giangchidong@gmail.com"}}
+1611754864305-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754924297-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754939434-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611754980228-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755001731-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755272344-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755320147-DELETE-/user/60115d9eb9c12a16ec426a13
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755320325-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755536548-GET-/user/60116d49b9c12a16ec426a18
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755552265-GET-/user/60116d49b9c12a16ec426a18
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755558892-GET-/user/60116d49b9c12a16ec426a18
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755578245-GET-/user/60116d49b9c12a16ec426a18
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755609223-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755611509-GET-/user/60116d49b9c12a16ec426a18
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755614913-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755618073-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755619573-GET-/user/60116d49b9c12a16ec426a18
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611755621350-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1611756351897-GET-/user/$%7BuserIdCurrent%7D
+-200-{"xu_ly":"thêm user mới","data_send":{}}

@@ -1,37 +1,35 @@
 var http = require('http');
 
+
 function in_gia_tri(res, chuoi_data){
-    if (chuoi_data){
-        console.log(JSON.parse(chuoi_data).bien);
-    }    
-    res.writeHeader(200, {'Content-Type': 'application/json'});
-    res.write('{"data":"hello world"}');
+    if(chuoi_data){
+        console.log(JSON.parse(chuoi_data));
+    }
+    res.writeHeader(200, { 'Content-Type': 'application/json' })
+    res.write('{"data": "hello world"}');
     res.end();
 }
 
-http.createServer(function (req, res) {
+http.createServer((req, res) => {
+    //console.log(req);
     var data = [];
-    
-    req.on('data',(chunk) =>{
+
+    req.on('data', (chunk) => {
         data.push(chunk);
     })
 
-    req.on('end',() => {
+    req.on('end', () => {
         if(req.url == '/'){
-            if(req.method == "POST"){
+            if(req.method == 'GET'){
                 in_gia_tri(res);
             }
-            else if(req.method == "GET"){
+            else if(req.method == "POST"){
                 in_gia_tri(res, data.toString());
             }
         }
-        else {
+        else{
 
-        }      
-        // console.log(JSON.parse(data.toString()).bien);
-        // res.writeHeader(200, {'Content-Type': 'application/json'});
-        // res.write('{"data":"hello world"}');
-        // res.end();
+        }
     })
 
 }).listen(4000);

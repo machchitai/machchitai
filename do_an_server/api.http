@@ -1,74 +1,125 @@
-# GET   http://localhost:4000/movies?thoi_luong=120
-# Content-Type: application/json
+###
+GET http://localhost:4000/
 
-GET   http://localhost:4000/message
+####
+POST http://localhost:4000/
 Content-Type: application/json
 
-# POST http://localhost:4000/?abc=abc
-# Content-Type: application/json
+{
+    "bien": "gia tri"
+}
 
-# {
-#     "bien" : "gia_tri"
-# }
+###
+GET http://localhost:4000/users
 
-# GET http://localhost:4000/user/machchitai
+###
+GET http://localhost:4000/users?s=hung
 
+###
+POST http://localhost:4000/users
 
-# POST http://localhost:4000/users
-# Content-Type: application/json
-# Authorization: Basic bWFjaGNoaXRhaToxMjMxMjM=
+###
+PUT http://localhost:4000/users
 
-# [
-#     {
-#         "name":"Tai Mach",  
-#         "username":"machchitai",
-#         "password":"123123",
-#         "email":"machchitai@gmail.com"
-#     },
-#     {
-#         "name":"Tai Mach 2",
-#         "username":"machchitai",
-#         "password":"123123",
-#         "email":"machchitai2@gmail.com"
-#     },
-#     {
-#         "name":"Tai Mach 3",
-#         "username":"machchitai",
-#         "password":"123123",
-#         "email":"machchitai3@gmail.com"
-#     }
-
-# ]
+###
+DELETE http://localhost:4000/users
 
 
-# POST http://localhost:4000/user/sign-up
-# Content-Type: application/json
 
-# {
-#     "name":"Tai Mach",
-#     "username":"machchitai",
-#     "password":"123123",
-#     "email":"machchitai2@gmail.com"
-# }
+###
+GET http://localhost:4000/user/
 
-# PUT http://localhost:4000/user/machchitai1994@gmail.com
-# Content-Type: application/json
+###
+#GET http://localhost:4000/user/hungnguyenxuan118@gmail.com
+GET http://localhost:4000/user/5fe9d7998598f8140c7344c0
 
-# {
-#     "name":"Tai Mach",
-#     "username":"machchitai",
-#     "password":"123123",
-#     "email":"machchitai@gmail.com"
-# }
+###
+POST http://localhost:4000/user
+Content-Type: application/json
+Authorization: Basic aHVuZ25ndXllbjoxMjM0NTY=
 
-# DELETE http://localhost:4000/user/machchitai2@gmail.com
-# Content-Type: application/json
-# Authorization: Basic bWFjaGNoaXRhaToxMjMxMjM=
+{
+    "name": "Hùng Nguyễn",
+    "tai_khoan": "hungnguyen",
+    "mat_khau": "123456789",
+    "email": "hungnguyenxuan118@gmail.com"
+}
 
-# POST http://localhost:4000/user/log-in
-# Content-Type: application/json
 
-# {
-#     "tai_khoan": "machchitai",
-#     "mat_khau": "123123"
-# }
+
+###
+POST http://localhost:4000/user/sign-up
+Content-Type: application/json
+
+{
+    "name": "Hùng Nguyễn",
+    "username": "hungnguyen",
+    "password": "123456789",
+    "email": "hungnguyenxuan118@gmail.com"
+}
+
+
+###
+POST http://localhost:4000/users
+Content-Type: application/json
+Authorization: Basic aHVuZ25ndXllbjoxMjM0NTY=
+
+[
+    {
+        "name": "Hùng Nguyễn",
+        "tai_khoan": "hungnguyen",
+        "mat_khau": "123456789",
+        "email": "hungnguyenxuan118@gmail.com"
+    },
+    {
+        "name": "Hùng Nguyễn 1",
+        "tai_khoan": "hungnguyen",
+        "mat_khau": "123456789",
+        "email": "hungnguyenxuan1@gmail.com"
+    },
+    {
+        "name": "Hùng Nguyễn 2",
+        "tai_khoan": "hungnguyen",
+        "mat_khau": "123456789",
+        "email": "hungnguyenxuan2@gmail.com"
+    }
+]
+
+
+###
+PUT http://localhost:4000/user/5fe9d7998598f8140c7344c0
+Content-Type: application/json
+
+{ 
+    "name" : "Hùng Nguyễn", 
+    "tai_khoan" : "hungnguyen", 
+    "mat_khau" : "123456789", 
+    "email" : "hungnguyenxuan1188@gmail.com"
+}
+
+
+###
+DELETE http://localhost:4000/user/600eb6b03d8ce1156c27c805
+Content-Type: application/json
+Authorization: Basic aHVuZ25ndXllbjoxMjM0NTY=
+
+
+
+###
+POST http://localhost:4000/user/log-in
+Content-Type: application/json
+
+{
+    "tai_khoan": "hungnguyen",
+    "mat_khau": "123456789"
+}
+
+
+###
+GET http://localhost:4000/movies
+Content-Type: application/json
+
+
+###
+GET http://localhost:4000/messages
+Content-Type: application/json
