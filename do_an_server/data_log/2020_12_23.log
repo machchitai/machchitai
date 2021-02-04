@@ -1514,3 +1514,1887 @@
 -200-{"xu_ly":"thêm user mới","data_send":["60116d5eb9c12a16ec426a19"]}
 1612416172843-GET-/users/
 -200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420195613-GET-/dashboard/get-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420195677-GET-/dashboard/data-employee
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420197164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420197183-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420198155-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420198175-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420199155-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420199174-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420200152-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420200168-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420201159-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420201175-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420202156-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420202186-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420203167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420203185-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420204165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420204184-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420205163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420205180-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420206158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420206174-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420207178-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420207205-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420207774-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420207792-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420208773-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420208793-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420209776-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420209793-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420210766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420210781-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420211773-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420211790-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420212767-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420212784-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420213778-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420213794-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420214771-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420214788-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420215770-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420215787-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420217173-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420217196-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420218158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420218198-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420219169-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420219195-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420220170-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420220197-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420221169-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420221194-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420222164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420222181-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420223159-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420223176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420224157-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420224177-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420225157-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420225179-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420226168-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420226193-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420226768-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420226792-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420227842-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420227925-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420228768-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420228818-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420230623-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420230678-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420231157-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420231234-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420232233-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420232325-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420233169-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420233222-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420234330-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420234361-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420235155-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420235177-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420236173-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420236221-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420237155-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420237181-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420238165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420238219-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420239165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420239245-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420240239-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420240299-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420241281-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420241374-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420242164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420242192-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420243162-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420243189-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420244162-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420244187-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420245160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420245203-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420246330-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420246512-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420246906-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420246934-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420247779-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420247813-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420248796-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420248833-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420249768-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420249794-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420250811-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420250844-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420252169-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420252198-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420253167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420253198-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420253771-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420253797-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420254771-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420254794-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420256041-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420256109-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420256775-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420256817-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420258164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420258190-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420259164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420259191-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420260160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420260182-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420261161-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420261181-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420262341-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420262547-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420263165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420263185-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420263962-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420263990-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420264769-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420264788-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420265777-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420265793-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420267157-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420267172-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420268162-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420268179-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420269154-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420269171-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420270162-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420270178-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420271156-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420271175-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420272160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420272176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420273164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420273181-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420274158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420274176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420275162-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420275185-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420276163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420276180-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420277163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420277188-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420278164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420278217-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420279251-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420279349-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420280164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420280192-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420281168-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420281191-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420282167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420282215-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420283164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420283187-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420284164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420284191-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420285173-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420285225-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420286179-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420286232-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420287372-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420287739-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420288155-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420288179-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420289158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420289185-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420290157-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420290178-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420291155-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420291171-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420292169-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420292189-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420293167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420293372-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420294169-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420294199-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420295169-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420295227-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420296167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420296250-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420297165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420297192-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420298165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420298193-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420299161-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420299194-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420300163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420300182-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420301167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420301241-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420302160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420302177-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420303159-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420303177-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420304155-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420304172-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420305167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420305185-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420306158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420306174-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420307178-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420307213-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420308160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420308183-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420309168-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420309222-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420310178-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420310239-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420311164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420311188-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420312164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420312186-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420313169-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420313190-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420314164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420314180-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420315166-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420315233-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420316156-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420316172-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420317160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420317186-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420318165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420318199-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420319163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420319199-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420320189-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420320219-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420321216-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420321324-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420322159-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420322181-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420323343-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420323368-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420324158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420324183-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420325162-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420325191-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420326168-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420326206-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420327155-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420327210-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420328161-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420328248-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420329157-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420329178-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420330156-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420330175-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420331163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420331184-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420332160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420332177-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420333157-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420333173-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420334163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420334179-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420335153-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420335169-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420336160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420336176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420337155-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420337171-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420338153-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420338172-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420339165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420339182-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420340158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420340176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420341163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420341180-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420342166-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420342182-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420343155-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420343171-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420344160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420344176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420345154-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420345170-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420346158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420346174-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420347162-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420347179-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420348158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420348175-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420349158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420349176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420350164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420350191-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420351158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420351174-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420352164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420352180-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420353158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420353175-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420354154-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420354170-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420355158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420355176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420356165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420356184-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420357165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420357297-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420358166-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420358186-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420359166-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420359220-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420360161-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420360214-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420361958-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420361987-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420363163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420363228-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420364167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420364189-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420365155-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420365176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420366375-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420366442-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420367258-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420367329-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420368163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420368220-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420369533-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420369621-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420370263-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420370316-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420371160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420371178-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420372167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420372184-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420373159-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420373177-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420374155-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420374173-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420375164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420375183-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420376167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420376187-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420377167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420377189-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420378156-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420378176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420379159-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420379176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420380158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420380184-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420381159-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420381203-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420382160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420382235-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420383162-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420383248-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420384159-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420384183-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420385261-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420385285-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420386154-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420386179-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420387168-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420387188-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420388168-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420388189-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420389174-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420389246-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420390200-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420390256-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420391171-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420391206-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420392164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420392270-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420393163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420393186-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420394166-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420394191-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420395170-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420395192-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420396166-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420396189-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420397167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420397231-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420398160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420398233-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420399160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420399180-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420400164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420400184-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420401159-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420401175-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420402153-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420402170-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420403163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420403183-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420404165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420404221-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420405164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420405188-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420406167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420406236-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420407161-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420407238-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420408228-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420408330-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420409158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420409184-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420410163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420410185-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420411215-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420411239-GET-/dashboard/get-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420411268-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420412169-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420412190-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420413158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420413177-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420413203-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420413241-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420414155-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420414176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420414202-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420414223-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420415158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420415179-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420415205-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420415248-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420416156-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420416179-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420416206-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420416237-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420417164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420417182-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420417209-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420417231-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420418157-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420418174-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420418198-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420418232-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420419164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420419182-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420419206-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420419226-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420419456-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420419485-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420419766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420419782-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420420415-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420420432-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420420765-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420420782-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420421415-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420421432-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420421766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420421784-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420422429-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420422445-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420422769-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420422786-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420423416-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420423432-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420423780-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420423796-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420424417-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420424440-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420424767-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420424784-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420425415-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420425432-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420425869-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420425903-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420426418-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420426436-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420426766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420426784-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420427422-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420427438-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420427767-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420427788-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420428416-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420428437-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420428773-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420428789-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420429426-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420429442-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420429766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420429783-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420430416-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420430433-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420430768-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420430792-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420431418-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420431436-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420431775-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420431792-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420433165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420433181-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420433205-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420433237-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420434160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420434177-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420434203-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420434245-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420435172-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420435195-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420435219-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420435256-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420436169-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420436185-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420436210-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420436240-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420437168-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420437185-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420437208-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420437234-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420438164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420438181-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420438205-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420438227-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420439162-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420439178-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420439200-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420439234-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420439947-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420440053-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420440127-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420440182-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420440419-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420440448-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420440769-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420440799-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420441426-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420441514-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420441769-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420441788-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420442420-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420442441-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420442765-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420442782-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420444165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420444190-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420444221-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420444256-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420445161-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420445179-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420445203-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420445223-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420446157-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420446176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420446203-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420446239-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420447166-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420447188-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420447219-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420447264-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420448165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420448183-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420448207-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420448239-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420449167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420449183-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420449206-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420449232-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420450165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420450181-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420450206-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420450226-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420451157-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420451177-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420451201-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420451221-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420452251-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420452303-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420452346-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420452377-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420453160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420453179-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420453203-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420453224-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420454059-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420454091-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420454119-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420454146-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420454416-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420454433-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420454766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420454784-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420455416-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420455433-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420455765-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420455781-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420456424-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420456441-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420456766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420456782-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420457421-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420457438-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420457774-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420457791-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420459160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420459176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420459205-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420459233-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420460168-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420460184-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420460208-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420460236-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420461163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420461179-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420461205-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420461224-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420462156-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420462173-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420462195-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420462222-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420463160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420463180-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420463205-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420463242-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420464158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420464175-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420464201-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420464222-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420465153-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420465170-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420465192-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420465217-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420466228-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420466253-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420466280-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420466323-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420466428-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420466446-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420466765-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420466782-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420467425-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420467442-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420467767-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420467783-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420468422-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420468443-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420468778-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420468795-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420469429-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420469446-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420469770-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420469787-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420470422-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420470438-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420470779-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420470796-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420471416-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420471433-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420471771-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420471789-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420472422-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420472439-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420472765-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420472782-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420473416-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420473432-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420473767-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420473794-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420474427-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420474445-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420474770-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420474788-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420475429-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420475446-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420475766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420475785-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420477160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420477188-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420477223-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420477264-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420478169-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420478188-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420478212-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420478250-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420479165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420479184-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420479217-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420479253-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420480170-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420480198-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420480231-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420480260-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420481178-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420481262-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420481331-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420481417-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420482165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420482186-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420482215-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420482248-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420483012-GET-/dashboard/get-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420483165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420483402-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420483607-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420483699-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420484157-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420484177-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420484222-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420484261-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420485156-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420485179-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420485212-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420485255-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420486156-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420486174-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420486199-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420486230-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420487164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420487181-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420487199-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420487233-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420488162-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420488178-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420488208-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420488233-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420489157-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420489282-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420489329-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420489377-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420490162-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420490178-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420490205-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420490245-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420491159-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420491183-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420491213-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420491247-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420492159-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420492185-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420492218-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420492251-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420493156-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420493185-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420493216-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420493254-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420493468-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420493492-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420493774-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420493800-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420494415-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420494431-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420494766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420494783-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420495425-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420495441-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420495765-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420495781-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420496414-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420496431-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420496765-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420496783-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420497424-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420497440-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420497769-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420497790-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420498414-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420498431-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420498766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420498786-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420499423-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420499450-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420499778-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420499794-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420500416-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420500434-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420500767-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420500784-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420501415-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420501440-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420501766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420501784-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420502414-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420502431-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420502780-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420502796-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420503415-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420503431-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420503771-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420503789-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420504413-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420504432-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420504766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420504783-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420505414-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420505431-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420505777-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420505794-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420506425-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420506442-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420506780-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420506797-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420508157-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420508175-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420508206-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420508240-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420509156-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420509174-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420509198-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420509263-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420510162-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420510182-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420510222-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420510262-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420511166-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420511183-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420511214-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420511249-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420512165-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420512183-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420512210-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420512246-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420512768-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420513160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420513176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420513200-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420513229-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420514163-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420514187-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420514221-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420514254-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420515167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420515191-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420515230-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420515257-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420516111-GET-/dashboard/data-employee
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420516159-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420516232-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420516281-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420516342-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420517167-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420517187-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420517226-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420517256-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420518164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420518180-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420518204-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420518230-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420519160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420519176-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420519201-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420519223-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420520158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420520175-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420520208-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420520257-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420521158-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420521178-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420521202-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420521225-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420522160-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420522177-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420522202-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420522239-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420523164-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420523189-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420523227-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420523260-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420523868-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420523898-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420523925-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420523955-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420524416-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420524435-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420524766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420524784-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420525420-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420525436-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420525778-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420525795-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420526415-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420526436-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420526774-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420526790-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420527424-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420527442-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420527766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420527783-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420528418-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420528434-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420528766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420528791-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420529429-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420529448-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420529765-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420529782-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420530420-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420530437-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420530765-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420530785-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420531418-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420531435-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420531766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420531782-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420532426-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420532443-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420532766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420532782-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420533414-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420533431-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420533765-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420533781-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420534418-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420534437-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420534778-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420534795-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420535416-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420535432-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420535765-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420535782-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420536414-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420536432-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420536774-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420536790-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420537424-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420537440-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420537766-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420537783-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420538427-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612420538445-GET-/dashboard/data-last-month
+-200-{"xu_ly":"thêm user mới","data_send":{}}

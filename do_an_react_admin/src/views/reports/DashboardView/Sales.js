@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { Bar } from 'react-chartjs-2';
+import axios from 'axios';
 import {
   Box,
   Button,
@@ -23,21 +24,24 @@ const useStyles = makeStyles(() => ({
 const Sales = ({ className, ...rest }) => {
   const classes = useStyles();
   const theme = useTheme();
+  const [numberDayOfMonth, setNumberDayOfMonth] = useState([]);
+  const [data1, setData1] = useState([]);
+  const [data2, setData2] = useState([]);
 
   const data = {
     datasets: [
       {
         backgroundColor: colors.indigo[500],
-        data: [18, 5, 19, 27, 29, 19, 20],
+        data: data1,
         label: 'This year'
       },
       {
-        backgroundColor: colors.grey[200],
-        data: [11, 20, 12, 29, 30, 25, 13],
-        label: 'Last year'
+        backgroundColor: colors.red.A400,
+        data: data2,
+        label: '2020'
       }
     ],
-    labels: ['1 Aug', '2 Aug', '3 Aug', '4 Aug', '5 Aug', '6 Aug']
+    labels: numberDayOfMonth
   };
 
   const options = {
@@ -94,6 +98,35 @@ const Sales = ({ className, ...rest }) => {
       titleFontColor: theme.palette.text.primary
     }
   };
+
+  useEffect(() => {
+    axios.get('http://localhost:4000/dashboard/get-last-month')
+      .then((response) => {
+        console.log(response);
+        setNumberDayOfMonth(response.data);
+        setInterval(() => {
+          axios.get('http://localhost:4000/dashboard/data-last-month')
+            .then((response1) => {
+              console.log(response1);
+              setData1(response1.data);
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+          axios.get('http://localhost:4000/dashboard/data-last-month')
+            .then((response2) => {
+              console.log(response2);
+              setData2(response2.data);
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+        }, 1000);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <Card

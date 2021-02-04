@@ -13,6 +13,7 @@ import TasksProgress from './TasksProgress';
 import TotalCustomers from './TotalCustomers';
 import TotalProfit from './TotalProfit';
 import TrafficByDevice from './TrafficByDevice';
+import PerformanceEmployee from './PerformanceEmployee';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -98,6 +99,15 @@ const Dashboard = () => {
             xs={12}
           >
             <LatestProducts />
+          </Grid>
+          <Grid
+            item
+            lg={4}
+            md={6}
+            xl={3}
+            xs={12}
+          >
+            <PerformanceEmployee />
           </Grid>
           <Grid
             item
