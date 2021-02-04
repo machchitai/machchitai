@@ -4,6 +4,7 @@ var authenticate = require('../middleware/auth');
 
 
 const MongoClient = require('mongodb').MongoClient;
+const ObjectID = require('mongodb').ObjectId;
 
 // Connection URL
 const url = 'mongodb://localhost:27017';
@@ -47,27 +48,47 @@ router.get('/', function(req, res, next) {
 
 router.post('/', authenticate.auth, (req, res) => {
   MongoClient.connect(url, function(err, client) {
-    if(err)
-        console.log(err);
-    const db = client.db(dbName);
-    const collection_user = db.collection('users');
-    collection_user.insertMany(req.body, () => {
-        res.json({
-            'xu_ly': 'import nhieu user 1 lúc',
-            data_send: req.body
-        });
-    })
-});
-  //res.json({'xu_ly': 'import nhieu user 1 lúc'});
-}); // insert
+      if(err)
+          console.log(err);
+      const db = client.db(dbName);
+      const collection_user = db.collection('users');
+      collection_user.insertMany(req.body, () => {
+          res.json({
+              'xu_ly': 'import nhieu user 1 lúc',
+              data_send: req.body
+          });
+      })
+  });
+  
+}); 
 
-router.put('/', (req, res) => {
-  res.json({'xu_ly': 'update nhieu user 1 lúc'});
-}); // create or update
+router.delete('/', authenticate.auth, (req, res) => {
 
-router.delete('/', (req, res) => {
-  res.json({'xu_ly': 'delete nhieu user 1 lúc'});
-}); // delete
+  var array_temp =[];
+  
+  for(var i = 0; i < req.body.length; i++)  {
+    array_temp.push(ObjectID(req.body[i].toString()));
+  }
+
+  console.log(array_temp);
+
+  MongoClient.connect(url, function(err, client) {
+      if(err)
+          console.log(err);
+      const db = client.db(dbName);
+      const collection_user = db.collection('users');
+      collection_user.deleteMany({
+        _id: {
+          $in: array_temp
+        }
+      }, () => {
+          res.json({
+              'xu_ly': 'delete nhieu user 1 lúc'
+          });
+      })
+  });
+  
+}); 
 
 // router.all(); // thich cai nao chay cai do
 // router.patch(); //move

@@ -51,10 +51,6 @@ const UserListView = () => {
     setValueSearch(e.target.value);
   };
 
-  // const handleDeleteSelected = () => {
-
-  // };
-
   return (
     <Page
       className={classes.root}
@@ -65,9 +61,6 @@ const UserListView = () => {
         {valueSearch}
         <Box mt={3}>
           <div>User List</div>
-          {/* <Button className={classes.importButton} onClick={handleDeleteSelected}>
-            Delete Selected
-          </Button> */}
           <Results
             customers={
               listUsers.filter((temp) => {

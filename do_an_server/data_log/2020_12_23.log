@@ -1494,3 +1494,23 @@
 -200-{"xu_ly":"thêm user mới","data_send":{}}
 1611756351897-GET-/user/$%7BuserIdCurrent%7D
 -200-{"xu_ly":"thêm user mới","data_send":{}}
+1612415578489-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612415605339-POST-/user/sign-up
+-200-{"xu_ly":"thêm user mới","data_send":{"name":"mach chi dai","tai_khoan":"machchidai","mat_khau":"123456","email":"machchidai@gmail.com"}}
+1612415606522-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612415619797-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612416029192-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612416034131-DELETE-/users
+-200-{"xu_ly":"thêm user mới","data_send":["601b8275d91c373018a83283","60116d6fb9c12a16ec426a1a"]}
+1612416034360-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612416159583-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1612416172651-DELETE-/users
+-200-{"xu_ly":"thêm user mới","data_send":["60116d5eb9c12a16ec426a19"]}
+1612416172843-GET-/users/
+-200-{"xu_ly":"thêm user mới","data_send":{}}

@@ -38,14 +38,10 @@ const Results = ({ className, customers, ...rest }) => {
   const [selectedCustomerIds, setSelectedCustomerIds] = useState([]);
   const [limit, setLimit] = useState(10);
   const [page, setPage] = useState(0);
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = React.useState(false);
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down('sm'));
   const [userIdCurrent, setUserIdCurrent] = useState('');
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   const handleSelectAll = (event) => {
     let newSelectedCustomerIds;
@@ -79,8 +75,16 @@ const Results = ({ className, customers, ...rest }) => {
     setSelectedCustomerIds(newSelectedCustomerIds);
   };
 
+  const handleLimitChange = (event) => {
+    setLimit(event.target.value);
+  };
+
   const handlePageChange = (event, newPage) => {
     setPage(newPage);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
   };
 
   const handleClickOpen = (idUser) => {
@@ -110,8 +114,24 @@ const Results = ({ className, customers, ...rest }) => {
       });
   };
 
-  const handleLimitChange = (event) => {
-    setLimit(event.target.value);
+  const handleRemoveUserSelected = () => {
+    console.log('xoa danh sach user thanh cong');
+
+    axios.delete('http://localhost:4000/users', {
+      auth: {
+        username: 'hungnguyen',
+        password: '123456'
+      },
+      data: selectedCustomerIds
+    })
+      .then((response) => {
+        console.log(response);
+        rest.handleSomethingChangeThenRefreshComponent();
+        handleClose();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
@@ -119,6 +139,9 @@ const Results = ({ className, customers, ...rest }) => {
       className={clsx(classes.root, className)}
       {...rest}
     >
+      <Button autoFocus onClick={handleRemoveUserSelected} color="secondary">
+        Delete Selected
+      </Button>
       <PerfectScrollbar>
         <Dialog
           fullScreen={fullScreen}
@@ -128,7 +151,7 @@ const Results = ({ className, customers, ...rest }) => {
         >
           <DialogContent>
             <DialogContentText>
-              Bạn có chắc chắn muốn xóa user này không?
+              Bạn có chắc chắn muốn xóa không?
             </DialogContentText>
           </DialogContent>
           <DialogActions>
