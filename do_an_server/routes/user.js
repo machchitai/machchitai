@@ -62,6 +62,15 @@ router.post('/', authenticate.auth, (req, res) => {
 
 router.post('/sign-up', (req, res) => {
     MongoClient.connect(url, function(err, client) {
+
+        var data_save = req.body;
+
+        var created_date = new Date().toISOString();
+
+        data_save.created_date = created_date;  
+        
+        data_save.mat_khau = md5(data_save.mat_khau);
+
         if(err)
             console.log(err);
         const db = client.db(dbName);
@@ -69,7 +78,7 @@ router.post('/sign-up', (req, res) => {
         collection_user.insertOne(req.body, () => {
             res.json({
                 'xu_ly': 'đăng ký user mới',
-                data_send: req.body
+                data_send: data_save
             });
         })
     });
@@ -78,16 +87,26 @@ router.post('/sign-up', (req, res) => {
 router.put('/:id_user', (req, res) => {
     //console.log(req.params.email);
     MongoClient.connect(url, function(err, client) {
+
+        var data_save = req.body;
+
+        var updated_date = new Date().toISOString();
+
+        data_save.update_date = updated_date;
+
+        data_save.mat_khau = md5(data_save.mat_khau);
+
         if(err)
             console.log(err);
         const db = client.db(dbName);
         const collection_user = db.collection('users');
-        delete req.body._id;
+        delete req.body._id;               
+            
         //collection_user.updateOne({email: req.params.email}, { $set: req.body }, () => {
-        collection_user.updateOne({_id: ObjectID(req.params.id_user)}, { $set: req.body }, () => {
+        collection_user.updateOne({_id: ObjectID(req.params.id_user)}, { $set: data_save }, () => {
             res.json({
                 'xu_ly': 'update user ' + req.params.id_user + ' thành công',
-                data_send: req.body
+                data_send: data_save
             });
         });
         
