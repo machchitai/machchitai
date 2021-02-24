@@ -14,13 +14,9 @@ import {
   TablePagination,
   TableRow,
   Button,
-  makeStyles,
   Dialog,
   DialogActions,
-  DialogContent,
-  DialogContentText,
-  useTheme,
-  useMediaQuery
+  makeStyles
 } from '@material-ui/core';
 import axios from 'axios';
 import DeleteIcon from '@material-ui/icons/Delete';
@@ -39,8 +35,6 @@ const Results = ({ className, customers, ...rest }) => {
   const [limit, setLimit] = useState(10);
   const [page, setPage] = useState(0);
   const [open, setOpen] = React.useState(false);
-  const theme = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down('sm'));
   const [userIdCurrent, setUserIdCurrent] = useState('');
 
   const handleSelectAll = (event) => {
@@ -75,12 +69,12 @@ const Results = ({ className, customers, ...rest }) => {
     setSelectedCustomerIds(newSelectedCustomerIds);
   };
 
-  const handleLimitChange = (event) => {
-    setLimit(event.target.value);
-  };
-
   const handlePageChange = (event, newPage) => {
     setPage(newPage);
+  };
+
+  const handleLimitChange = (event) => {
+    setLimit(event.target.value);
   };
 
   const handleClose = () => {
@@ -97,7 +91,7 @@ const Results = ({ className, customers, ...rest }) => {
     handleClickOpen(idUser);
   };
 
-  const handleDeleteRequest = () => {
+  const handleSendRequestDeleteUser = () => {
     axios.delete(`http://localhost:4000/user/${userIdCurrent}`, {
       auth: {
         username: 'hungnguyen',
@@ -106,7 +100,7 @@ const Results = ({ className, customers, ...rest }) => {
     })
       .then((response) => {
         console.log(response);
-        rest.handleSomethingChangeThenRefreshComponent();
+        rest.handleChangeComponent();
         handleClose();
       })
       .catch((err) => {
@@ -115,7 +109,8 @@ const Results = ({ className, customers, ...rest }) => {
   };
 
   const handleRemoveUserSelected = () => {
-    console.log('xoa danh sach user thanh cong');
+    console.log('xoa danh sach user');
+    console.log(selectedCustomerIds);
 
     axios.delete('http://localhost:4000/users', {
       auth: {
@@ -126,8 +121,6 @@ const Results = ({ className, customers, ...rest }) => {
     })
       .then((response) => {
         console.log(response);
-        rest.handleSomethingChangeThenRefreshComponent();
-        handleClose();
       })
       .catch((err) => {
         console.log(err);
@@ -143,23 +136,14 @@ const Results = ({ className, customers, ...rest }) => {
         Delete Selected
       </Button>
       <PerfectScrollbar>
-        <Dialog
-          fullScreen={fullScreen}
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="responsive-dialog-title"
-        >
-          <DialogContent>
-            <DialogContentText>
-              Bạn có chắc chắn muốn xóa không?
-            </DialogContentText>
-          </DialogContent>
+
+        <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
           <DialogActions>
-            <Button autoFocus onClick={handleClose} color="primary">
-              Không
+            <Button autoFocus onClick={handleSendRequestDeleteUser} color="secondary">
+              OK
             </Button>
-            <Button onClick={handleDeleteRequest} color="secondary" autoFocus>
-              Xóa
+            <Button autoFocus onClick={handleClose} color="primary">
+              Cancel
             </Button>
           </DialogActions>
         </Dialog>
@@ -183,10 +167,10 @@ const Results = ({ className, customers, ...rest }) => {
                   Name
                 </TableCell>
                 <TableCell>
-                  Username
+                  Email
                 </TableCell>
                 <TableCell>
-                  Password
+                  Location
                 </TableCell>
                 <TableCell>
                   Email

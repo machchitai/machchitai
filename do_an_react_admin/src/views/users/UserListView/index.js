@@ -15,10 +15,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.dark,
     minHeight: '100%',
     paddingBottom: theme.spacing(3),
-    paddingTop: theme.spacing(3),
-    importButton: {
-      marginRight: theme.spacing(1)
-    }
+    paddingTop: theme.spacing(3)
   }
 }));
 
@@ -29,7 +26,7 @@ const UserListView = () => {
 
   const [valueSearch, setValueSearch] = useState('');
 
-  const [somethingChange, setSomethingChange] = useState(0);
+  const [valueChange, setValueChange] = useState(0);
 
   useEffect(() => {
     setListUsers(data);
@@ -41,10 +38,10 @@ const UserListView = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, [somethingChange]);
+  }, [valueChange]);
 
-  const handleSomethingChangeThenRefreshComponent = () => {
-    setSomethingChange(somethingChange + 1);
+  const handleChangeComponent = () => {
+    setValueChange(valueChange + 1);
   };
 
   const handleProcessSearchValue = (e) => {
@@ -60,14 +57,14 @@ const UserListView = () => {
         <Toolbar processInput={handleProcessSearchValue} />
         {valueSearch}
         <Box mt={3}>
-          <div>User List</div>
+          <div>Test Page</div>
           <Results
             customers={
               listUsers.filter((temp) => {
                 return temp.tai_khoan.indexOf(valueSearch) >= 0;
               })
             }
-            handleSomethingChangeThenRefreshComponent={handleSomethingChangeThenRefreshComponent}
+            handleChangeComponent={handleChangeComponent}
           />
         </Box>
       </Container>

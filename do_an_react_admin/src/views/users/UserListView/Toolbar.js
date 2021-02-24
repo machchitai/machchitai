@@ -37,10 +37,10 @@ const Toolbar = ({ className, ...rest }) => {
         justifyContent="flex-end"
       >
         <Button className={classes.importButton}>
-          Import List
+          Import
         </Button>
         <Button className={classes.exportButton}>
-          Export List
+          Export
         </Button>
         <Link to="/app/users/them">
           <Button

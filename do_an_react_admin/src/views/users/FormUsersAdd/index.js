@@ -41,23 +41,23 @@ const FormUsersAdd = () => {
   const [messageError, setMessageError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmitAdd = (event) => {
+  const handleSubmit = (event) => {
     setIsSubmitting(true);
     event.preventDefault();
     console.log(userInfo);
     axios.post('http://localhost:4000/user/sign-up', userInfo)
       .then((data) => {
         console.log(data);
-        setTypeError('Success! ');
-        setMessageError('Tạo user thành công!');
+        setTypeError('success');
+        setMessageError('tạo user thành công!');
         setTimeout(() => {
           navigate('/app/users', { replace: true });
-        }, 1000);
+        }, 5000);
       })
       .catch((err) => {
         console.log(err);
-        setTypeError('Error! ');
-        setMessageError('Tạo user thất bại!');
+        setTypeError('error');
+        setMessageError('tạo user thất bại!');
         setIsSubmitting(false);
       });
   };
@@ -97,13 +97,20 @@ const FormUsersAdd = () => {
               handleBlur,
               touched
             }) => (
-              <form onSubmit={handleSubmitAdd}>
+              <form onSubmit={handleSubmit}>
                 <Box mb={3}>
                   <Typography
                     color="textPrimary"
                     variant="h2"
                   >
                     Tạo User mới
+                  </Typography>
+                  <Typography
+                    color="textSecondary"
+                    gutterBottom
+                    variant="body2"
+                  >
+                    Use your email to create new account
                   </Typography>
                 </Box>
                 <TextField

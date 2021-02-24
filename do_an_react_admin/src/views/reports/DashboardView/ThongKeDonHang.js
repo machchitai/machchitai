@@ -21,24 +21,18 @@ const useStyles = makeStyles(() => ({
   root: {}
 }));
 
-const Sales = ({ className, ...rest }) => {
+const ThongKeDonHang = ({ className, ...rest }) => {
   const classes = useStyles();
   const theme = useTheme();
-  const [numberDayOfMonth, setNumberDayOfMonth] = useState([]);
+  const [numberDayOfMonth, setNumberOfMonth] = useState([]);
   const [data1, setData1] = useState([]);
-  const [data2, setData2] = useState([]);
 
   const data = {
     datasets: [
       {
         backgroundColor: colors.indigo[500],
         data: data1,
-        label: 'This year'
-      },
-      {
-        backgroundColor: colors.red.A400,
-        data: data2,
-        label: '2020'
+        label: ''
       }
     ],
     labels: numberDayOfMonth
@@ -100,29 +94,19 @@ const Sales = ({ className, ...rest }) => {
   };
 
   useEffect(() => {
-    axios.get('http://localhost:4000/dashboard/get-last-month')
+    axios.get('http://localhost:4000/dashboard/don-hang-so-thang/2016')
       .then((response) => {
         console.log(response);
-        setNumberDayOfMonth(response.data);
-        setInterval(() => {
-          axios.get('http://localhost:4000/dashboard/data-last-month')
-            .then((response1) => {
-              console.log(response1);
-              setData1(response1.data);
-            })
-            .catch((err) => {
-              console.log(err);
-            });
+        setNumberOfMonth(response.data);
 
-          axios.get('http://localhost:4000/dashboard/data-last-month')
-            .then((response2) => {
-              console.log(response2);
-              setData2(response2.data);
-            })
-            .catch((err) => {
-              console.log(err);
-            });
-        }, 1000);
+        axios.get('http://localhost:4000/dashboard/don-hang/2016')
+          .then((response1) => {
+            console.log(response1);
+            setData1(response1.data);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
       })
       .catch((err) => {
         console.log(err);
@@ -144,7 +128,7 @@ const Sales = ({ className, ...rest }) => {
             Last 7 days
           </Button>
         )}
-        title="Latest Sales"
+        title="Latest"
       />
       <Divider />
       <CardContent>
@@ -177,8 +161,8 @@ const Sales = ({ className, ...rest }) => {
   );
 };
 
-Sales.propTypes = {
+ThongKeDonHang.propTypes = {
   className: PropTypes.string
 };
 
-export default Sales;
+export default ThongKeDonHang;

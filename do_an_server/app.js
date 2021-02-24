@@ -11,8 +11,8 @@ var usersRouter = require('./routes/users');
 var userRouter = require('./routes/user');
 var moviesRouter = require('./routes/movies');
 var messageRouter = require('./routes/message');
-var uploadRouter = require('./routes/upload_file');
 var dashboardRouter = require('./routes/dashboard');
+var uploadRouter = require('./routes/upload_file');
 
 var app = express();
 

@@ -58,7 +58,7 @@ const FormUserEdit = () => {
         setMessageError('cập nhật thông tin user thành công!');
         setTimeout(() => {
           navigate('/app/users', { replace: true });
-        }, 1000);
+        }, 10000);
       })
       .catch((err) => {
         console.log(err);
@@ -105,7 +105,14 @@ const FormUserEdit = () => {
                     color="textPrimary"
                     variant="h2"
                   >
-                    Sửa thông tin User
+                    Tạo User mới
+                  </Typography>
+                  <Typography
+                    color="textSecondary"
+                    gutterBottom
+                    variant="body2"
+                  >
+                    Use your email to create new account
                   </Typography>
                 </Box>
                 <TextField
