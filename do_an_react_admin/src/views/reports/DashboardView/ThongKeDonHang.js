@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
+import MenuItem from '@material-ui/core/MenuItem';
+import Select from '@material-ui/core/Select';
 import { Bar } from 'react-chartjs-2';
 import {
   Box,
   Button,
   Card,
   CardContent,
-  CardHeader,
   Divider,
   useTheme,
   makeStyles,
   colors
 } from '@material-ui/core';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import axios from 'axios';
 
@@ -26,6 +26,20 @@ const ThongKeDonHang = ({ className, ...rest }) => {
   const theme = useTheme();
   const [numberDayOfMonth, setNumberOfMonth] = useState([]);
   const [data1, setData1] = useState([]);
+  const [age, setAge] = React.useState('');
+  const [open, setOpen] = React.useState(false);
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
 
   const data = {
     datasets: [
@@ -118,18 +132,22 @@ const ThongKeDonHang = ({ className, ...rest }) => {
       className={clsx(classes.root, className)}
       {...rest}
     >
-      <CardHeader
-        action={(
-          <Button
-            endIcon={<ArrowDropDownIcon />}
-            size="small"
-            variant="text"
-          >
-            Last 7 days
-          </Button>
-        )}
-        title="Latest"
-      />
+      <Select
+        labelId="demo-controlled-open-select-label"
+        id="demo-controlled-open-select"
+        open={open}
+        onClose={handleClose}
+        onOpen={handleOpen}
+        value={age}
+        onChange={handleChange}
+      >
+        <MenuItem value="">
+          <em>None</em>
+        </MenuItem>
+        <MenuItem value={10}>Ten</MenuItem>
+        <MenuItem value={20}>Twenty</MenuItem>
+        <MenuItem value={30}>Thirty</MenuItem>
+      </Select>
       <Divider />
       <CardContent>
         <Box
