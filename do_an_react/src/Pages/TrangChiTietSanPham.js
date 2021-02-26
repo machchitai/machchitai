@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Poster from '../Module/Poster/Poster';
 import Xbox from '../Module/Xbox/Xbox';
 import { Container, Grid } from '@material-ui/core';
-
+import axios from 'axios';
 import { withRouter } from "react-router";
 
 class TrangChiTietSanPham extends Component {
@@ -48,15 +48,26 @@ class TrangChiTietSanPham extends Component {
         let id_san_pham = this.props.match.params.id_san_pham;
         //console.log(id_san_pham);
 
-        this.state.list_item.forEach((item) => {
-            if(item.id == id_san_pham){
-                this.setState({
-                    item_current: item
-                }, () => {
-                    //console.log(this.state.item_current)
-                })
-            }
+        // this.state.list_item.forEach((item) => {
+        //     if(item.id == id_san_pham){
+        //         this.setState({
+        //             item_current: item
+        //         }, () => {
+        //             //console.log(this.state.item_current)
+        //         })
+        //     }
+        // })
+
+        axios.get('http://localhost:4000/product/' +  id_san_pham)
+        .then((response) => {
+            console.log(response);
+            this.setState({
+                item_current: response.data[0]
+            })
         })
+        .cath((err) => {
+            console.log(err);
+        });
     }
 
     render() {

@@ -12,7 +12,8 @@ import {
   Divider,
   useTheme,
   makeStyles,
-  colors
+  colors,
+  InputLabel
 } from '@material-ui/core';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import axios from 'axios';
@@ -26,20 +27,9 @@ const ThongKeDonHang = ({ className, ...rest }) => {
   const theme = useTheme();
   const [numberDayOfMonth, setNumberOfMonth] = useState([]);
   const [data1, setData1] = useState([]);
-  const [age, setAge] = React.useState('');
+  const [year, setYear] = React.useState('');
   const [open, setOpen] = React.useState(false);
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
+  const [listyear] = useState([2016, 2017]);
 
   const data = {
     datasets: [
@@ -107,13 +97,13 @@ const ThongKeDonHang = ({ className, ...rest }) => {
     }
   };
 
-  useEffect(() => {
-    axios.get('http://localhost:4000/dashboard/don-hang-so-thang/2016')
+  const handleChangeDataChart = (paramyear) => {
+    axios.get(`http://localhost:4000/dashboard/don-hang-so-thang/${paramyear}`)
       .then((response) => {
         console.log(response);
         setNumberOfMonth(response.data);
 
-        axios.get('http://localhost:4000/dashboard/don-hang/2016')
+        axios.get(`http://localhost:4000/dashboard/don-hang/${paramyear}`)
           .then((response1) => {
             console.log(response1);
             setData1(response1.data);
@@ -125,6 +115,24 @@ const ThongKeDonHang = ({ className, ...rest }) => {
       .catch((err) => {
         console.log(err);
       });
+  };
+
+  const handleChange = (event) => {
+    setYear(event.target.value);
+
+    handleChangeDataChart(event.target.value);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  useEffect(() => {
+    handleChangeDataChart(2016);
   }, []);
 
   return (
@@ -138,15 +146,15 @@ const ThongKeDonHang = ({ className, ...rest }) => {
         open={open}
         onClose={handleClose}
         onOpen={handleOpen}
-        value={age}
+        value={year}
         onChange={handleChange}
       >
         <MenuItem value="">
           <em>None</em>
         </MenuItem>
-        <MenuItem value={10}>Ten</MenuItem>
-        <MenuItem value={20}>Twenty</MenuItem>
-        <MenuItem value={30}>Thirty</MenuItem>
+        {listyear.map((itemyear) => {
+          return (<MenuItem value={itemyear}>{itemyear}</MenuItem>);
+        })}
       </Select>
       <Divider />
       <CardContent>
