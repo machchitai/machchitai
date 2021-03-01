@@ -7,11 +7,13 @@ import TrangChiTietSanPham from './Pages/TrangChiTietSanPham';
 import TrangLienHe from './Pages/TrangLienHe';
 import TrangGioHang from './Pages/TrangGioHang';
 import TrangTestMaterialUI from './Pages/TrangTestMaterialUI';
+import TrangTimKiem from './Pages/TrangTimKiem';
+import TrangThanhToan from './Pages/TrangThanhToan';
+
+import UploadFile from './Module/Upload';
 import Footer from './Module/Footer/Footer';
 import FormChat from './Module/FormChat/index';
 import ButtonGoToGioHang from './Module/ButtonGoToGioHang';
-import TrangTimKiem from './Pages/TrangTimKiem';
-import UploadFile from './Module/Upload';
 
 import { useState } from 'react';
 import {
@@ -20,7 +22,6 @@ import {
   BrowserRouter as Router,
   Switch
 } from 'react-router-dom';
-
 
 function App() {
   // let abc = 'Chào các bạn';
@@ -59,6 +60,10 @@ function App() {
 
           <Route path='/gio-hang'>
             <TrangGioHang />
+          </Route>
+
+          <Route path='/thanh-toan'>
+            <TrangThanhToan />
           </Route>
 
           <Route path='/tim-kiem'>
