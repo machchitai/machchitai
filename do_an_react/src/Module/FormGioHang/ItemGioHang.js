@@ -37,7 +37,7 @@ class ItemGioHang extends Component {
     }
 
     handleButtonRemoveItemCart(){
-        var key = window.confirm('Bạn có chắc chắn muốn xóa tất cả số lượng sản phẩm ' + this.props.info_item.ten_san_pham + ' khỏi giỏ hàng không?');
+        var key = window.confirm('Bạn có chắc chắn muốn xóa sản phẩm ' + this.props.info_item.ten_san_pham + ' khỏi giỏ hàng không?');
         //console.log(key);
         if(key == true){
             this.props.handle_remove_item(this.props.info_item.ma);
@@ -57,7 +57,7 @@ class ItemGioHang extends Component {
                 (this.props.info_item)?
                 <tr>
                     <td>{this.props.info_item.ma}</td>
-                    <td>{this.props.info_item.ten_san_pham + '(' + this.props.info_item.so_lan_xem + ')'}</td>
+                    <td>{this.props.info_item.ten_san_pham + this.props.info_item.so_luot_xem}</td>
                     <td className="include_action_gio_hang">
                         <button type="button" class="btn btn-default" onClick={()=>{this.handleButtonClick('-')}}>-</button>
                         <input type="number" name="" readOnly={!this.state.is_edit} className="form-control number_input" value={this.props.info_item.so_luong} />

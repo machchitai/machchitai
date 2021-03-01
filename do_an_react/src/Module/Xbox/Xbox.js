@@ -24,14 +24,14 @@ const Xbox = (props) => {
         // console.log(e);
 
         // setAnHienHinh(false);
-        
+
         var mang_gio_hang_temp = mang_gio_hang;
         
         if(mang_gio_hang_temp.length > 0){
             var flag_co_trong_gio_hang_hay_khong = false;
 
             for(var i = 0; i< mang_gio_hang_temp.length; i++){
-                if(mang_gio_hang_temp[i].id == props.item_current.ma){
+                if(mang_gio_hang_temp[i].ma == props.item_current.ma){
                     mang_gio_hang_temp[i].so_luong += 1;
                     flag_co_trong_gio_hang_hay_khong = true;
                     break;
@@ -53,8 +53,8 @@ const Xbox = (props) => {
 
         console.log(mang_gio_hang_temp);
 
-        localStorage.setItem('gio_hang', JSON.stringify(mang_gio_hang_temp));        
-        // window.location.href='http://localhost:3000/gio-hang';
+        localStorage.setItem('gio_hang', JSON.stringify(mang_gio_hang_temp));
+
     }
 
     return (
@@ -64,14 +64,15 @@ const Xbox = (props) => {
                 <div className="col-md-7 x-box-left">
                 <h2>{props.item_current.ten_san_pham}</h2>
                 <h3>{props.item_current.so_lan_xem}</h3>
-                <div dangerouslySetInnerHTML={{__html: props.item_current.mo_ta_chi_tiet}}></div>
+                <div dangerouslySetInnerHTML={{__html: props.item_current.mo_ta_chi_tiet}}>
+                </div>
                 <div>{props.item_current.don_gia}</div>
-                <a className="hvr-bounce-to-top" onClick={handleClick}>Mua ngay</a>
+                <a className="hvr-bounce-to-top" onClick={handleClick}>Buy now</a>
                 </div>
                 {
                     (an_hien_hinh)?
                     <div className="col-md-5 x-box-right">
-                        <img src="images/san_pham" className="img-responsive" alt="" />
+                        <img src={'images/san_pham/' + props.item_current.hinh_san_pham} className="img-responsive" alt="" />
                     </div>
                     :
                     <></>

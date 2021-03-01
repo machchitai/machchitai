@@ -12,7 +12,7 @@ import VolumeDown from '@material-ui/icons/VolumeDown';
 import VolumeUp from '@material-ui/icons/VolumeUp';
  
 
-import GreenCheckbox from '../../Theme/CustomInput/CheckBoxLike';
+import GreenCheckbox from '../../Themes/CustomInput/CheckBoxLike';
 
 import 'date-fns';
 import DateFnsUtils from '@date-io/date-fns';
@@ -40,7 +40,7 @@ class TopBanner extends Component {
   constructor(props){
     super(props);
     this.state = {
-      title_logo: this.props.title_page,
+      title_logo: this.props.title_page + ' test xem sao',
       count: 1,
       interval: null,
       search: '',
@@ -191,6 +191,7 @@ class TopBanner extends Component {
   handleSubmitLoginForm = (e) => {
     e.preventDefault();
 
+    /* code process call API Express */
     axios.post('http://localhost:4000/user/log-in', this.state.thong_tin_user)
       .then((result) =>  {
         console.log(result);
@@ -209,7 +210,7 @@ class TopBanner extends Component {
 
           localStorage.setItem('thong_tin_user', JSON.stringify(thong_tin_user_temp));
 
-          $('#modal-form-dang-nhap').hide();
+          $('#modal-id').hide();
           $('.modal-backdrop').hide();
           $('body').removeClass('modal-open');
           
@@ -227,6 +228,49 @@ class TopBanner extends Component {
         })
 
       })
+
+
+
+    /* code process call API PHP */
+    //console.log(this.state.thong_tin_user);
+    // axios.post('http://localhost:8181/test_php/do_an_nho_nho/api/auth/index.php', this.state.thong_tin_user)
+    // .then((result) =>  {
+    //   console.log(result);
+
+    //   var thong_tin_user_temp = {...this.state.thong_tin_user};
+
+    //   thong_tin_user_temp.name = result.data.data_send.name;
+
+    //   this.setState({
+    //     thong_tin_user: thong_tin_user_temp
+    //   }, () => {
+
+    //     //console.log(this.state);
+
+    //     thong_tin_user_temp.mat_khau = '';
+
+    //     localStorage.setItem('thong_tin_user', JSON.stringify(thong_tin_user_temp));
+
+    //     $('#modal-id').hide();
+    //     $('.modal-backdrop').hide();
+    //     $('body').removeClass('modal-open');
+        
+    //   });
+
+    // })
+    // .catch((err) => {
+    //   console.log(err);
+    //   console.log(err.response);
+
+    //   this.setState({
+    //     message_error: {
+    //       general_error: err.response.data.xu_ly
+    //     }
+    //   })
+
+    // })
+
+
 
     // if(this.state.thong_tin_user.tai_khoan == 'hungnguyen' && this.state.thong_tin_user.mat_khau == '123456'){
     //   console.log('Đăng nhập thành công');
@@ -331,7 +375,7 @@ class TopBanner extends Component {
                   :
                   <li>
                     {/* <a href="" class="btn btn-primary" data-toggle="modal" href='#modal-id'>Đăng nhập</a> */}
-                    <a href="" data-toggle="modal" href='#modal-form-dang-nhap'>
+                    <a href="" data-toggle="modal" href='#modal-id'>
                       <Button variant="contained" color="primary">
                         <PersonIcon />Đăng nhập
                       </Button>
@@ -443,7 +487,7 @@ class TopBanner extends Component {
         </div>
 
         
-        <div className="modal fade" id="modal-form-dang-nhap">
+        <div className="modal fade" id="modal-id">
 
           <form className="login_form" action="" method="POST" onSubmit={this.handleSubmitLoginForm}>
             <div className="modal-dialog">

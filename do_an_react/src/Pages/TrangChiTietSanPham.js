@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import Poster from '../Module/Poster/Poster';
 import Xbox from '../Module/Xbox/Xbox';
 import { Container, Grid } from '@material-ui/core';
-import axios from 'axios';
+
 import { withRouter } from "react-router";
+
+import axios from 'axios';
 
 class TrangChiTietSanPham extends Component {
 
@@ -58,16 +60,16 @@ class TrangChiTietSanPham extends Component {
         //     }
         // })
 
-        axios.get('http://localhost:4000/product/' +  id_san_pham)
-        .then((response) => {
-            console.log(response);
-            this.setState({
-                item_current: response.data[0]
+        axios.get('http://localhost:4000/product/' + id_san_pham)
+            .then((response) => {
+                console.log(response);
+                this.setState({
+                    item_current: response.data[0]
+                })
             })
-        })
-        .cath((err) => {
-            console.log(err);
-        });
+            .catch((err) => {
+                console.log(err);
+            });
     }
 
     render() {

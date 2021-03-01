@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Slider from '../Module/Slider/Slider';
-import FormThanhToan from '../Module/FormThanhToan';
 import FormReviewGioHang from '../Module/FormReviewGioHang';
 import { Grid } from '@material-ui/core';
+import FormThanhToan from '../Module/FormThanhToan';
 
 class TrangThanhToan extends Component {
     render() {
         return (
-            <div>
+            <>
                 <Slider />
 
                 <div className="container include_table_gio_hang">
@@ -23,7 +23,7 @@ class TrangThanhToan extends Component {
                     </Grid>
 
                 </div>
-            </div>
+            </>
         );
     }
 }

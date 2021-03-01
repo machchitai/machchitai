@@ -1,10 +1,15 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+
 import TransferList from '../Module/TestMaterialUI/TransferList';
-import DialogComp from '../Module/TestMaterialUI/DialogComp';
-import ToolTipComp from '../Module/TestMaterialUI/ToolTipComp';
+import {CircularProgress, Button, Dialog, DialogTitle } from '@material-ui/core/';
+
 import Pagination from '@material-ui/lab/Pagination';
-import AutoCompleteComp from '../Module/TestMaterialUI/AutoCompleteComp';
+
 import Slider from '../Module/Slider/Slider';
+import ExampleDialog from '../Module/TestMaterialUI/ExampleDialog';
+import ExampleToolstip from '../Module/TestMaterialUI/ExampleToolstip';
+import ExampleAutocomplete from '../Module/TestMaterialUI/ExampleAutocomplete';
+import ExampleRating from '../Module/TestMaterialUI/ExampleRating';
 
 const TrangTestMaterialUI = () => {
 
@@ -43,22 +48,25 @@ const TrangTestMaterialUI = () => {
         <div>
             <Slider />
 
-            <TransferList />
+            {/* <TransferList /> */}
             {/* <CircularProgress /> */}
 
-            <DialogComp /> 
+            {/* <ExampleDialog /> */}
 
-            <ToolTipComp />
+            {/* <ExampleToolstip /> */}
 
-            {
+
+            {/* {
                 mang_data[cur_page].map(hoten => 
                     <div>{hoten}</div>    
                 )
             }
 
-            <Pagination count={mang_data.length} color="secondary" onChange={handleChangePage} />
+            <Pagination count={mang_data.length} color="secondary" onChange={handleChangePage} /> */}
 
-            <AutoCompleteComp />
+            <ExampleAutocomplete />
+
+            <ExampleRating />
             
             
         </div>

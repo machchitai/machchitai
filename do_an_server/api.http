@@ -1,8 +1,8 @@
 ###
-GET http://localhost:4000/
+GET http://localhost/
 
 ####
-POST http://localhost:4000/
+POST http://localhost/
 Content-Type: application/json
 
 {
@@ -10,19 +10,19 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:4000/users
+GET http://localhost/users
 
 ###
-GET http://localhost:4000/users?s=hung
+GET http://localhost/users?s=hung
 
 ###
-POST http://localhost:4000/users
+POST http://localhost/users
 
 ###
-PUT http://localhost:4000/users
+PUT http://localhost/users
 
 ###
-DELETE http://localhost:4000/users
+DELETE http://localhost/users
 Content-Type: application/json
 Authorization: Basic aHVuZ25ndXllbjoxMjM0NTY=
 
@@ -31,14 +31,14 @@ Authorization: Basic aHVuZ25ndXllbjoxMjM0NTY=
 
 
 ###
-GET http://localhost:4000/user/
+GET http://localhost/user/
 
 ###
-#GET http://localhost:4000/user/hungnguyenxuan118@gmail.com
-GET http://localhost:4000/user/5fe9d7998598f8140c7344c0
+#GET http://localhost/user/hungnguyenxuan118@gmail.com
+GET http://localhost/user/5fe9d7998598f8140c7344c0
 
 ###
-POST http://localhost:4000/user
+POST http://localhost/user
 Content-Type: application/json
 Authorization: Basic aHVuZ25ndXllbjoxMjM0NTY=
 
@@ -52,7 +52,7 @@ Authorization: Basic aHVuZ25ndXllbjoxMjM0NTY=
 
 
 ###
-POST http://localhost:4000/user/sign-up
+POST http://localhost/user/sign-up
 Content-Type: application/json
 
 {
@@ -64,7 +64,7 @@ Content-Type: application/json
 
 
 ###
-POST http://localhost:4000/users
+POST http://localhost/users
 Content-Type: application/json
 Authorization: Basic aHVuZ25ndXllbjoxMjM0NTY=
 
@@ -91,7 +91,7 @@ Authorization: Basic aHVuZ25ndXllbjoxMjM0NTY=
 
 
 ###
-PUT http://localhost:4000/user/5fe9d7998598f8140c7344c0
+PUT http://localhost/user/5fe9d7998598f8140c7344c0
 Content-Type: application/json
 
 { 
@@ -103,14 +103,14 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:4000/user/600eb6b03d8ce1156c27c805
+DELETE http://localhost/user/600eb6b03d8ce1156c27c805
 Content-Type: application/json
 Authorization: Basic aHVuZ25ndXllbjoxMjM0NTY=
 
 
 
 ###
-POST http://localhost:4000/user/log-in
+POST http://localhost/user/log-in
 Content-Type: application/json
 
 {
@@ -120,43 +120,42 @@ Content-Type: application/json
 
 
 ###
-GET http://localhost:4000/movies
+GET http://localhost/movies
 Content-Type: application/json
 
 
 ###
-GET http://localhost:4000/messages
+GET http://localhost/messages
 Content-Type: application/json
 
 ###
-GET http://localhost:4000/dashboard/get-last-month
+GET http://localhost/dashboard/get-last-month
 
 
 ###
-GET http://localhost:4000/dashboard/data-last-month
+GET http://localhost/dashboard/data-last-month
 
 ###
-GET http://localhost:4000/dashboard/data-employee
-
-
-###
-GET http://localhost:4000/dashboard/don-hang/2016
-
-###
-+GET http://localhost:4000/dashboard/don-hang-so-thang/2016
+GET http://localhost/dashboard/data-employee
 
 
 ###
-GET http://localhost:4000/products
+GET http://localhost/dashboard/don-hang/2016
+
+###
+GET http://localhost/dashboard/don-hang-so-thang/2016
 
 
 ###
-
-GET http://localhost:4000/product/115
+GET http://localhost/products
 
 
 ###
-POST http://localhost:4000/don-hang/
+GET http://localhost/product/115
+
+
+###
+POST http://localhost/don-hang/
 Content-Type: application/json
 
 {
@@ -175,3 +174,7 @@ Content-Type: application/json
         }
     ]
 }
+
+
+###
+GET http://localhost/don-hang/abcd_000000000107

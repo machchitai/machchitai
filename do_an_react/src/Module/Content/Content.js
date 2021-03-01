@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProductList from '../Product/ProductList';
 import axios from 'axios';
 
@@ -41,10 +41,10 @@ const Content = () => {
         console.log(response);
         SetListItem(response.data);
       })
-      .cath((err) => {
+      .catch((err) => {
         console.log(err);
       });
-    },[]);
+    }, []);
 
     return (
         <div className="content">

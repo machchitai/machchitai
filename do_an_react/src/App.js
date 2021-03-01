@@ -2,17 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 
 import TopBanner from './Module/TopBanner/TopBanner';
+
 import TrangChu from './Pages/TrangChu';
 import TrangChiTietSanPham from './Pages/TrangChiTietSanPham';
 import TrangLienHe from './Pages/TrangLienHe';
 import TrangGioHang from './Pages/TrangGioHang';
-import TrangTestMaterialUI from './Pages/TrangTestMaterialUI';
-import TrangTimKiem from './Pages/TrangTimKiem';
 import TrangThanhToan from './Pages/TrangThanhToan';
 
-import UploadFile from './Module/Upload';
 import Footer from './Module/Footer/Footer';
-import FormChat from './Module/FormChat/index';
+
 import ButtonGoToGioHang from './Module/ButtonGoToGioHang';
 
 import { useState } from 'react';
@@ -22,9 +20,16 @@ import {
   BrowserRouter as Router,
   Switch
 } from 'react-router-dom';
+import TrangTestMaterialUI from './Pages/TrangTestMaterialUI';
+import TrangTimKiem from './Pages/TrangTimKiem';
+import FormChat from './Module/FormChat';
+
+import UploadFile from './Module/UploadFile';
+import TrangTruyXuatDonHang from './Pages/TrangTruyXuatDonHang';
+
 
 function App() {
-  // let abc = 'Chào các bạn';
+  let abc = 'Chào các bạn';
 
   const[load_top_banner, SetLoadTopBanner] = useState(true);
 
@@ -35,23 +40,22 @@ function App() {
 
   return (
     <>
+    
       <Router>
       
       {
         (load_top_banner)?
-        <TopBanner title_page={"Halo " + "Shop "} delete_me={handleUnMountTopBanner} />
+        <TopBanner title_page={"Tai " + "Store " + Math.round(Math.random() * 100)} delete_me={handleUnMountTopBanner} />
         :
         null
-      }      
+      }
+
+      
         
         <Switch>
 
           <Route path='/chi-tiet/:id_san_pham'>
             <TrangChiTietSanPham />
-          </Route>
-
-          <Route path='/test'>
-            <TrangTestMaterialUI />
           </Route>
 
           <Route path='/lien-he'>
@@ -66,8 +70,16 @@ function App() {
             <TrangThanhToan />
           </Route>
 
+          <Route path='/test-material-ui'>
+            <TrangTestMaterialUI />
+          </Route>
+
           <Route path='/tim-kiem'>
             <TrangTimKiem />
+          </Route>
+
+          <Route path='/don-hang/:ma_truy_xuat_dh'>
+            <TrangTruyXuatDonHang />
           </Route>
 
           <Route path='/'>
@@ -78,12 +90,12 @@ function App() {
       
       <ButtonGoToGioHang />
       <Footer />
-      
+
       </Router>
 
-      <FormChat/>
+      <FormChat />
 
-      <UploadFile/>
+      <UploadFile />
 
     </>
   );

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
-import MenuItem from '@material-ui/core/MenuItem';
-import Select from '@material-ui/core/Select';
 import { Bar } from 'react-chartjs-2';
 import {
   Box,
@@ -13,7 +11,9 @@ import {
   useTheme,
   makeStyles,
   colors,
-  InputLabel
+  Select,
+  InputLabel,
+  MenuItem
 } from '@material-ui/core';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import axios from 'axios';
@@ -27,6 +27,7 @@ const ThongKeDonHang = ({ className, ...rest }) => {
   const theme = useTheme();
   const [numberDayOfMonth, setNumberOfMonth] = useState([]);
   const [data1, setData1] = useState([]);
+
   const [year, setYear] = React.useState('');
   const [open, setOpen] = React.useState(false);
   const [listyear] = useState([2016, 2017]);
@@ -140,6 +141,7 @@ const ThongKeDonHang = ({ className, ...rest }) => {
       className={clsx(classes.root, className)}
       {...rest}
     >
+      <InputLabel id="demo-controlled-open-select-label">Age</InputLabel>
       <Select
         labelId="demo-controlled-open-select-label"
         id="demo-controlled-open-select"
@@ -156,6 +158,7 @@ const ThongKeDonHang = ({ className, ...rest }) => {
           return (<MenuItem value={itemyear}>{itemyear}</MenuItem>);
         })}
       </Select>
+      {year}
       <Divider />
       <CardContent>
         <Box

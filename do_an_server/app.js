@@ -13,8 +13,8 @@ var moviesRouter = require('./routes/movies');
 var messageRouter = require('./routes/message');
 var dashboardRouter = require('./routes/dashboard');
 var uploadRouter = require('./routes/upload_file');
-var productRouter = require('./routes/product');
 var productsRouter = require('./routes/products');
+var productRouter = require('./routes/product');
 var donHangRouter = require('./routes/don_hang');
 
 var app = express();
@@ -68,6 +68,7 @@ app.use('/dashboard', dashboardRouter);
 app.use('/products', productsRouter);
 app.use('/product', productRouter);
 app.use('/don-hang', donHangRouter);
+
 
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {

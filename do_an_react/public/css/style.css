@@ -14,151 +14,33 @@ html, body{
 	background: #ffffff;
 }
 div.error {
-  color: #f00;  
+  color: #f00;
 }
-
-.div_include_chat_box {  
-  position: fixed;
-  bottom: 0px;
-  right: 10px;
-  border: 1px solid black;
-  background-color: white;
-  overflow: hidden;
-  border-radius: 8px 8px 0 0;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.animation_button_mua_ngay {
+  animation: hieu_ung_vy ease 0.6s infinite;
 }
-
-.title_chat_form {
-  background-color: #3f51b5;
-  color: white;
-  border-radius: 5px; 
-  padding: 10px;
+@keyframes hieu_ung_vy {
+  0%{
+    background: #3f51b5;
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(20deg);
+  }
+  50%{
+    background: #f43c60;
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(-20deg);
+  }
+  100%{
+    background: #3f51b5;
+    transform: rotate(0deg);
+  }
 }
-
-.danh_sach_chat { 
-  height: 300px;
-  width: 300px;
-  overflow: scroll;
-  display: flex;
-  flex-direction: column;
-}
-
-.danh_sach_chat .item_message{
-  max-width: 90%;
-  word-wrap: break-word;
-  background-color: #ccc;
-  margin: 12px auto 12px 12px;
-  border-radius: 10px 10px 10px 0px;
-  padding: 8px;
-}
-
-.danh_sach_chat .item_message.current_user {
-  background-color: #3f51b5;
-  margin: 12px auto 12px 12px;
-  border-radius: 10px 10px 0px 10px;
-  padding: 8px;
-  color: white;
-}
-
-.input_message {
-  border-radius: 5px;
-  margin: 12px auto 12px 12px;
-}
-
-.button_send_message {
-  border-radius: 5px;
-  margin: 12px auto 12px 12px;
-}
-
 .include_table_gio_hang {
   padding: 40px 0;
-}
-
-.animation_button_mua_ngay{   
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s; 
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-.animation_button_mua_ngay:hover {
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;  
-}
-/* @keyframes effect {
-  0%{background: #15f50d;transform: rotate(0);transform: scale(1.25,1.25);}
-  25%{background: #f43c60;transform: rotate(20deg);}
-  50%{background: #e20808;transform: rotate(0deg);transform: scale(1.25,1.25);}
-  75%{background: #ecf008;transform: rotate(-20deg);}
-  100%{background: #3f51b5;transform: rotate(0deg);transform: scale(1.25,1.25);}
-} */
-@-webkit-keyframes tada {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  10%, 20% {
-    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-  }
-
-  30%, 50%, 70%, 90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  40%, 60%, 80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-@keyframes tada {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    -ms-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-    background: #f30000;
-  }
-
-  10%, 20% {
-    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-    -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-    background: #3f51b5;
-  }
-
-  30%, 50%, 70%, 90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    background: #f70606;
-  }
-
-  40%, 60%, 80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    background: #3f51b5;
-  }
-
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    -ms-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-    background: #f70606;
-  }
-}
-.tada {
-  -webkit-animation-name: tada;
-  animation-name: tada;
 }
 .number_input {
   max-width: 80px;
@@ -171,6 +53,51 @@ div.error {
   max-height: 500px;
   overflow: hidden;
 }
+
+.div_include_chat_box {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.title_chat_form {
+  background: #0053b2;
+  color: #fff;
+  padding: 10px;
+}
+
+.danh_sach_chat {
+  height: 300px;
+  width: 300px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.danh_sach_chat .item_message {
+  max-width: 90%;
+  word-wrap: break-word;
+  background: #ccc;
+  margin: 12px auto 12px 12px;
+  border-radius: 10px 10px 10px 0;
+  padding: 8px;
+}
+
+
+.danh_sach_chat .item_message.current_user {
+  background: #004db2;
+  margin: 12px 12px 12px auto;
+  border-radius: 10px 10px 0 10px;
+  padding: 8px;
+  color: #fff;
+}
+
+
+
 .carousel-inner img {
   width: 100%;
 }
