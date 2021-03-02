@@ -10,7 +10,7 @@ const UploadFile = () => {
         var formData = new FormData();
         var imagefile = document.querySelector('#file');
         formData.append("upload_file_input", imagefile.files[0]);
-        axios.post('http://localhost/upload/', formData, {
+        axios.post('http://localhost:4000/upload/', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }

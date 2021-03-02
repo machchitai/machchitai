@@ -45,7 +45,7 @@ function App() {
       
       {
         (load_top_banner)?
-        <TopBanner title_page={"Tai " + "Store " + Math.round(Math.random() * 100)} delete_me={handleUnMountTopBanner} />
+        <TopBanner title_page={"Hung " + "Store " + Math.round(Math.random() * 100)} delete_me={handleUnMountTopBanner} />
         :
         null
       }

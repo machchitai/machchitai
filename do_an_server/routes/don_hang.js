@@ -18,8 +18,8 @@ var transporter = nodemailer.createTransport(smtpTransport({
     service: 'gmail',
     host: 'smtp.gmail.com',
     auth: {
-      user: 'machchitai@gmail.com',
-      pass: 'Tai4312214!'
+      user: 'hungbookstoreonline@gmail.com',
+      pass: '1qazXSw2'
     }
 }));
 
@@ -120,11 +120,11 @@ router.post('/', function(req, res, next) {
                                             }
 
                                             html_string += `
-                                                <div>Bạn mua đơn hàng: <a href="http://localhost/don-hang/${ma_truy_xuat_dh}">${ma_truy_xuat_dh}</a></div>
+                                                <div>Bạn mua đơn hàng: <a href="http://localhost:3000/don-hang/${ma_truy_xuat_dh}">${ma_truy_xuat_dh}</a></div>
                                             `
 
                                             // var mailOptions = {
-                                            //     from: 'machchitai@gmail.com',
+                                            //     from: 'hungbookstoreonline@gmail.com',
                                             //     to: req.body.email,
                                             //     subject: 'Cám ơn bạn đã đặt hàng tại Shop Online',
                                             //     //text: html_string

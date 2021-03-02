@@ -8,7 +8,7 @@ const TrangTruyXuatDonHang = () => {
     useEffect(() => {
         console.log(param);
 
-        axios.get('http://localhost/don-hang/' + param.ma_truy_xuat_dh)
+        axios.get('http://localhost:4000/don-hang/' + param.ma_truy_xuat_dh)
             .then((response) => {
                 console.log(response);
             })
