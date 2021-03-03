@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Box,
   Container,
   makeStyles
 } from '@material-ui/core';
 import Page from 'src/components/Page';
+import axios from 'axios';
 import Results from './Results';
 import Toolbar from './Toolbar';
-import data from './data';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,14 +18,25 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const CustomerListView = () => {
+const QuanLySanPhamListView = () => {
   const classes = useStyles();
-  const [products] = useState(data);
+  const [products, setProduct] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:4000/quan-ly-san-pham/')
+      .then((response) => {
+        console.log(response);
+        setProduct(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <Page
       className={classes.root}
-      title="Products"
+      title="Sản phẩm"
     >
       <Container maxWidth={false}>
         <Toolbar />
@@ -37,4 +48,4 @@ const CustomerListView = () => {
   );
 };
 
-export default CustomerListView;
+export default QuanLySanPhamListView;

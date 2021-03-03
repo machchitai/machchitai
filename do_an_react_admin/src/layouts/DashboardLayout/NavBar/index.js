@@ -52,9 +52,9 @@ const items = [
     title: 'Products'
   },
   {
-    href: '/app/productss',
+    href: '/app/quan-ly-san-pham',
     icon: ShoppingBagIcon,
-    title: 'Productss'
+    title: 'Quản lý sản phẩm'
   },
   {
     href: '/app/account',

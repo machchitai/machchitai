@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import {
-  Avatar,
   Box,
   Card,
   Checkbox,
@@ -14,10 +13,9 @@ import {
   TableHead,
   TablePagination,
   TableRow,
-  Typography,
   makeStyles
 } from '@material-ui/core';
-import getInitials from 'src/utils/getInitials';
+// import getInitials from 'src/utils/getInitials';
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -94,19 +92,19 @@ const Results = ({ className, products, ...rest }) => {
                   />
                 </TableCell>
                 <TableCell>
-                  Name
+                  Tên sản phẩm
                 </TableCell>
                 <TableCell>
-                  Email
+                  Hình
                 </TableCell>
                 <TableCell>
-                  Location
+                  Giá
                 </TableCell>
                 <TableCell>
-                  Phone
+                  Lượt xem
                 </TableCell>
                 <TableCell>
-                  Registration date
+                  Ngày tạo
                 </TableCell>
               </TableRow>
             </TableHead>
@@ -129,31 +127,20 @@ const Results = ({ className, products, ...rest }) => {
                       alignItems="center"
                       display="flex"
                     >
-                      <Avatar
-                        className={classes.avatar}
-                        src={product.avatarUrl}
-                      >
-                        {getInitials(product.name)}
-                      </Avatar>
-                      <Typography
-                        color="textPrimary"
-                        variant="body1"
-                      >
-                        {product.name}
-                      </Typography>
+                      {product.ten_san_pham}
                     </Box>
                   </TableCell>
                   <TableCell>
-                    {product.email}
+                    <img style={{ width: '100px' }} src={`/public/static/images/san_pham/${product.hinh_san_pham}`} alt={product.ten_san_pham} />
                   </TableCell>
                   <TableCell>
-                    {`${product.address.city}, ${product.address.state}, ${product.address.country}`}
+                    {product.don_gia}
                   </TableCell>
                   <TableCell>
-                    {product.phone}
+                    {product.so_lan_xem}
                   </TableCell>
                   <TableCell>
-                    {moment(product.createdAt).format('DD/MM/YYYY')}
+                    {moment(product.ngay_tao).format('DD/MM/YYYY')}
                   </TableCell>
                 </TableRow>
               ))}
