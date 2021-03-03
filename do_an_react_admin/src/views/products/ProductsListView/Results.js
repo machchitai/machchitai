@@ -28,40 +28,40 @@ const useStyles = makeStyles((theme) => ({
 
 const Results = ({ className, products, ...rest }) => {
   const classes = useStyles();
-  const [selectedProductsIds, setSelectedProductsIds] = useState([]);
+  const [selectedProductIds, setSelectedProductIds] = useState([]);
   const [limit, setLimit] = useState(10);
   const [page, setPage] = useState(0);
 
   const handleSelectAll = (event) => {
-    let newSelectedProductsIds;
+    let newSelectedProductIds;
 
     if (event.target.checked) {
-      newSelectedProductsIds = products.map((product) => product.ma);
+      newSelectedProductIds = products.map((product) => product.ma);
     } else {
-      newSelectedProductsIds = [];
+      newSelectedProductIds = [];
     }
 
-    setSelectedProductsIds(newSelectedProductsIds);
+    setSelectedProductIds(newSelectedProductIds);
   };
 
   const handleSelectOne = (event, id) => {
-    const selectedIndex = selectedProductsIds.indexOf(id);
-    let newSelectedProductsIds = [];
+    const selectedIndex = selectedProductIds.indexOf(id);
+    let newSelectedProductIds = [];
 
     if (selectedIndex === -1) {
-      newSelectedProductsIds = newSelectedProductsIds.concat(selectedProductsIds, id);
+      newSelectedProductIds = newSelectedProductIds.concat(selectedProductIds, id);
     } else if (selectedIndex === 0) {
-      newSelectedProductsIds = newSelectedProductsIds.concat(selectedProductsIds.slice(1));
-    } else if (selectedIndex === selectedProductsIds.length - 1) {
-      newSelectedProductsIds = newSelectedProductsIds.concat(selectedProductsIds.slice(0, -1));
+      newSelectedProductIds = newSelectedProductIds.concat(selectedProductIds.slice(1));
+    } else if (selectedIndex === selectedProductIds.length - 1) {
+      newSelectedProductIds = newSelectedProductIds.concat(selectedProductIds.slice(0, -1));
     } else if (selectedIndex > 0) {
-      newSelectedProductsIds = newSelectedProductsIds.concat(
-        selectedProductsIds.slice(0, selectedIndex),
-        selectedProductsIds.slice(selectedIndex + 1)
+      newSelectedProductIds = newSelectedProductIds.concat(
+        selectedProductIds.slice(0, selectedIndex),
+        selectedProductIds.slice(selectedIndex + 1)
       );
     }
 
-    setSelectedProductsIds(newSelectedProductsIds);
+    setSelectedProductIds(newSelectedProductIds);
   };
 
   const handleLimitChange = (event) => {
@@ -84,11 +84,11 @@ const Results = ({ className, products, ...rest }) => {
               <TableRow>
                 <TableCell padding="checkbox">
                   <Checkbox
-                    checked={selectedProductsIds.length === products.length}
+                    checked={selectedProductIds.length === products.length}
                     color="primary"
                     indeterminate={
-                      selectedProductsIds.length > 0
-                      && selectedProductsIds.length < products.length
+                      selectedProductIds.length > 0
+                      && selectedProductIds.length < products.length
                     }
                     onChange={handleSelectAll}
                   />
@@ -115,11 +115,11 @@ const Results = ({ className, products, ...rest }) => {
                 <TableRow
                   hover
                   key={product.ma}
-                  selected={selectedProductsIds.indexOf(product.ma) !== -1}
+                  selected={selectedProductIds.indexOf(product.ma) !== -1}
                 >
                   <TableCell padding="checkbox">
                     <Checkbox
-                      checked={selectedProductsIds.indexOf(product.ma) !== -1}
+                      checked={selectedProductIds.indexOf(product.ma) !== -1}
                       onChange={(event) => handleSelectOne(event, product.ma)}
                       value="true"
                     />

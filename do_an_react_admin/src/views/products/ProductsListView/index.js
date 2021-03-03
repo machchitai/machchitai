@@ -5,7 +5,6 @@ import {
   makeStyles
 } from '@material-ui/core';
 import Page from 'src/components/Page';
-import axios from 'axios';
 import Results from './Results';
 import Toolbar from './Toolbar';
 import data from './data';
@@ -19,20 +18,9 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const ProductsListView = () => {
+const CustomerListView = () => {
   const classes = useStyles();
-  const [products, setProducts] = useState(data);
-
-  useEffect(() => {
-    axios.get("http://localhost:4000/products/")
-    .then((response) => {
-      console.log(response);
-      setProducts(response.data);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-  }, [])
+  const [products] = useState(data);
 
   return (
     <Page
@@ -49,4 +37,4 @@ const ProductsListView = () => {
   );
 };
 
-export default ProductsListView;
+export default CustomerListView;

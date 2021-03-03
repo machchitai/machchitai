@@ -52,6 +52,11 @@ const items = [
     title: 'Products'
   },
   {
+    href: '/app/productss',
+    icon: ShoppingBagIcon,
+    title: 'Productss'
+  },
+  {
     href: '/app/account',
     icon: UserIcon,
     title: 'Account'

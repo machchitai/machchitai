@@ -116,7 +116,7 @@ router.post('/', function(req, res, next) {
                                                     error_message: "Tạo mã truy xuất thất bại"
                                                 });
             
-                                                throw err_update;
+                                                throw err_child;
                                             }
 
                                             html_string += `

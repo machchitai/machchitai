@@ -26,7 +26,7 @@ var mang_sach = [];
 $(() => {
     console.log('đã load trang');
     
-    $.get('http://localhost/machchitai/do_an/api/sach/index.php')
+    $.get('http://localhost:8181/test_php/do_an_nho_nho/api/sach/index.php')
     .done((result) => {
         //console.log(data);
         mang_sach = result.data;
