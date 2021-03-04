@@ -149,8 +149,6 @@ GET http://localhost:4000/dashboard/don-hang-so-thang/2016
 ###
 GET http://localhost:4000/products/?limit=4
 
-###
-GET http://localhost:4000/quan-ly-san-pham/?limit=4
 
 ###
 GET http://localhost:4000/product/115

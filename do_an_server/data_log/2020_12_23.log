@@ -31172,3 +31172,19 @@
 -200-{"xu_ly":"thêm user mới","data_send":{}}
 1614801050062-GET-/quan-ly-san-pham/
 -200-{"xu_ly":"thêm user mới","data_send":{}}
+1614862581724-GET-/don-hang/abcd_000000000107
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1614862646112-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1614862646435-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1614863250361-GET-/don-hang/tim-kiem/abcd_00000000010
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1614863250652-GET-/favicon.ico
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1614863257062-GET-/don-hang/tim-kiem/abcd_00000000010
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1614864045022-GET-/don-hang/tim-kiem/abcd_00000000010
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1614864087905-GET-/quan-ly-san-pham/
+-200-{"xu_ly":"thêm user mới","data_send":{}}

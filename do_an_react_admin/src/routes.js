@@ -9,6 +9,7 @@ import LoginView from 'src/views/auth/LoginView';
 import NotFoundView from 'src/views/errors/NotFoundView';
 import ProductListView from 'src/views/product/ProductListView';
 import QuanLySanPhamListView from 'src/views/products/ProductsListView';
+import TruyXuatDonHang from 'src/views/truyxuatdonhang';
 import RegisterView from 'src/views/auth/RegisterView';
 import SettingsView from 'src/views/settings/SettingsView';
 import TestComponent from 'src/views/test/CustomerListView';
@@ -28,6 +29,7 @@ const routes = [
       { path: 'dashboard', element: <DashboardView /> },
       { path: 'products', element: <ProductListView /> },
       { path: 'quan-ly-san-pham', element: <QuanLySanPhamListView /> },
+      { path: 'truy-xuat-don-hang', element: <TruyXuatDonHang /> },
       { path: 'settings', element: <SettingsView /> },
       { path: 'users', element: <UserListView /> },
       { path: 'users/:id_user', element: <FormUserEdit /> },

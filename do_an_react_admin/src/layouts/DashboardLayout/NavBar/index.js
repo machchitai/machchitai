@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import ReceiptIcon from '@material-ui/icons/Receipt';
 import {
   Avatar,
   Box,
@@ -35,6 +36,11 @@ const items = [
     href: '/app/dashboard',
     icon: BarChartIcon,
     title: 'Dashboard'
+  },
+  {
+    href: '/app/truy-xuat-don-hang',
+    icon: ReceiptIcon,
+    title: 'Truy xuất đơn hàng'
   },
   {
     href: '/app/customers',
