@@ -146,15 +146,13 @@ const Results = ({ className, donhangs, ...rest }) => {
                     </div>
                   </TableCell>
                   <TableCell>
-                    {
-                      donhang.list_sanpham.map((sanpham) => {
-                        return (
-                          <div>
-                            {`${sanpham.ten_sanpham} - ${sanpham.so_luong} - ${sanpham.don_gia} - ${sanpham.thanh_tien}`}
-                          </div>
-                        );
-                      })
-                    }
+                    {donhang.list_san_pham.map((sanpham) => {
+                      return (
+                        <div>
+                          {`${sanpham.ten_san_pham} - ${sanpham.so_luong} - ${sanpham.don_gia} - ${sanpham.thanh_tien}`}
+                        </div>
+                      );
+                    })}
                     <div>{donhang.tong_tien}</div>
                   </TableCell>
                   <TableCell>

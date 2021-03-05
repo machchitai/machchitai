@@ -43,6 +43,19 @@ const FormTruyXuatDonHang = () => {
           variant="outlined"
         />
         <DanhSachDonHang donhangs={listdonhang} />
+        <button
+          type="submit"
+          style={{
+            padding: '5px',
+            margin: '10px',
+            borderRadius: '5px',
+            border: 'solid 1px black',
+            width: '100px'
+          }}
+          className="btn btn-primary"
+        >
+          Submit
+        </button>
       </form>
     </div>
   );
