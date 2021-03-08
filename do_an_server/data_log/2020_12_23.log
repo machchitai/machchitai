@@ -31210,3 +31210,27 @@
 -200-{"xu_ly":"thêm user mới","data_send":{}}
 1614865712566-GET-/dashboard/don-hang/2016
 -200-{"xu_ly":"thêm user mới","data_send":{}}
+1615205264742-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"123456"}}
+1615205801128-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"123456"}}
+1615208428846-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"123456"}}
+1615208466188-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"123456"}}
+1615208948313-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"123456"}}
+1615208968240-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"asdasd","mat_khau":"123456"}}
+1615208977168-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"11111"}}
+1615209513705-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"123456"}}
+1615209766912-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"123456"}}
+1615209810027-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"123456"}}
+1615209818960-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"123456"}}
+1615209843759-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"123456"}}

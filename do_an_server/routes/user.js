@@ -3,13 +3,23 @@ var router = express.Router();
 var fs = require('fs');
 var authenticate = require('../middleware/auth');
 var md5 = require('md5');
+var base64 = require('base-64');
+var router = express.Router();
+var mysql = require('mysql');
+var pool  = mysql.createPool({
+    connectionLimit : 10,
+    host            : 'localhost',
+    user            : 'root',
+    password        : '',
+    database        : 'shop_ban_hang'
+});
 
+const { v4: uuidv4 } = require('uuid');
 const MongoClient = require('mongodb').MongoClient;
 const ObjectID = require('mongodb').ObjectID;
 
 // Connection URL
 const url = 'mongodb://localhost:27017';
-
 const dbName = 'shop_online';
 
 router.get('/', (req, res) => {
@@ -115,8 +125,6 @@ router.put('/:id_user', (req, res) => {
     });
 });
 
-
-//router.delete('/:email', authenticate.auth, (req, res) => {
 router.delete('/:id_user', authenticate.auth, (req, res) => {
     console.log(req.params.email);
     MongoClient.connect(url, function(err, client) {
@@ -132,47 +140,146 @@ router.delete('/:id_user', authenticate.auth, (req, res) => {
         });
         
     });
-})
+});
 
+// router.post('/log-in', (req, res) => {
+//     console.log(req.body);
+//     MongoClient.connect(url, function(err, client) {
+//         if(err)
+//             console.log(err);
+//         const db = client.db(dbName);
+//         const collection_user = db.collection('users');
+//         collection_user.findOne({tai_khoan: req.body.tai_khoan}, (err, result) => {
+//             if(err)
+//                 console.log(err);
 
-router.post('/log-in', (req, res) => {
-    console.log(req.body);
-    MongoClient.connect(url, function(err, client) {
-        if(err)
-            console.log(err);
-        const db = client.db(dbName);
-        const collection_user = db.collection('users');
-        collection_user.findOne({tai_khoan: req.body.tai_khoan}, (err, result) => {
-            if(err)
-                console.log(err);
-
-            if(typeof result != 'undefined' && result != null){
-                if(result.mat_khau == md5(req.body.mat_khau)){
-                    //res.status(401);
-                    result.mat_khau = null;
-                    res.json({
-                        'xu_ly': 'đăng nhập thành công',
-                        data_send: result
-                    });
-                }
-                else{
-                    res.status(401);
-                    res.json({
-                        'xu_ly': 'xử lý đăng nhập thất bại, sai tài khoản hoặc mật khẩu',
-                        error: true
-                    });
-                }
-            }
-            else{
-                res.status(401);
-                res.json({
-                    'xu_ly': 'xử lý đăng nhập thất bại, sai tài khoản hoặc mật khẩu',
-                    error: true
-                });
-            }
-        });
+//             if(typeof result != 'undefined' && result != null){
+//                 if(result.mat_khau == md5(req.body.mat_khau)){
+//                     //res.status(401);
+//                     result.mat_khau = null;
+//                     res.json({
+//                         'xu_ly': 'đăng nhập thành công',
+//                         data_send: result
+//                     });
+//                 }
+//                 else{
+//                     res.status(401);
+//                     res.json({
+//                         'xu_ly': 'xử lý đăng nhập thất bại, sai tài khoản hoặc mật khẩu',
+//                         error: true
+//                     });
+//                 }
+//             }
+//             else{
+//                 res.status(401);
+//                 res.json({
+//                     'xu_ly': 'xử lý đăng nhập thất bại, sai tài khoản hoặc mật khẩu',
+//                     error: true
+//                 });
+//             }
+//         });
         
+//     });
+// });
+
+router.post('/admin-log-in', (req, res) => {
+    console.log(req.body);    
+
+    pool.getConnection(function(err, connection) {
+        if (err) throw err; // not connected!
+       
+        // Use the connection
+        connection.query(`SELECT * FROM nguoi_dung WHERE ten_dang_nhap = ?`, [req.body.ten_dang_nhap] , 
+        function (error, results, fields) {
+          
+          // Handle error if not exist
+          if (error) throw error;
+
+          var string_token = '';
+
+          if(results.length && results[0]){ // if account exist
+
+              if(results[0].mat_khau == md5(req.body.mat_khau)){ // if password correct
+
+                connection.query(`SELECT * FROM nguoi_dung WHERE ten_dang_nhap = ?`, [results[0].ma], 
+                function (error, results_token, fields) {
+
+                    if(error) throw error;
+
+                    string_token = base64.encode(results[0].email + results[0].ten_dang_nhap + uuidv4()); // token formula
+                    console.log(string_token);
+                    created_date = (new Date().toISOString().split('.'))[0].replace(/T/,' ');
+                    updated_date = (new Date().toISOString().split('.'))[0].replace(/T/,' ');
+                    expired_date = (new Date(new Date().getTime()+(30*24*60*60*1000)).toISOString().split('.'))[0].replace(/T/,' '); // expired date = created date + 30 days
+
+                    if(results_token.length) { // if already have token then up date exist one with new token for exist account
+                        connection.query(`UPDATE token 
+                                        SET token = ?, updated_date = ?, expired_date = ? 
+                                        WHERE user_id = ? `,
+                        [string_token, updated_date, expired_date, results[0].ma],
+                        function (error, results, fields) {
+                            if(error) throw error;
+
+                            var response = {
+                                error: false,
+                                token: string_token,
+                                message: "Login successful"
+                            }
+
+                            res.json(response);
+
+                            connection.release();
+                            
+                        }); 
+                    }
+                    else {  // if do not have token then create new token for exist account
+                        connection.query(`INSERT INTO token(token, 
+                                            created_date, 
+                                            expired_date, 
+                                            user_id, 
+                                            type_token) 
+                                        VALUES (?, ?, ?, ?, ?)`, 
+                        [string_token, created_date, expired_date, results[0].ma, 'authorized'], 
+                        function (error, results, fields) {
+                            if(error) throw error;
+
+                            var response = {
+                                error: false,
+                                token: string_token,
+                                message: "Login successful"
+                            }
+                            
+                            res.json(response);
+
+                            connection.release();
+                            
+                        }); 
+                    }
+                });
+
+              }
+
+              else { // if wrong password
+                var error = {
+                    error: true,
+                    message: "Username or password not correct"
+                }
+                res.json(error);
+              }
+
+          }
+
+          else { // if account not exist
+            var error = {
+                error: true,
+                message: "Account not exist"
+            }
+            res.json(error);
+          }     
+          
+        });
     });
+
 })
 
 module.exports = router;
