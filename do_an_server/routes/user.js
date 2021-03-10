@@ -17,7 +17,7 @@ var pool  = mysql.createPool({
 const { v4: uuidv4 } = require('uuid');
 const MongoClient = require('mongodb').MongoClient;
 const ObjectID = require('mongodb').ObjectID;
-
+const { UpgradeRequired } = require('http-errors');
 // Connection URL
 const url = 'mongodb://localhost:27017';
 const dbName = 'shop_online';
@@ -183,7 +183,8 @@ router.delete('/:id_user', authenticate.auth, (req, res) => {
 // });
 
 router.post('/admin-log-in', (req, res) => {
-    console.log(req.body);    
+
+    console.log(req.body);
 
     pool.getConnection(function(err, connection) {
         if (err) throw err; // not connected!
@@ -281,5 +282,43 @@ router.post('/admin-log-in', (req, res) => {
     });
 
 })
+
+router.post('/admin-authorized', (req, res) => {
+    console.log(req.header('authorization'));    
+
+    if(authorized){
+        authorized = authorized.split(' ')[1];
+        
+        pool.getConnection(function(err, connection) {
+            if (err) throw err; // not connected!
+    
+           
+            connection.query(`SELECT mqt.*
+            FROM token t
+            JOIN nguoi_dung nd
+            ON nd.ma = t.user_id
+            JOIN quyen_nguoi_dung_menu_quan_tri qndmqt
+            ON nd.ma_quyen = qndmqt.id_quyen_nguoi_dung
+            JOIN menu_quan_tri mqt
+            ON qndmqt.id_menu_quan_tri = mqt.id
+            WHERE t.token = ?`, 
+            [authorized],
+            function (error, results_permission, fields) {
+                if (err) throw err;
+    
+                res.json({
+                    error: true,
+                    permission: results_permission
+                });
+    
+            });
+    
+        });
+        
+    }
+
+    
+
+});
 
 module.exports = router;
