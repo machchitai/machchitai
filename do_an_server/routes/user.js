@@ -6,6 +6,8 @@ var md5 = require('md5');
 var base64 = require('base-64');
 var router = express.Router();
 var mysql = require('mysql');
+var Cookies = require('cookie');
+
 var pool  = mysql.createPool({
     connectionLimit : 10,
     host            : 'localhost',
@@ -184,15 +186,29 @@ router.delete('/:id_user', authenticate.auth, (req, res) => {
 
 router.post('/admin-log-in', (req, res) => {
 
+    var keys = ['keyboard cat'];
+
+    var cookies = new Cookies(req, res, { keys: keys });
+
+    var lastVisit = cookies.get('LastVisit', { signed: true })
+
+    cookies.set('LastVisit', (new Date(new Date().getTime()+(30*24*60*60*1000))).toISOString(), { signed: true });
+
     console.log(req.body);
 
     pool.getConnection(function(err, connection) {
         if (err) throw err; // not connected!
        
         // Use the connection
-        connection.query(`SELECT * FROM nguoi_dung WHERE ten_dang_nhap = ?`, [req.body.ten_dang_nhap] , 
+        connection.query(`SELECT * FROM nguoi_dung WHERE ten_dang_nhap = ? OR email = ?`, [req.body.ten_dang_nhap] , 
         function (error, results, fields) {
-          
+
+            if (!lastVisit) {
+                console.log('nothing here');
+            } else {    
+                console.log(lastVisit);
+            }
+            
           // Handle error if not exist
           if (error) throw error;
 
@@ -202,7 +218,7 @@ router.post('/admin-log-in', (req, res) => {
 
               if(results[0].mat_khau == md5(req.body.mat_khau)){ // if password correct
 
-                connection.query(`SELECT * FROM nguoi_dung WHERE ten_dang_nhap = ?`, [results[0].ma], 
+                connection.query(`SELECT * FROM nguoi_dung WHERE ten_dang_nhap = ? OR email = ?`, [req.body.ten_dang_nhap, req.body.ten_dang_nhap], 
                 function (error, results_token, fields) {
 
                     if(error) throw error;
@@ -290,24 +306,23 @@ router.post('/admin-authorized', (req, res) => {
         authorized = authorized.split(' ')[1];
         
         pool.getConnection(function(err, connection) {
-            if (err) throw err; // not connected!
-    
+            if (err) throw err; // not connected!    
            
-            connection.query(`SELECT mqt.*
-            FROM token t
-            JOIN nguoi_dung nd
-            ON nd.ma = t.user_id
-            JOIN quyen_nguoi_dung_menu_quan_tri qndmqt
-            ON nd.ma_quyen = qndmqt.id_quyen_nguoi_dung
-            JOIN menu_quan_tri mqt
-            ON qndmqt.id_menu_quan_tri = mqt.id
-            WHERE t.token = ?`, 
+            connection.query(`SELECT mad.*
+                FROM token t
+                JOIN nguoi_dung nd
+                ON nd.ma = t.user_id
+                JOIN bang_phan_quyen bpq
+                ON nd.ma_quyen = bpq.id_quyen_nguoi_dung
+                JOIN menu_admin mad
+                ON bpq.id_menu_admin = mad.id
+                WHERE t.token = ?`,
             [authorized],
             function (error, results_permission, fields) {
                 if (err) throw err;
     
                 res.json({
-                    error: true,
+                    error: false,
                     permission: results_permission
                 });
     

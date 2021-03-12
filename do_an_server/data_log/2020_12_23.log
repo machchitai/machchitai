@@ -31234,3 +31234,19 @@
 -200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"123456"}}
 1615209843759-POST-/user/admin-log-in
 -200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"123456"}}
+1615353462024-GET-/upload/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615353462342-GET-/favicon.ico
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615355877177-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615355877337-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615356492509-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615356511394-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615356595998-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615356633688-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}

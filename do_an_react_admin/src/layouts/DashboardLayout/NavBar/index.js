@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
-import { Link as RouterLink, useLocation } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link as RouterLink, useLocation, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ReceiptIcon from '@material-ui/icons/Receipt';
+import axios from 'axios';
+import { useCookies } from 'react-cookie';
 import {
   Avatar,
   Box,
@@ -31,69 +33,6 @@ const user = {
   name: 'Katarina Smith'
 };
 
-const items = [
-  {
-    href: '/app/dashboard',
-    icon: BarChartIcon,
-    title: 'Dashboard'
-  },
-  {
-    href: '/app/truy-xuat-don-hang',
-    icon: ReceiptIcon,
-    title: 'Truy xuất đơn hàng'
-  },
-  {
-    href: '/app/customers',
-    icon: UsersIcon,
-    title: 'Customers'
-  },
-  {
-    href: '/app/users',
-    icon: UsersIcon,
-    title: 'User\'s Accounts'
-  },
-  {
-    href: '/app/products',
-    icon: ShoppingBagIcon,
-    title: 'Products'
-  },
-  {
-    href: '/app/quan-ly-san-pham',
-    icon: ShoppingBagIcon,
-    title: 'Quản lý sản phẩm'
-  },
-  {
-    href: '/app/account',
-    icon: UserIcon,
-    title: 'Account'
-  },
-  {
-    href: '/app/settings',
-    icon: SettingsIcon,
-    title: 'Settings'
-  },
-  {
-    href: '/login',
-    icon: LockIcon,
-    title: 'Login'
-  },
-  {
-    href: '/register',
-    icon: UserPlusIcon,
-    title: 'Register'
-  },
-  {
-    href: '/app/test',
-    icon: UserPlusIcon,
-    title: 'Test'
-  },
-  {
-    href: '/404',
-    icon: AlertCircleIcon,
-    title: 'Error'
-  }
-];
-
 const useStyles = makeStyles(() => ({
   mobileDrawer: {
     width: 256
@@ -113,6 +52,97 @@ const useStyles = makeStyles(() => ({
 const NavBar = ({ onMobileClose, openMobile }) => {
   const classes = useStyles();
   const location = useLocation();
+  const [cookies] = useCookies(['token']);
+  const navigate = useNavigate();
+
+  const items = [
+    {
+      href: '/app/dashboard',
+      icon: BarChartIcon,
+      title: 'Dashboard'
+    },
+    {
+      href: '/app/truy-xuat-don-hang',
+      icon: ReceiptIcon,
+      title: 'Truy xuất đơn hàng'
+    },
+    {
+      href: '/app/customers',
+      icon: UsersIcon,
+      title: 'Customers'
+    },
+    {
+      href: '/app/users',
+      icon: UsersIcon,
+      title: 'User\'s Accounts'
+    },
+    {
+      href: '/app/products',
+      icon: ShoppingBagIcon,
+      title: 'Products'
+    },
+    {
+      href: '/app/quan-ly-san-pham',
+      icon: ShoppingBagIcon,
+      title: 'Quản lý sản phẩm'
+    },
+    {
+      href: '/app/account',
+      icon: UserIcon,
+      title: 'Account'
+    },
+    {
+      href: '/app/settings',
+      icon: SettingsIcon,
+      title: 'Settings'
+    },
+    {
+      href: '/login',
+      icon: LockIcon,
+      title: 'Login'
+    },
+    {
+      href: '/register',
+      icon: UserPlusIcon,
+      title: 'Register'
+    },
+    {
+      href: '/app/test',
+      icon: UserPlusIcon,
+      title: 'Test'
+    },
+    {
+      href: '/404',
+      icon: AlertCircleIcon,
+      title: 'Error'
+    }
+  ];
+  const [permission, setPermission] = useState([]);
+
+  useEffect(() => {
+    if (cookies && cookies.token) {
+      axios.post('http://localhost:4000/user/admin-authorized', {}, 
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Basic ${cookies.token}`
+          }
+        })
+        .then((response) => {
+          console.log(response);
+          setPermission(items.filter((item) => {
+            return response.data.permission.find((vy) => {
+              return item.href.includes(vy.alias);
+            });
+          }));
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } else {
+      navigate('/login', { replace: true });
+    }
+  }, []);
 
   useEffect(() => {
     if (openMobile && onMobileClose) {
@@ -156,7 +186,7 @@ const NavBar = ({ onMobileClose, openMobile }) => {
       <Divider />
       <Box p={2}>
         <List>
-          {items.map((item) => (
+          {permission.map((item) => (
             <NavItem
               href={item.href}
               key={item.title}

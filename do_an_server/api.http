@@ -194,4 +194,4 @@ Content-Type: application/json
 ###
 POST http://localhost:4000/user/admin-authorized
 Content-Type: application/json
-Authorization: Basic aHVuZ25ndXllbnh1YW4xMThAZ21haWwuY29tYWRtaW42ZGM5NWRmMi1mNzE3LTQxOTUtOGI4Ni1jNzI5YTE0YTUzZjk=
+Authorization: Basic aHVuZ25ndXllbnh1YW4xMThAZ21haWwuY29tYWRtaW5kOGY0YjIyZS03YjcwLTQ0MTYtYmFiMS1lNmJlOGY4M2JjMWI=
