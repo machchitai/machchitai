@@ -15,7 +15,7 @@ import {
 import FacebookIcon from 'src/icons/Facebook';
 import GoogleIcon from 'src/icons/Google';
 import Page from 'src/components/Page';
-import useCookies from 'react-cookie';
+import { useCookies } from 'react-cookie';
 import axios from 'axios';
 
 const useStyles = makeStyles((theme) => ({
