@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 import { Formik } from 'formik';
@@ -28,9 +28,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const LoginView = ({ ...rest }) => {
+  const [cookies, setCookie] = useCookies(['token']);
   const classes = useStyles();
   const navigate = useNavigate();
-  const [cookies, setCookie] = useCookies(['token']);
   const [isSubmitting, setisSubmitting] = useState(false);
 
   useEffect(() => {

@@ -50,12 +50,11 @@ const useStyles = makeStyles(() => ({
 }));
 
 const NavBar = ({ onMobileClose, openMobile }) => {
+  const [cookies] = useCookies(['token']);
   const classes = useStyles();
   const location = useLocation();
-  const [cookies] = useCookies(['token']);
   const navigate = useNavigate();
-
-  const items = [
+  const [items] = useState([
     {
       href: '/app/dashboard',
       icon: BarChartIcon,
@@ -116,12 +115,12 @@ const NavBar = ({ onMobileClose, openMobile }) => {
       icon: AlertCircleIcon,
       title: 'Error'
     }
-  ];
+  ]);
   const [permission, setPermission] = useState([]);
 
   useEffect(() => {
     if (cookies && cookies.token) {
-      axios.post('http://localhost:4000/user/admin-authorized', {}, 
+      axios.post('http://localhost:4000/user/admin-authorized', {},
         {
           headers: {
             'Content-Type': 'application/json',
@@ -131,8 +130,8 @@ const NavBar = ({ onMobileClose, openMobile }) => {
         .then((response) => {
           console.log(response);
           setPermission(items.filter((item) => {
-            return response.data.permission.find((vy) => {
-              return item.href.includes(vy.alias);
+            return response.data.permission.find((p) => {
+              return item.href.includes(p.alias);
             });
           }));
         })

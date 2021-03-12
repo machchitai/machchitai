@@ -2,7 +2,7 @@ import React from 'react';
 import { Navigate } from 'react-router-dom';
 import LoginView from 'src/views/auth/LoginView';
 
-const routesnologin = [
+const routesnotlogin = [
   {
     path: '',
     element: <LoginView />,
@@ -12,4 +12,4 @@ const routesnologin = [
   }
 ];
 
-export default routesnologin;
+export default routesnotlogin;

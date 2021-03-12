@@ -187,11 +187,11 @@ POST  http://localhost:4000/user/admin-log-in
 Content-Type: application/json
 
 {
-    "ten_dang_nhap": "admin",
-    "mat_khau": "123456"
+    "ten_dang_nhap":"hungnguyenxuan118@gmail.com",
+    "mat_khau":"1234asdasd56"
 }
 
 ###
 POST http://localhost:4000/user/admin-authorized
 Content-Type: application/json
-Authorization: Basic aHVuZ25ndXllbnh1YW4xMThAZ21haWwuY29tYWRtaW5kOGY0YjIyZS03YjcwLTQ0MTYtYmFiMS1lNmJlOGY4M2JjMWI=
+Authorization: Basic aHVuZ25ndXllbnh1YW4xMThAZ21haWwuY29tYWRtaW5jZmIwMTIwNi1hN2MwLTQ3M2MtYjVmZi0xYmEwYWY1MjJlZjE=

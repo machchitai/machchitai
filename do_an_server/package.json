@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "testcookie": "concurrently \"node ./bin/www\" \"cd ../do_an_react_admin/ && npm start\""
+    "testrun": "concurrently \"node ./bin/www\" \"cd ../do_an_react_admin/ && npm start\""
   },
   "dependencies": {
     "base-64": "^1.0.0",

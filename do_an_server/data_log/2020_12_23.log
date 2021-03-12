@@ -31250,3 +31250,221 @@
 -200-{"xu_ly":"thêm user mới","data_send":{}}
 1615356633688-POST-/user/admin-authorized
 -200-{"xu_ly":"thêm user mới","data_send":{}}
+1615520967755-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520974792-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520975673-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520975879-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520976087-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520976299-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520976499-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520976995-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520977204-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520977395-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520977605-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520977802-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520978021-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520978223-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615520978409-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615521237888-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615521262094-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"admin","mat_khau":"123456"}}
+1615521341679-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615521361703-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521490064-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615521560354-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521566815-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungnguyenxuan118@gmail.com","mat_khau":"123456"}}
+1615521639096-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521643785-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungnguyenxuan118@gmail.com","mat_khau":"123456"}}
+1615521647716-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521670086-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungnguyenxuan118@gmail.com","mat_khau":"123456"}}
+1615521670757-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521670776-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521670941-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521735298-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521789185-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521789188-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521789280-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521791140-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521791143-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521791230-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521877060-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521877071-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521877226-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521994419-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521994423-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615521994517-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615509781996-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615509912857-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungxnguyen118@gmail.com","mat_khau":"123456"}}
+1615509929529-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungnguyenxuan118@gmail.com","mat_khau":"123456"}}
+1615509930052-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615509930065-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615509930253-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615510569229-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungxuannguyen118@gmail.com","mat_khau":"123456"}}
+1615510574655-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungxuanguyen118@gmail.com","mat_khau":"123456"}}
+1615510581556-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungnguyenxuan118@gmail.com","mat_khau":"123456"}}
+1615510581979-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615510581982-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615510582102-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615510668123-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615510668127-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615510668271-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615510885982-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511695370-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungnguyenxuan118@gmail.com","mat_khau":"123456"}}
+1615511695891-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511695902-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511696024-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511700181-GET-/quan-ly-san-pham/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511700818-GET-/public/static/images/san_pham/_Linksys_ADSL2_4_4af26fa3538de.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511700819-GET-/public/static/images/san_pham/Trancend_DDR2_1._4b09163a080c6.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511700820-GET-/public/static/images/san_pham/ASUS_512MB_DDR2__4af2191978c58.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511700821-GET-/public/static/images/san_pham/JETEK_X303_305_4af246d34cfe8.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511700821-GET-/public/static/images/san_pham/____c___ng_SamSu_4b454f81f070b.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511700833-GET-/public/static/images/san_pham/Canon_Laser_Prin_4af27540152b2.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511701188-GET-/public/static/images/san_pham/_ASUS_DVD_Rom_18_4b46cca154ac1.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511701189-GET-/public/static/images/san_pham/HP_Pavilion_P611_4af2cb7656a26.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511701190-GET-/public/static/images/san_pham/Homesound_MS_306_4af3a4aec66c6.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511701195-GET-/public/static/images/san_pham/HP_Compaq_Presar_4af2cbd08af76.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511703712-GET-/quan-ly-san-pham/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511704287-GET-/public/static/images/san_pham/_Linksys_ADSL2_4_4af26fa3538de.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511704288-GET-/public/static/images/san_pham/ASUS_512MB_DDR2__4af2191978c58.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511704289-GET-/public/static/images/san_pham/Trancend_DDR2_1._4b09163a080c6.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511704291-GET-/public/static/images/san_pham/JETEK_X303_305_4af246d34cfe8.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511704292-GET-/public/static/images/san_pham/____c___ng_SamSu_4b454f81f070b.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511704304-GET-/public/static/images/san_pham/Canon_Laser_Prin_4af27540152b2.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511704664-GET-/public/static/images/san_pham/_ASUS_DVD_Rom_18_4b46cca154ac1.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511704665-GET-/public/static/images/san_pham/HP_Pavilion_P611_4af2cb7656a26.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511704666-GET-/public/static/images/san_pham/HP_Compaq_Presar_4af2cbd08af76.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615511704672-GET-/public/static/images/san_pham/Homesound_MS_306_4af3a4aec66c6.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512030625-GET-/quan-ly-san-pham/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512031156-GET-/public/static/images/san_pham/Trancend_DDR2_1._4b09163a080c6.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512031158-GET-/public/static/images/san_pham/ASUS_512MB_DDR2__4af2191978c58.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512031186-GET-/public/static/images/san_pham/_Linksys_ADSL2_4_4af26fa3538de.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512031187-GET-/public/static/images/san_pham/JETEK_X303_305_4af246d34cfe8.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512031188-GET-/public/static/images/san_pham/____c___ng_SamSu_4b454f81f070b.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512031189-GET-/public/static/images/san_pham/Canon_Laser_Prin_4af27540152b2.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512031499-GET-/public/static/images/san_pham/_ASUS_DVD_Rom_18_4b46cca154ac1.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512031532-GET-/public/static/images/san_pham/HP_Pavilion_P611_4af2cb7656a26.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512031551-GET-/public/static/images/san_pham/HP_Compaq_Presar_4af2cbd08af76.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512031552-GET-/public/static/images/san_pham/Homesound_MS_306_4af3a4aec66c6.jpg
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512090488-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"tuan@yahoo.com","mat_khau":"123456"}}
+1615512118221-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"tuan@yahoo.com","mat_khau":"1111"}}
+1615512121763-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"tuan@yahoo.com","mat_khau":"123"}}
+1615512126557-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"tuan@yahoo.com","mat_khau":"111"}}
+1615512128935-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"tuan@yahoo.com","mat_khau":"1"}}
+1615512132776-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"tuan@yahoo.com","mat_khau":"asd"}}
+1615512136602-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"tuan@yahoo.com","mat_khau":"tuan"}}
+1615512190743-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"tuan@yahoo.com","mat_khau":"tuan"}}
+1615512191006-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512191304-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512191399-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512366579-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512380236-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615512451301-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungnguyenxuan118@gmail.com","mat_khau":"1234asdasd56"}}

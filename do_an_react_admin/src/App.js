@@ -7,7 +7,7 @@ import 'src/mixins/chartjs';
 import theme from 'src/theme';
 import routes from 'src/routes';
 import { useCookies } from 'react-cookie';
-import LoginView from './views/auth/LoginView';
+import LoginView from 'src/views/auth/LoginView';
 
 const App = () => {
   const routing = useRoutes(routes);
