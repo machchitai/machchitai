@@ -303,14 +303,14 @@ router.post('/admin-authorized', (req, res) => {
         pool.getConnection(function(err, connection) {
             if (err) throw err;
     
-            connection.query(`SELECT madmin.*
+            connection.query(`SELECT mqt.*
             FROM token t
             JOIN nguoi_dung nd
             ON nd.ma = t.user_id
             JOIN bang_phan_quyen bpq
             ON nd.ma_quyen = bpq.id_quyen_nguoi_dung
-            JOIN menu_admin madmin
-            ON bpq.id_menu_admin = madmin.id
+            JOIN menu_quan_tri mqt
+            ON bpq.id_menu_quan_tri = mqt.id
             WHERE t.tokens = ?`, 
             [authorized], 
             function (error, results_permission, fields){

@@ -12,6 +12,7 @@ import UserListView from 'src/views/users/UserListView';
 import FormUsersAdd from 'src/views/users/FormUsersAdd';
 import FormUserEdit from 'src/views/users/FormUserEdit';
 import QuanLySanPhamListView from 'src/views/products/ProductsListView';
+import PhanQuyen from 'src/views/phanquyen';
 import TruyXuatDonHang from 'src/views/truyxuatdonhang';
 
 const routes = [
@@ -26,7 +27,8 @@ const routes = [
       { path: 'users/:id_user', element: <FormUserEdit /> },
       { path: 'users/them', element: <FormUsersAdd /> },
       { path: 'quan-ly-san-pham', element: <QuanLySanPhamListView alias="quan-ly-san-pham" /> },
-      { path: 'truy-xuat-don-hang', element: <TruyXuatDonHang /> },
+      { path: 'phan-quyen', element: <PhanQuyen alias="phan-quyen" /> },
+      { path: 'truy-xuat-don-hang', element: <TruyXuatDonHang alias="truy-xuat-don-hang" /> },
       { path: '*', element: <Navigate to="/404" /> }
     ]
   },

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import ReceiptIcon from '@material-ui/icons/Receipt';
 import axios from 'axios';
 import { useCookies } from 'react-cookie';
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import {
   Avatar,
   Box,
@@ -84,6 +85,11 @@ const NavBar = ({ onMobileClose, openMobile }) => {
       href: '/app/quan-ly-san-pham',
       icon: ShoppingBagIcon,
       title: 'Quản lý sản phẩm'
+    },
+    {
+      href: '/app/phan-quyen',
+      icon: AccountBoxIcon,
+      title: 'Quản lý phân quyền'
     },
     {
       href: '/app/account',

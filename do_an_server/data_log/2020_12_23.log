@@ -31468,3 +31468,11 @@
 -200-{"xu_ly":"thêm user mới","data_send":{}}
 1615512451301-POST-/user/admin-log-in
 -200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungnguyenxuan118@gmail.com","mat_khau":"1234asdasd56"}}
+1615817564319-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615817585668-GET-/phan-quyen/2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615817653867-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615818034807-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
