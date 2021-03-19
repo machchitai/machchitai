@@ -230,8 +230,8 @@ router.post('/admin-log-in', (req, res) => {
 
                     if(results_token.length){//nếu có token rồi
                         connection.query(`UPDATE token
-                        SET tokens = ?,
-                        expired_date = ?
+                        SET token = ?,
+                        expireted_date = ?
                         WHERE user_id = ?`, 
                         [string_token, expired_date, results[0].ma], 
                         function (error, results, fields){
@@ -249,7 +249,7 @@ router.post('/admin-log-in', (req, res) => {
                     }
                     else {//chưa có token
 
-                        connection.query(`INSERT INTO token(tokens, created_date, expired_date, user_id, type_token)
+                        connection.query(`INSERT INTO token(token, created_date, expireted_date, user_id, type_token)
                                             VALUES(?, ?, ?, ?, ?)`, 
                         [string_token, created_date, expired_date, results[0].ma, 'authorized'], 
                         function (error, results, fields){
@@ -311,7 +311,7 @@ router.post('/admin-authorized', (req, res) => {
             ON nd.ma_quyen = bpq.id_quyen_nguoi_dung
             JOIN menu_quan_tri mqt
             ON bpq.id_menu_quan_tri = mqt.id
-            WHERE t.tokens = ?`, 
+            WHERE t.token = ?`, 
             [authorized], 
             function (error, results_permission, fields){
                 if (error) throw error;

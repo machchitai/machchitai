@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Box,
   Container,
@@ -6,7 +6,7 @@ import {
 } from '@material-ui/core';
 import axios from 'axios';
 import Page from 'src/components/Page';
-import DsPhanQuyen from './Results';
+import DanhSachPhanQuyen from './Results';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,10 +17,10 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const DanhSachPhanQuyen = () => {
+const CustomerListView = () => {
   const classes = useStyles();
-  const [dsphanquyen, setDsPhanQuyen] = useEffect([]);
-  const [menuquantri, setMenuQuanTri] = useEffect([]);
+  const [dsphanquyen, setDsPhanQuyen] = useState([]);
+  const [menuquantri, setMenuQuanTri] = useState([]);
 
   useEffect(() => {
     axios.get('http://localhost:4000/phan-quyen')
@@ -46,11 +46,11 @@ const DanhSachPhanQuyen = () => {
     >
       <Container maxWidth={false}>
         <Box mt={3}>
-          <DsPhanQuyen danhsachphanquyen={dsphanquyen} dsmenuquantri={menuquantri} />
+          <DanhSachPhanQuyen danhsachphanquyen={dsphanquyen} dsmenuquantri={menuquantri} />
         </Box>
       </Container>
     </Page>
   );
 };
 
-export default DanhSachPhanQuyen;
+export default CustomerListView;

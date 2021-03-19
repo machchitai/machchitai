@@ -82,7 +82,7 @@ const Results = ({ className, danhsachphanquyen, ...rest }) => {
   const [page, setPage] = useState(0);
   const [open, setOpen] = React.useState(false);
   const [dsQuyenHienTai, setdsQuyenHienTai] = useState([]);
-  // const [quyenHienTai, setQuyenHienTai] = useState([]);
+  const [quyenduocchon, setQuyenduocchon] = useState([]);
 
   const handleSelectAll = (event) => {
     let newSelectedDonhangIds;
@@ -116,7 +116,7 @@ const Results = ({ className, danhsachphanquyen, ...rest }) => {
     setSelectedDonhangIds(newSelectedDonhangIds);
   };
 
-  const handleLimitChange = (event) => {
+  const handleLimitChange = () => {
   };
 
   const handlePageChange = (event, newPage) => {
@@ -124,6 +124,7 @@ const Results = ({ className, danhsachphanquyen, ...rest }) => {
   };
 
   const handleClickOpen = (idquyen) => {
+    setQuyenduocchon(idquyen);
     axios.get(`http://localhost:4000/phan-quyen/${idquyen}`)
       .then((results) => {
         setdsQuyenHienTai(results.data);
@@ -136,10 +137,33 @@ const Results = ({ className, danhsachphanquyen, ...rest }) => {
 
   const handleSavePhanQuyen = () => {
     console.log('save');
+    axios.put(`http://localhost:4000/phan-quyen/${quyenduocchon}`, dsQuyenHienTai)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
-  
+
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const handleProcessChangeCheckBox = (event) => {
+    console.log(event.target.name);
+    if (dsQuyenHienTai.find((itemquyenhientai) => itemquyenhientai.alias === event.target.name)) {
+      console.log('Not Checked');
+      setdsQuyenHienTai(dsQuyenHienTai.filter((itemquyenhientai) => {
+        return itemquyenhientai.alias !== event.target.name;
+      }));
+    } else {
+      console.log('Checked');
+      const dataitem = {
+        alias: event.target.name
+      };
+      setdsQuyenHienTai([...dsQuyenHienTai, dataitem]);
+    }
   };
 
   return (
@@ -211,12 +235,26 @@ const Results = ({ className, danhsachphanquyen, ...rest }) => {
             <DialogContent dividers>
               {
                 rest.dsmenuquantri.map((menuquantri) => {
-                  return <FormControlLabel key={menuquantri.id} control={<Checkbox name="checkedC" checked={Boolean(dsQuyenHienTai.find((data) => data.alias === menuquantri.alias))} />} label={menuquantri.ten_menu} />;
+                  return (
+                    <FormControlLabel
+                      key={menuquantri.id}
+                      control={(
+                        <Checkbox
+                          name={menuquantri.alias}
+                          onChange={handleProcessChangeCheckBox}
+                          checked={Boolean(dsQuyenHienTai.find((data) => {
+                            return data.alias === menuquantri.alias;
+                          }))}
+                        />
+                      )}
+                      label={menuquantri.ten_menu}
+                    />
+                  );
                 })
               }
             </DialogContent>
             <DialogActions>
-              <Button autoFocus onClick={handleClose} color="primary">
+              <Button autoFocus onClick={handleSavePhanQuyen} color="primary">
                 Save changes
               </Button>
             </DialogActions>

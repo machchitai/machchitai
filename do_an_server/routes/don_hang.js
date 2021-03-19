@@ -186,8 +186,7 @@ router.get('/tim-kiem/:ma_don_hang', function(req, res, next){
         FROM hoa_don hd
         JOIN chi_tiet_hoa_don cthd
         ON hd.ma = cthd.ma_hoa_don
-        WHERE ma_truy_xuat_dh LIKE ?`
-        ,
+        WHERE ma_truy_xuat_dh LIKE ?`,
             ['%' + req.params.ma_don_hang + '%'],
             function(err, result, fields){
                 if(err){
@@ -211,13 +210,15 @@ router.get('/tim-kiem/:ma_don_hang', function(req, res, next){
 
                     else {
                         var thong_tin_san_pham = {
-                            ten_san_pha: item.ten_san_pham,
+                            ten_san_pham: item.ten_san_pham,
                             so_luong: item.so_luong,
                             don_gia: item.don_gia,
                             thanh_tien: item.thanh_tien
                         };
 
-                        item.list_san_pham = [thong_tin_san_pham];
+                        item.list_san_pham = [
+                            thong_tin_san_pham
+                        ];
                         array_result[item.ma] = item;
                     }
                 });

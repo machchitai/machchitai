@@ -31476,3 +31476,181 @@
 -200-{"xu_ly":"thêm user mới","data_send":{}}
 1615818034807-GET-/phan-quyen/1
 -200-{"xu_ly":"thêm user mới","data_send":{}}
+1615958574173-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}
+1615958633224-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungnguyenxuan118@gmail.com","mat_khau":"123456"}}
+1615958796935-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungnguyenxuan118@gmail.com","mat_khau":"123456"}}
+1615959199023-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungnguyenxuan118@gmail.com","mat_khau":"123456"}}
+1615959343232-POST-/user/admin-log-in
+-200-{"xu_ly":"thêm user mới","data_send":{"ten_dang_nhap":"hungnguyenxuan118@gmail.com","mat_khau":"123456"}}
+1615959343751-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959344126-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959480388-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959480423-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959480590-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959667175-GET-/app/babel/parser/lib/index.js
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959895815-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959895880-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959895896-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959909675-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959948161-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959953402-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959953426-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959953451-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959955084-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959971316-GET-/phan-quyen/2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959977477-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959977500-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959977523-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615959980024-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615960081456-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615960081499-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615960081521-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615960083270-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615960114225-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615960114581-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615960114601-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615960175539-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615960175769-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615960175921-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615960178019-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615960178044-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615960179422-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615961044293-GET-/app/babel/parser/lib/index.js
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615961340568-GET-/app/babel/parser/lib/index.js
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615961348495-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615961348548-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615961348570-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615961349935-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615961416416-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615961416450-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615961416470-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615961438842-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986853624-GET-/phan-quyen/2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986893288-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986893322-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986893346-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986894654-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986899307-GET-/phan-quyen/2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986912311-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986920889-GET-/phan-quyen/2
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986931066-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986931091-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986931111-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986945176-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986945208-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986945473-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986947638-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615986947666-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615987091420-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615987091584-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615987091783-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615989731191-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615989731413-GET-/dashboard/don-hang-so-thang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615989731551-GET-/dashboard/don-hang/2016
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615989743761-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615989743879-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615989789689-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615989795727-POST-/phan-quyen/undefined
+-200-{"xu_ly":"thêm user mới","data_send":[{"id":1,"alias":"truy-xuat-don-hang","ten_menu":"Truy Xuất Đơn Hàng","type_menu":"read"},{"id":2,"alias":"quan-ly-san-pham","ten_menu":"Quản Lý Sản Phẩm","type_menu":"read"},{"id":3,"alias":"phan-quyen","ten_menu":"Phân Quyền","type_menu":"read"},{"alias":"tin-tuc"}]}
+1615989833731-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615989837339-POST-/phan-quyen/undefined
+-200-{"xu_ly":"thêm user mới","data_send":[{"id":1,"alias":"truy-xuat-don-hang","ten_menu":"Truy Xuất Đơn Hàng","type_menu":"read"},{"id":2,"alias":"quan-ly-san-pham","ten_menu":"Quản Lý Sản Phẩm","type_menu":"read"},{"id":3,"alias":"phan-quyen","ten_menu":"Phân Quyền","type_menu":"read"},{"alias":"tin-tuc"}]}
+1615989852516-POST-/user/admin-authorized
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615989852543-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615989852568-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1615989853974-GET-/phan-quyen/1
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616119682891-GET-/menu-quan-tri
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616119788521-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616119789687-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616119789723-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616119804333-PUT-/phan-quyen/4
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616119915016-PUT-/phan-quyen/4
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616121655004-PUT-/phan-quyen/4
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616121680043-PUT-/phan-quyen/4
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616121732039-PUT-/phan-quyen/4
+-200-{"xu_ly":"thêm user mới","data_send":{}}
