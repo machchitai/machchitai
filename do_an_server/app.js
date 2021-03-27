@@ -27,9 +27,7 @@ app.use(cors());
 var complete_log = (req, res, next) => {
   try {
       //console.log(hahaha.length);
-      var string_log = '-200-' + JSON.stringify({
-          data_send: req.body
-      }) +  '\n';
+      var string_log = '-200-' + '\n';
   
       fs.appendFileSync('./data_log/request.log', string_log);
   }
@@ -58,7 +56,7 @@ app.use((req, res, next) => {
   next();
 })
 
-app.use(complete_log);
+//app.use(complete_log);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
