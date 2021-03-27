@@ -1,0 +1,104 @@
+1616415728934-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616415823308-PUT-/phan-quyen/4
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616415904973-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616415951820-GET-/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616416004226-GET-/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616416079823-GET-/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616416133784-GET-/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616416176961-GET-/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616417763566-GET-/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616417831264-GET-/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616417848391-GET-/?!@
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616417877045-GET-/?%3C%3E%27%27%3E
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616418964360-GET-/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616419018507-GET-/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616420171665-GET-/phan-quyen
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616420190317-GET-/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616420260286-GET-/
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616420306994-GET-/log
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616420365088-GET-/log
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616420444747-GET-/log
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616420502020-GET-/log
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616420553156-GET-/?-%27%22%22%3Cscript%3E
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616420557220-GET-/log
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616420592549-GET-/?-%27%22%22%3Cscript%3E
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616420600787-GET-/log
+-200-{"xu_ly":"thêm user mới","data_send":{}}
+1616420670738-GET-/phan-quyen
+-200-{"data_send":{}}
+1616420734710-GET-/phan-quyen
+-200-{"data_send":{}}
+1616420747149-PUT-/phan-quyen/4
+-200-{"data_send":{}}
+1616420766277-PUT-/phan-quyen/4
+-200-{"data_send":{}}
+1616420780589-GET-/menu-quan-tri
+-200-{"data_send":{}}
+1616420789609-GET-/?-%27%22%22%3Cscript%3E
+-200-{"data_send":{}}
+1616420793004-GET-/log
+-200-{"data_send":{}}
+1616420819769-GET-/?-%27%22%22%3Cscript%3E
+-200-{"data_send":{}}
+1616420821578-GET-/log
+-200-{"data_send":{}}
+1616421056645-GET-/?-%27%22%22%3Cscript%3E
+-200-{"data_send":{}}
+1616421065993-GET-/log
+-200-{"data_send":{}}
+1616421106730-GET-/log
+-200-{"data_send":{}}
+1616421157528-GET-/?-%27%22%22%3Cscript%3E
+-200-{"data_send":{}}
+1616421159191-GET-/log
+-200-{"data_send":{}}
+1616421182648-GET-/log
+-200-{"data_send":{}}
+1616421229754-GET-/?-%27%22%22%3Cscript%3E
+-200-{"data_send":{}}
+1616421235357-GET-/?-%3Cscript%3E%27%22%22
+-200-{"data_send":{}}
+1616421237548-GET-/log
+-200-{"data_send":{}}
+1616422794132-POST-/user/admin-log-in
+-200-{"data_send":{"ten_dang_nhap":"hungnguyenxuan118@gmail.com","mat_khau":"123456"}}
+1616422794832-POST-/user/admin-authorized
+-200-{"data_send":{}}
+1616422794840-GET-/dashboard/don-hang-so-thang/2016
+-200-{"data_send":{}}
+1616422795046-GET-/dashboard/don-hang/2016
+-200-{"data_send":{}}
+1616422836009-POST-/user/admin-authorized
+-200-{"data_send":{}}
+1616422836012-GET-/dashboard/don-hang-so-thang/2016
+-200-{"data_send":{}}
+1616422836207-GET-/dashboard/don-hang/2016
+-200-{"data_send":{}}
+1616422837006-GET-/app/dashboard
+-200-{"data_send":{}}
+1616422856628-POST-/user/admin-log-in
+-200-{"data_send":{"ten_dang_nhap":"demo@devias.io","mat_khau":"Password123"}}

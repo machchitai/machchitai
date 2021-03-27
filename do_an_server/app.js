@@ -18,6 +18,7 @@ var productRouter = require('./routes/product');
 var donHangRouter = require('./routes/don_hang');
 var phanquyenRouter = require('./routes/phan_quyen');
 var menuQuanTriRouter = require('./routes/menu');
+var viewLogRouter = require('./routes/viewlog');
 
 var app = express();
 
@@ -27,15 +28,14 @@ var complete_log = (req, res, next) => {
   try {
       //console.log(hahaha.length);
       var string_log = '-200-' + JSON.stringify({
-          'xu_ly': 'thêm user mới',
           data_send: req.body
       }) +  '\n';
   
-      fs.appendFileSync('./data_log/2020_12_23.log', string_log);
+      fs.appendFileSync('./data_log/request.log', string_log);
   }
   catch(err){
-      var string_log = '-500-Server Internal Error' +  '\n';
-      fs.appendFileSync('./data_log/2020_12_23.log', string_log);
+      var string_log = '-500-Server Internal Error' + err + '\n';
+      fs.appendFileSync('./data_log/error.log', string_log);
   }
 
   next();
@@ -54,7 +54,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use((req, res, next) => {
   //console.log(Date.now() + '-' + req.method + '-' + req.url);
   var string_log = Date.now() + '-' + req.method + '-' + req.url + '\n';
-  fs.appendFileSync('./data_log/2020_12_23.log', string_log);
+  fs.appendFileSync('./data_log/request.log', string_log);
   next();
 })
 
@@ -72,6 +72,7 @@ app.use('/product', productRouter);
 app.use('/don-hang', donHangRouter);
 app.use('/phan-quyen', phanquyenRouter);
 app.use('/menu-quan-tri', menuQuanTriRouter);
+app.use('/log', viewLogRouter);
 
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {
@@ -83,6 +84,9 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  var string_log = Date.now() + '-' + req.url + '-500-Server Internal Error-' + err.message + '\n';
+  fs.appendFileSync('./data_log/error.log', string_log);
 
   // render the error page
   res.status(err.status || 500);
