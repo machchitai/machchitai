@@ -131,7 +131,6 @@ router.put('/:id_user', (req, res) => {
 });
 
 
-//router.delete('/:email', authenticate.auth, (req, res) => {
 router.delete('/:id_user', authenticate.auth, (req, res) => {
     console.log(req.params.email);
     MongoClient.connect(url, function(err, client) {
